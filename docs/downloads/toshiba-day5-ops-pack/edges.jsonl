@@ -381,3 +381,349 @@
 {"from_space": "community", "from_id": "retail_loss_prevention_community", "relation": "summarizes", "to_space": "concept", "to_id": "ai_powered_loss_prevention", "properties": {}}
 {"from_space": "concept", "from_id": "loss_prevention", "relation": "constrains", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Loss prevention requirements constrain how self-checkout enhancements can be designed and deployed."}}
 {"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Better customer experience drives retailer investment in SCO enhancements."}}
+{"from_space": "evidence", "from_id": "sla_key_takeaway", "relation": "describes", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_key_takeaway", "relation": "mentions", "to_space": "concept", "to_id": "response_time", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_key_takeaway", "relation": "mentions", "to_space": "concept", "to_id": "resolution_time", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "part_of", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "concept", "from_id": "service_request_management", "relation": "part_of", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "related_to", "to_space": "concept", "to_id": "service_request_management", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "depends_on", "to_space": "concept", "to_id": "response_time", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "depends_on", "to_space": "concept", "to_id": "resolution_time", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "contributes_to", "to_space": "outcome", "to_id": "user_trust", "properties": {}}
+{"from_space": "concept", "from_id": "service_level_agreement", "relation": "predicts", "to_space": "outcome", "to_id": "bottleneck_capacity_gap", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "raises", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "lowers", "to_space": "outcome", "to_id": "bottleneck_capacity_gap", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "affects", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "resource", "from_id": "jira_service_management", "relation": "contains", "to_space": "evidence", "to_id": "sla_key_takeaway", "properties": {}}
+{"from_space": "resource", "from_id": "service_collection", "relation": "contains", "to_space": "evidence", "to_id": "sla_key_takeaway", "properties": {}}
+{"from_space": "community", "from_id": "it_service_teams", "relation": "clusters", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "community", "from_id": "it_service_teams", "relation": "summarizes", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "describes", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "describes", "to_space": "concept", "to_id": "performance_metrics", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "describes", "to_space": "concept", "to_id": "roles_and_responsibilities", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "describes", "to_space": "concept", "to_id": "remedies_and_penalties", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "describes", "to_space": "concept", "to_id": "services_provided", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_components_text", "relation": "mentions", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "part_of", "to_space": "concept", "to_id": "itsm", "properties": {"note": "SLAs are a core component of ITSM practice"}}
+{"from_space": "concept", "from_id": "customer_based_sla", "relation": "subclass_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "performance_metrics", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "roles_and_responsibilities", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "remedies_and_penalties", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "services_provided", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_trust", "properties": {"note": "SLAs reduce uncertainty and ease risk concerns, building trust"}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "outcome", "to_id": "team_productivity", "properties": {"note": "SLAs define urgency and focus IT teams on priority issues"}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "outcome", "to_id": "structured_communication", "properties": {"note": "SLAs enable structured conversations based on agreed-upon terms"}}
+{"from_space": "concept", "from_id": "remedies_and_penalties", "relation": "constrains", "to_space": "outcome", "to_id": "sla_breach_risk", "properties": {"note": "Predefined remedies constrain the impact of SLA breach risk"}}
+{"from_space": "concept", "from_id": "performance_metrics", "relation": "predicts", "to_space": "outcome", "to_id": "team_productivity", "properties": {"note": "Quantifiable performance targets predict and drive team productivity"}}
+{"from_space": "lever", "from_id": "sla_implementation", "relation": "raises", "to_space": "outcome", "to_id": "customer_trust", "properties": {}}
+{"from_space": "lever", "from_id": "sla_implementation", "relation": "raises", "to_space": "outcome", "to_id": "team_productivity", "properties": {}}
+{"from_space": "lever", "from_id": "sla_implementation", "relation": "lowers", "to_space": "outcome", "to_id": "sla_breach_risk", "properties": {"note": "Implementing SLAs with clear remedies reduces breach risk"}}
+{"from_space": "lever", "from_id": "sla_implementation", "relation": "affects", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "multi_level_sla", "relation": "part_of", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "concept", "from_id": "corporate_level_sla", "relation": "part_of", "to_space": "concept", "to_id": "multi_level_sla", "properties": {}}
+{"from_space": "concept", "from_id": "customer_level_sla", "relation": "part_of", "to_space": "concept", "to_id": "multi_level_sla", "properties": {}}
+{"from_space": "concept", "from_id": "service_based_sla", "relation": "subclass_of", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "concept", "from_id": "service_based_sla", "relation": "related_to", "to_space": "concept", "to_id": "multi_level_sla", "properties": {}}
+{"from_space": "concept", "from_id": "uptime_guarantee", "relation": "contributes_to", "to_space": "outcome", "to_id": "uptime_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "response_time", "relation": "contributes_to", "to_space": "outcome", "to_id": "response_time_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "response_time", "relation": "contributes_to", "to_space": "outcome", "to_id": "resolution_time_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "first_call_resolution", "relation": "contributes_to", "to_space": "outcome", "to_id": "fcr_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "service_credit", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_breach_risk", "properties": {}}
+{"from_space": "concept", "from_id": "it_metrics", "relation": "contributes_to", "to_space": "outcome", "to_id": "response_time_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "uptime_guarantee", "relation": "predicts", "to_space": "outcome", "to_id": "sla_breach_risk", "properties": {}}
+{"from_space": "subject", "from_id": "it_support_team", "relation": "manages", "to_space": "resource", "to_id": "ticketing_system", "properties": {}}
+{"from_space": "subject", "from_id": "cloud_hosting_provider", "relation": "manages", "to_space": "resource", "to_id": "automated_monitoring", "properties": {}}
+{"from_space": "resource", "from_id": "ticketing_system", "relation": "logged_as", "to_space": "evidence", "to_id": "sla_examples_text", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "describes", "to_space": "concept", "to_id": "service_based_sla", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "describes", "to_space": "concept", "to_id": "multi_level_sla", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "mentions", "to_space": "concept", "to_id": "uptime_guarantee", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "mentions", "to_space": "concept", "to_id": "first_call_resolution", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "mentions", "to_space": "concept", "to_id": "response_time", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_examples_text", "relation": "mentions", "to_space": "concept", "to_id": "service_credit", "properties": {}}
+{"from_space": "community", "from_id": "itsm_sla_community", "relation": "clusters", "to_space": "concept", "to_id": "service_based_sla", "properties": {}}
+{"from_space": "community", "from_id": "itsm_sla_community", "relation": "clusters", "to_space": "concept", "to_id": "multi_level_sla", "properties": {}}
+{"from_space": "community", "from_id": "itsm_sla_community", "relation": "summarizes", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "concept", "from_id": "it_metrics", "relation": "related_to", "to_space": "concept", "to_id": "service_level_agreement", "properties": {}}
+{"from_space": "concept", "from_id": "service_credit", "relation": "related_to", "to_space": "concept", "to_id": "uptime_guarantee", "properties": {}}
+{"from_space": "concept", "from_id": "response_time", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "concept", "from_id": "resolution_time", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "concept", "from_id": "response_time", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "resolution_time", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "sla_baseline", "relation": "part_of", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "business_goals_alignment", "relation": "influences", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "management_buyin", "relation": "influences", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "lever", "from_id": "regular_sla_review", "relation": "optimizes", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "lever", "from_id": "regular_sla_review", "relation": "lowers", "to_space": "outcome", "to_id": "sla_drift_risk", "properties": {}}
+{"from_space": "lever", "from_id": "customer_feedback_collection", "relation": "raises", "to_space": "outcome", "to_id": "service_quality_outcome", "properties": {}}
+{"from_space": "lever", "from_id": "customer_feedback_collection", "relation": "affects", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "lever", "from_id": "sla_reporting_tooling", "relation": "optimizes", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "constrains", "to_space": "outcome", "to_id": "service_quality_outcome", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "it_support_solution", "properties": {}}
+{"from_space": "subject", "from_id": "it_management", "relation": "member_of", "to_space": "resource", "to_id": "it_support_solution", "properties": {}}
+{"from_space": "concept", "from_id": "business_goals_alignment", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_quality_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "sla_baseline", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_performance", "properties": {}}
+{"from_space": "subject", "from_id": "service_desk_team", "relation": "manages", "to_space": "resource", "to_id": "jira_service_management", "properties": {}}
+{"from_space": "subject", "from_id": "it_agent", "relation": "can_execute", "to_space": "resource", "to_id": "jira_service_management", "properties": {"context": "Agents use Jira Service Management to work on tickets and follow SLA goals"}}
+{"from_space": "concept", "from_id": "sla_measurement", "relation": "related_to", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "sla_exceptions", "relation": "influences", "to_space": "concept", "to_id": "sla_measurement", "properties": {"context": "Exceptions like slow-responding customers and third-party escalations distort SLA measurement"}}
+{"from_space": "concept", "from_id": "automation_rules", "relation": "related_to", "to_space": "concept", "to_id": "sla_measurement", "properties": {"context": "Automation rules help maintain accurate SLA measurement by closing inactive tickets"}}
+{"from_space": "concept", "from_id": "ticket_priority", "relation": "influences", "to_space": "concept", "to_id": "sla", "properties": {"context": "Ticket priority levels drive differentiated SLA performance goals"}}
+{"from_space": "concept", "from_id": "service_request_management", "relation": "related_to", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "concept", "from_id": "sla_measurement", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_response_time_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "sla_exceptions", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_metric_skew_risk", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "outcome", "to_id": "agent_clarity_outcome", "properties": {"context": "Well-designed SLAs with clear naming improve agent understanding and goal clarity"}}
+{"from_space": "lever", "from_id": "auto_close_inactive_tickets", "relation": "lowers", "to_space": "outcome", "to_id": "sla_metric_skew_risk", "properties": {"context": "Automatically closing inactive tickets prevents stale issues from distorting SLA metrics"}}
+{"from_space": "lever", "from_id": "auto_close_inactive_tickets", "relation": "affects", "to_space": "concept", "to_id": "automation_rules", "properties": {}}
+{"from_space": "lever", "from_id": "granular_sla_decomposition", "relation": "optimizes", "to_space": "outcome", "to_id": "sla_response_time_kpi", "properties": {"context": "Breaking SLAs into smaller components allows more precise measurement and reporting"}}
+{"from_space": "lever", "from_id": "granular_sla_decomposition", "relation": "affects", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "lever", "from_id": "priority_based_sla_goals", "relation": "optimizes", "to_space": "outcome", "to_id": "sla_response_time_kpi", "properties": {"context": "Differentiated goals aligned to ticket priority ensure appropriate response time targets"}}
+{"from_space": "lever", "from_id": "priority_based_sla_goals", "relation": "affects", "to_space": "concept", "to_id": "ticket_priority", "properties": {}}
+{"from_space": "lever", "from_id": "priority_based_sla_goals", "relation": "raises", "to_space": "outcome", "to_id": "agent_clarity_outcome", "properties": {}}
+{"from_space": "subject", "from_id": "rovo_agent", "relation": "can_execute", "to_space": "resource", "to_id": "jira_service_management", "properties": {}}
+{"from_space": "resource", "from_id": "jira_service_management", "relation": "contains", "to_space": "evidence", "to_id": "sla_atlassian_article", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_atlassian_article", "relation": "mentions", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_atlassian_article", "relation": "mentions", "to_space": "concept", "to_id": "sla_compliance", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_atlassian_article", "relation": "mentions", "to_space": "concept", "to_id": "business_hours_calendar", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_atlassian_article", "relation": "mentions", "to_space": "concept", "to_id": "ticket_routing", "properties": {}}
+{"from_space": "evidence", "from_id": "sla_atlassian_article", "relation": "mentions", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "related_to", "to_space": "concept", "to_id": "sla_compliance", "properties": {}}
+{"from_space": "concept", "from_id": "sla_compliance", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_trust", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_metrics_accuracy", "properties": {}}
+{"from_space": "concept", "from_id": "sla", "relation": "contributes_to", "to_space": "concept", "to_id": "resolution_time", "properties": {}}
+{"from_space": "concept", "from_id": "sla_compliance", "relation": "influences", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "concept", "from_id": "ticket_routing", "relation": "influences", "to_space": "concept", "to_id": "sla_compliance", "properties": {}}
+{"from_space": "concept", "from_id": "business_hours_calendar", "relation": "contributes_to", "to_space": "outcome", "to_id": "sla_metrics_accuracy", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "lowers", "to_space": "outcome", "to_id": "stale_ticket_skew", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "raises", "to_space": "outcome", "to_id": "sla_metrics_accuracy", "properties": {}}
+{"from_space": "lever", "from_id": "sla_automation", "relation": "affects", "to_space": "concept", "to_id": "sla_compliance", "properties": {}}
+{"from_space": "lever", "from_id": "ai_assisted_response", "relation": "lowers", "to_space": "concept", "to_id": "resolution_time", "properties": {}}
+{"from_space": "lever", "from_id": "ai_assisted_response", "relation": "affects", "to_space": "concept", "to_id": "ticket_routing", "properties": {}}
+{"from_space": "lever", "from_id": "ai_assisted_response", "relation": "raises", "to_space": "outcome", "to_id": "customer_trust", "properties": {}}
+{"from_space": "lever", "from_id": "quarterly_sla_review", "relation": "optimizes", "to_space": "outcome", "to_id": "sla_metrics_accuracy", "properties": {}}
+{"from_space": "lever", "from_id": "quarterly_sla_review", "relation": "raises", "to_space": "outcome", "to_id": "customer_trust", "properties": {}}
+{"from_space": "lever", "from_id": "quarterly_sla_review", "relation": "affects", "to_space": "concept", "to_id": "sla", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "itsm", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "esm", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "digital_transformation", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "employee_onboarding", "properties": {}}
+{"from_space": "evidence", "from_id": "hr_itsm_best_practices_text", "relation": "mentions", "to_space": "concept", "to_id": "team_silos", "properties": {}}
+{"from_space": "concept", "from_id": "esm", "relation": "related_to", "to_space": "concept", "to_id": "itsm", "properties": {"note": "ESM is an extension of ITSM principles to enterprise-wide teams"}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "part_of", "to_space": "concept", "to_id": "esm", "properties": {}}
+{"from_space": "concept", "from_id": "workflow_automation", "relation": "part_of", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "resource_allocation_efficiency", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "it_optimization", "properties": {}}
+{"from_space": "concept", "from_id": "team_silos", "relation": "degrades", "to_space": "outcome", "to_id": "resource_allocation_efficiency", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "constrains", "to_space": "outcome", "to_id": "onboarding_inefficiency_risk", "properties": {}}
+{"from_space": "concept", "from_id": "digital_transformation", "relation": "depends_on", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "itsm", "relation": "influences", "to_space": "concept", "to_id": "hr_automation", "properties": {"note": "ITSM best practices adapted and applied to HR automation"}}
+{"from_space": "lever", "from_id": "early_automation_adoption", "relation": "raises", "to_space": "outcome", "to_id": "resource_allocation_efficiency", "properties": {}}
+{"from_space": "lever", "from_id": "early_automation_adoption", "relation": "lowers", "to_space": "outcome", "to_id": "onboarding_inefficiency_risk", "properties": {}}
+{"from_space": "lever", "from_id": "early_automation_adoption", "relation": "affects", "to_space": "concept", "to_id": "team_silos", "properties": {"note": "Early automation helps break down team silos"}}
+{"from_space": "lever", "from_id": "early_automation_adoption", "relation": "optimizes", "to_space": "outcome", "to_id": "it_optimization", "properties": {}}
+{"from_space": "subject", "from_id": "hr_team", "relation": "can_execute", "to_space": "resource", "to_id": "jira_service_management", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "jira_service_management", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "member_of", "to_space": "resource", "to_id": "service_collection", "properties": {}}
+{"from_space": "concept", "from_id": "employee_onboarding", "relation": "depends_on", "to_space": "concept", "to_id": "workflow_automation", "properties": {"note": "Effective onboarding requires structured automated workflows"}}
+{"from_space": "concept", "from_id": "employee_onboarding", "relation": "contributes_to", "to_space": "outcome", "to_id": "onboarding_inefficiency_risk", "properties": {"note": "Without automation, onboarding becomes unwieldy and creates risk"}}
+{"from_space": "evidence", "from_id": "gartner_prediction_textunit", "relation": "mentions", "to_space": "concept", "to_id": "agile_principles", "properties": {}}
+{"from_space": "evidence", "from_id": "gartner_prediction_textunit", "relation": "mentions", "to_space": "concept", "to_id": "itsm_practice", "properties": {}}
+{"from_space": "concept", "from_id": "agile_principles", "relation": "related_to", "to_space": "concept", "to_id": "itsm_practice", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "related_to", "to_space": "concept", "to_id": "itsm_practice", "properties": {}}
+{"from_space": "concept", "from_id": "self_service", "relation": "contributes_to", "to_space": "outcome", "to_id": "ticket_volume_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "ticket_deflection", "relation": "contributes_to", "to_space": "outcome", "to_id": "ticket_volume_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "self_service", "relation": "related_to", "to_space": "concept", "to_id": "ticket_deflection", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "scaled_hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "agile_principles", "relation": "contributes_to", "to_space": "outcome", "to_id": "scaled_hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "itsm_practice", "relation": "predicts", "to_space": "outcome", "to_id": "itsm_bypass_risk", "properties": {}}
+{"from_space": "concept", "from_id": "onboarding_workflow", "relation": "part_of", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "depends_on", "to_space": "concept", "to_id": "agile_principles", "properties": {}}
+{"from_space": "lever", "from_id": "start_small_iterate", "relation": "raises", "to_space": "outcome", "to_id": "scaled_hr_automation", "properties": {}}
+{"from_space": "lever", "from_id": "start_small_iterate", "relation": "lowers", "to_space": "outcome", "to_id": "itsm_bypass_risk", "properties": {}}
+{"from_space": "lever", "from_id": "knowledge_hub_lever", "relation": "raises", "to_space": "outcome", "to_id": "ticket_volume_reduction", "properties": {}}
+{"from_space": "lever", "from_id": "knowledge_hub_lever", "relation": "affects", "to_space": "concept", "to_id": "self_service", "properties": {}}
+{"from_space": "lever", "from_id": "start_small_iterate", "relation": "affects", "to_space": "concept", "to_id": "agile_principles", "properties": {}}
+{"from_space": "community", "from_id": "esm_hr_community", "relation": "clusters", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "community", "from_id": "esm_hr_community", "relation": "summarizes", "to_space": "concept", "to_id": "itsm_practice", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "jira_hr_workflows", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "laptop_provisioning_system", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "service_catalog", "properties": {}}
+{"from_space": "subject", "from_id": "hr_team", "relation": "owns", "to_space": "resource", "to_id": "jira_hr_workflows", "properties": {}}
+{"from_space": "subject", "from_id": "onboarding_chatbot", "relation": "can_execute", "to_space": "resource", "to_id": "slack", "properties": {"description": "Chatbot sends new employees Slack group links"}}
+{"from_space": "resource", "from_id": "jira_hr_workflows", "relation": "contains", "to_space": "evidence", "to_id": "onboarding_scale_evidence", "properties": {}}
+{"from_space": "resource", "from_id": "slack", "relation": "logged_as", "to_space": "evidence", "to_id": "permission_hoops_evidence", "properties": {}}
+{"from_space": "evidence", "from_id": "onboarding_scale_evidence", "relation": "mentions", "to_space": "concept", "to_id": "employee_onboarding", "properties": {}}
+{"from_space": "evidence", "from_id": "onboarding_scale_evidence", "relation": "mentions", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "evidence", "from_id": "permission_hoops_evidence", "relation": "mentions", "to_space": "concept", "to_id": "permission_management", "properties": {}}
+{"from_space": "evidence", "from_id": "permission_hoops_evidence", "relation": "mentions", "to_space": "concept", "to_id": "open_by_default", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "related_to", "to_space": "concept", "to_id": "employee_onboarding", "properties": {}}
+{"from_space": "concept", "from_id": "permission_management", "relation": "related_to", "to_space": "concept", "to_id": "employee_onboarding", "properties": {}}
+{"from_space": "concept", "from_id": "open_by_default", "relation": "related_to", "to_space": "concept", "to_id": "permission_management", "properties": {}}
+{"from_space": "concept", "from_id": "self_service", "relation": "related_to", "to_space": "concept", "to_id": "permission_management", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "consistent_onboarding_experience", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "talent_retention", "properties": {}}
+{"from_space": "concept", "from_id": "employee_onboarding", "relation": "contributes_to", "to_space": "outcome", "to_id": "talent_retention", "properties": {}}
+{"from_space": "concept", "from_id": "permission_management", "relation": "contributes_to", "to_space": "outcome", "to_id": "employee_time_to_productivity", "properties": {}}
+{"from_space": "concept", "from_id": "open_by_default", "relation": "contributes_to", "to_space": "outcome", "to_id": "employee_time_to_productivity", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "constrains", "to_space": "outcome", "to_id": "human_error_risk", "properties": {}}
+{"from_space": "lever", "from_id": "onboarding_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "consistent_onboarding_experience", "properties": {}}
+{"from_space": "lever", "from_id": "onboarding_automation_lever", "relation": "lowers", "to_space": "outcome", "to_id": "human_error_risk", "properties": {}}
+{"from_space": "lever", "from_id": "onboarding_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "talent_retention", "properties": {}}
+{"from_space": "lever", "from_id": "onboarding_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "lever", "from_id": "permission_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "employee_time_to_productivity", "properties": {}}
+{"from_space": "lever", "from_id": "permission_automation_lever", "relation": "lowers", "to_space": "outcome", "to_id": "human_error_risk", "properties": {}}
+{"from_space": "lever", "from_id": "permission_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "open_by_default", "properties": {}}
+{"from_space": "lever", "from_id": "permission_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "self_service", "properties": {}}
+{"from_space": "subject", "from_id": "atlassian_org", "relation": "owns", "to_space": "resource", "to_id": "service_desk_tool", "properties": {}}
+{"from_space": "subject", "from_id": "atlassian_org", "relation": "owns", "to_space": "resource", "to_id": "asset_management_tool", "properties": {}}
+{"from_space": "subject", "from_id": "atlassian_org", "relation": "owns", "to_space": "resource", "to_id": "service_catalog", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "service_desk_tool", "properties": {}}
+{"from_space": "subject", "from_id": "it_team", "relation": "manages", "to_space": "resource", "to_id": "asset_management_tool", "properties": {}}
+{"from_space": "resource", "from_id": "service_desk_tool", "relation": "logged_as", "to_space": "evidence", "to_id": "atlassian_customer_automation_stat", "properties": {}}
+{"from_space": "resource", "from_id": "service_catalog", "relation": "contains", "to_space": "evidence", "to_id": "atlassian_customer_automation_stat", "properties": {}}
+{"from_space": "evidence", "from_id": "forrester_quote_automation", "relation": "mentions", "to_space": "concept", "to_id": "end_to_end_automation", "properties": {}}
+{"from_space": "evidence", "from_id": "atlassian_customer_automation_stat", "relation": "mentions", "to_space": "concept", "to_id": "request_fulfillment", "properties": {}}
+{"from_space": "evidence", "from_id": "offboarding_risk_evidence", "relation": "mentions", "to_space": "concept", "to_id": "employee_offboarding", "properties": {}}
+{"from_space": "evidence", "from_id": "offboarding_risk_evidence", "relation": "describes", "to_space": "concept", "to_id": "asset_management", "properties": {}}
+{"from_space": "concept", "from_id": "end_to_end_automation", "relation": "related_to", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "end_to_end_automation", "relation": "related_to", "to_space": "concept", "to_id": "self_service", "properties": {}}
+{"from_space": "concept", "from_id": "low_code_automation", "relation": "subclass_of", "to_space": "concept", "to_id": "end_to_end_automation", "properties": {}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "part_of", "to_space": "concept", "to_id": "end_to_end_automation", "properties": {}}
+{"from_space": "concept", "from_id": "employee_offboarding", "relation": "part_of", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "request_fulfillment", "relation": "part_of", "to_space": "concept", "to_id": "hr_automation", "properties": {}}
+{"from_space": "concept", "from_id": "asset_management", "relation": "part_of", "to_space": "concept", "to_id": "employee_offboarding", "properties": {}}
+{"from_space": "concept", "from_id": "license_subscription_management", "relation": "part_of", "to_space": "concept", "to_id": "employee_offboarding", "properties": {}}
+{"from_space": "concept", "from_id": "self_service", "relation": "contributes_to", "to_space": "outcome", "to_id": "employee_satisfaction", "properties": {}}
+{"from_space": "concept", "from_id": "end_to_end_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_catalog_automation_rate", "properties": {}}
+{"from_space": "concept", "from_id": "employee_offboarding", "relation": "contributes_to", "to_space": "outcome", "to_id": "data_security_risk", "properties": {"note": "Poor offboarding contributes to data security risk"}}
+{"from_space": "concept", "from_id": "asset_management", "relation": "constrains", "to_space": "outcome", "to_id": "data_security_risk", "properties": {"note": "Proper asset management constrains data security risk"}}
+{"from_space": "concept", "from_id": "hr_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "employee_satisfaction", "properties": {}}
+{"from_space": "lever", "from_id": "offboarding_automation_lever", "relation": "lowers", "to_space": "outcome", "to_id": "data_security_risk", "properties": {}}
+{"from_space": "lever", "from_id": "offboarding_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "employee_satisfaction", "properties": {}}
+{"from_space": "lever", "from_id": "offboarding_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "employee_offboarding", "properties": {}}
+{"from_space": "lever", "from_id": "service_catalog_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "service_catalog_automation_rate", "properties": {}}
+{"from_space": "lever", "from_id": "service_catalog_automation_lever", "relation": "raises", "to_space": "outcome", "to_id": "employee_satisfaction", "properties": {}}
+{"from_space": "lever", "from_id": "service_catalog_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "request_fulfillment", "properties": {}}
+{"from_space": "lever", "from_id": "service_catalog_automation_lever", "relation": "affects", "to_space": "concept", "to_id": "self_service", "properties": {}}
+{"from_space": "policy", "from_id": "sensitive_data_sensitivity", "relation": "protects", "to_space": "resource", "to_id": "asset_management_tool", "properties": {}}
+{"from_space": "policy", "from_id": "sensitive_data_sensitivity", "relation": "restricts", "to_space": "resource", "to_id": "service_desk_tool", "properties": {}}
+{"from_space": "concept", "from_id": "low_code_automation", "relation": "related_to", "to_space": "concept", "to_id": "democratized_automation", "properties": {"rationale": "Low-code approach is the mechanism enabling democratized access to automation"}}
+{"from_space": "concept", "from_id": "democratized_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "automation_value", "properties": {"rationale": "Democratizing automation reduces reliance on costly consulting and increases overall value"}}
+{"from_space": "concept", "from_id": "low_code_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_velocity", "properties": {"rationale": "Low-code workflows enable faster service delivery and high-velocity support"}}
+{"from_space": "concept", "from_id": "legacy_vendor_approach", "relation": "degrades", "to_space": "outcome", "to_id": "automation_value", "properties": {"rationale": "Legacy vendor approach increases costs by 50% in consulting hours, detracting from automation value"}}
+{"from_space": "concept", "from_id": "legacy_vendor_approach", "relation": "contributes_to", "to_space": "outcome", "to_id": "it_bottleneck_risk", "properties": {"rationale": "Traditional approaches keep IT as the gatekeeper for all automation changes"}}
+{"from_space": "lever", "from_id": "platform_level_automation", "relation": "raises", "to_space": "outcome", "to_id": "automation_value", "properties": {"rationale": "Enterprise-wide platform automation delivers comprehensive value across all teams"}}
+{"from_space": "lever", "from_id": "platform_level_automation", "relation": "lowers", "to_space": "outcome", "to_id": "it_bottleneck_risk", "properties": {"rationale": "Platform-level automation lets non-IT teams self-serve, reducing IT bottlenecks"}}
+{"from_space": "lever", "from_id": "platform_level_automation", "relation": "lowers", "to_space": "outcome", "to_id": "automation_avoidance_risk", "properties": {"rationale": "Investing in platform automation directly mitigates the risk of falling behind digitally"}}
+{"from_space": "lever", "from_id": "drag_drop_form_builder", "relation": "raises", "to_space": "outcome", "to_id": "service_velocity", "properties": {"rationale": "Teams can request exact data needed, speeding up job execution and service delivery"}}
+{"from_space": "lever", "from_id": "drag_drop_form_builder", "relation": "affects", "to_space": "concept", "to_id": "democratized_automation", "properties": {"rationale": "Drag-and-drop tools are the primary mechanism for democratizing automation access"}}
+{"from_space": "lever", "from_id": "platform_level_automation", "relation": "affects", "to_space": "concept", "to_id": "it_automation", "properties": {"rationale": "Platform automation shapes how companies manage IT services in digital-first environments"}}
+{"from_space": "concept", "from_id": "itsm", "relation": "related_to", "to_space": "concept", "to_id": "esm", "properties": {"rationale": "ESM is an enterprise-wide extension of ITSM practices"}}
+{"from_space": "concept", "from_id": "esm", "relation": "influences", "to_space": "concept", "to_id": "hr_service_delivery", "properties": {"rationale": "ESM extends service management practices to HR and other non-IT departments"}}
+{"from_space": "concept", "from_id": "it_automation", "relation": "related_to", "to_space": "concept", "to_id": "itsm", "properties": {"rationale": "IT automation is transforming how ITSM is implemented and managed"}}
+{"from_space": "evidence", "from_id": "gartner_agile_itsm_ref", "relation": "mentions", "to_space": "concept", "to_id": "itsm", "properties": {"rationale": "Gartner report specifically addresses agile IT service management"}}
+{"from_space": "community", "from_id": "non_technical_teams", "relation": "clusters", "to_space": "concept", "to_id": "democratized_automation", "properties": {"rationale": "Non-technical teams are the primary beneficiary community of democratized automation"}}
+{"from_space": "concept", "from_id": "democratized_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_velocity", "properties": {"rationale": "When more teams can self-serve automation, overall service velocity increases"}}
+{"from_space": "concept", "from_id": "low_code_automation", "relation": "depends_on", "to_space": "concept", "to_id": "itsm", "properties": {"rationale": "Low-code automation is applied within and transforms ITSM implementations"}}
+{"from_space": "evidence", "from_id": "alert_list_textunit", "relation": "describes", "to_space": "concept", "to_id": "alert_list_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_list_textunit", "relation": "describes", "to_space": "concept", "to_id": "alert_status_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_severity_textunit", "relation": "describes", "to_space": "concept", "to_id": "alert_severity_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_list_textunit", "relation": "mentions", "to_space": "concept", "to_id": "alert_concept", "properties": {}}
+{"from_space": "concept", "from_id": "alert_concept", "relation": "part_of", "to_space": "concept", "to_id": "incident_management_topic", "properties": {}}
+{"from_space": "concept", "from_id": "alert_list_concept", "relation": "part_of", "to_space": "concept", "to_id": "incident_management_topic", "properties": {}}
+{"from_space": "concept", "from_id": "alert_severity_concept", "relation": "part_of", "to_space": "concept", "to_id": "alert_concept", "properties": {}}
+{"from_space": "concept", "from_id": "alert_status_concept", "relation": "part_of", "to_space": "concept", "to_id": "alert_concept", "properties": {}}
+{"from_space": "concept", "from_id": "alert_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_outage_risk", "properties": {}}
+{"from_space": "concept", "from_id": "alert_severity_concept", "relation": "predicts", "to_space": "outcome", "to_id": "service_outage_risk", "properties": {}}
+{"from_space": "policy", "from_id": "alert_access_policy", "relation": "protects", "to_space": "resource", "to_id": "gitlab_monitor_tool", "properties": {}}
+{"from_space": "concept", "from_id": "alert_list_concept", "relation": "related_to", "to_space": "concept", "to_id": "alert_severity_concept", "properties": {}}
+{"from_space": "concept", "from_id": "alert_list_concept", "relation": "related_to", "to_space": "concept", "to_id": "alert_status_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_system_note", "relation": "describes", "to_space": "concept", "to_id": "activity_feed_tab", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_system_note", "relation": "describes", "to_space": "concept", "to_id": "alert_status", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_system_note", "relation": "describes", "to_space": "concept", "to_id": "alert_assignment", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_system_note", "relation": "describes", "to_space": "concept", "to_id": "alert_escalation", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_system_note", "relation": "describes", "to_space": "concept", "to_id": "incident_creation_from_alert", "properties": {}}
+{"from_space": "concept", "from_id": "activity_feed_tab", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_investigation_timeline", "properties": {}}
+{"from_space": "concept", "from_id": "alert_details_tab", "relation": "related_to", "to_space": "concept", "to_id": "alert_severity", "properties": {}}
+{"from_space": "concept", "from_id": "alert_details_tab", "relation": "related_to", "to_space": "concept", "to_id": "metrics_tab", "properties": {}}
+{"from_space": "concept", "from_id": "alert_details_tab", "relation": "related_to", "to_space": "concept", "to_id": "activity_feed_tab", "properties": {}}
+{"from_space": "concept", "from_id": "alert_status", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_investigation_timeline", "properties": {}}
+{"from_space": "concept", "from_id": "alert_assignment", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_investigation_timeline", "properties": {}}
+{"from_space": "concept", "from_id": "alert_escalation", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_investigation_timeline", "properties": {}}
+{"from_space": "concept", "from_id": "incident_creation_from_alert", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_investigation_timeline", "properties": {}}
+{"from_space": "subject", "from_id": "oncall_responder", "relation": "can_edit", "to_space": "resource", "to_id": "gitlab_alert_management", "properties": {"action": "respond to alert pages by changing status"}}
+{"from_space": "concept", "from_id": "incident", "relation": "influences", "to_space": "concept", "to_id": "alert_status", "properties": {"effect": "closing a linked incident changes alert status to Resolved"}}
+{"from_space": "concept", "from_id": "escalation_policy", "relation": "constrains", "to_space": "outcome", "to_id": "oncall_page_suppression", "properties": {"description": "Escalation policy governs extent of on-call page limiting when alert is Acknowledged"}}
+{"from_space": "subject", "from_id": "large_ops_team", "relation": "manages", "to_space": "resource", "to_id": "gitlab_alert_management", "properties": {"note": "Large teams use GitLab alert management to coordinate shared alert ownership"}}
+{"from_space": "resource", "from_id": "gitlab_alert_management", "relation": "contains", "to_space": "evidence", "to_id": "alert_assignment_doc", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_alert_management", "relation": "derived_from", "to_space": "evidence", "to_id": "alert_assignment_doc", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_assignment_doc", "relation": "describes", "to_space": "concept", "to_id": "alert_assignee_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_assignment_doc", "relation": "describes", "to_space": "concept", "to_id": "alert_todo_item", "properties": {}}
+{"from_space": "evidence", "from_id": "alert_assignment_doc", "relation": "describes", "to_space": "concept", "to_id": "automatic_incident_creation", "properties": {}}
+{"from_space": "concept", "from_id": "alert_assignee_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_collaboration_efficiency", "properties": {"note": "Assigning alerts clearly indicates ownership, improving collaboration"}}
+{"from_space": "concept", "from_id": "alert_assignee_concept", "relation": "constrains", "to_space": "outcome", "to_id": "shared_ownership_ambiguity", "properties": {"note": "Alert assignment reduces ambiguity about who is investigating"}}
+{"from_space": "concept", "from_id": "alert_todo_item", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_collaboration_efficiency", "properties": {"note": "To-do items help users track their alert investigation tasks"}}
+{"from_space": "concept", "from_id": "automatic_incident_creation", "relation": "contributes_to", "to_space": "outcome", "to_id": "alert_collaboration_efficiency", "properties": {"note": "Automatic incident creation from alerts streamlines incident response workflows"}}
+{"from_space": "concept", "from_id": "alert_assignee_concept", "relation": "related_to", "to_space": "concept", "to_id": "alert_todo_item", "properties": {"note": "GitLab automatically creates a to-do item for each user assigned to an alert"}}
+{"from_space": "concept", "from_id": "automatic_incident_creation", "relation": "depends_on", "to_space": "concept", "to_id": "alert_assignee_concept", "properties": {"note": "Incident creation is triggered when an alert fires; both are part of the alert lifecycle"}}
+{"from_space": "policy", "from_id": "maintainer_owner_required_rule", "relation": "restricts", "to_space": "resource", "to_id": "gitlab_alert_management", "properties": {"note": "Only Maintainer or Owner can configure alert actions"}}
+{"from_space": "concept", "from_id": "alert_incident_creation", "relation": "contributes_to", "to_space": "outcome", "to_id": "incident_created_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "alert_severity", "relation": "influences", "to_space": "concept", "to_id": "alert_incident_creation", "properties": {"description": "Alert severity level influences incident creation and prioritization"}}
+{"from_space": "concept", "from_id": "email_notification_alerts", "relation": "contributes_to", "to_space": "outcome", "to_id": "incident_created_outcome", "properties": {"description": "Email notifications inform stakeholders when incidents are created from alerts"}}
+{"from_space": "evidence", "from_id": "problem_management_roles_textunit", "relation": "describes", "to_space": "concept", "to_id": "problem_management", "properties": {}}
+{"from_space": "evidence", "from_id": "problem_management_roles_textunit", "relation": "describes", "to_space": "concept", "to_id": "roles_and_responsibilities", "properties": {}}
+{"from_space": "evidence", "from_id": "problem_management_roles_textunit", "relation": "mentions", "to_space": "concept", "to_id": "root_cause_analysis", "properties": {}}
+{"from_space": "evidence", "from_id": "problem_management_roles_textunit", "relation": "mentions", "to_space": "concept", "to_id": "incident_management", "properties": {}}
+{"from_space": "evidence", "from_id": "problem_management_roles_textunit", "relation": "mentions", "to_space": "concept", "to_id": "service_desk", "properties": {}}
+{"from_space": "concept", "from_id": "problem_management", "relation": "related_to", "to_space": "concept", "to_id": "incident_management", "properties": {}}
+{"from_space": "concept", "from_id": "problem_management", "relation": "depends_on", "to_space": "concept", "to_id": "root_cause_analysis", "properties": {}}
+{"from_space": "concept", "from_id": "problem_management", "relation": "depends_on", "to_space": "concept", "to_id": "roles_and_responsibilities", "properties": {}}
+{"from_space": "concept", "from_id": "roles_and_responsibilities", "relation": "contributes_to", "to_space": "outcome", "to_id": "process_health_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "problem_management", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_health_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "root_cause_analysis", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_health_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "service_desk", "relation": "related_to", "to_space": "concept", "to_id": "incident_management", "properties": {}}
+{"from_space": "subject", "from_id": "service_desk_agent", "relation": "can_view", "to_space": "resource", "to_id": "jira_service_management_tool", "properties": {}}
+{"from_space": "subject", "from_id": "problem_manager_agent", "relation": "can_execute", "to_space": "resource", "to_id": "jira_service_management_tool", "properties": {}}
+{"from_space": "subject", "from_id": "process_owner_agent", "relation": "manages", "to_space": "resource", "to_id": "jira_service_management_tool", "properties": {"note": "Process Owner oversees process evolution and team training"}}
+{"from_space": "subject", "from_id": "service_owner_agent", "relation": "manages", "to_space": "resource", "to_id": "jira_service_management_tool", "properties": {"note": "Service Owner manages service operations and health reporting"}}
+{"from_space": "concept", "from_id": "root_cause_analysis_concept", "relation": "part_of", "to_space": "concept", "to_id": "problem_management_concept", "properties": {}}
+{"from_space": "concept", "from_id": "itil4_concept", "relation": "influences", "to_space": "concept", "to_id": "problem_management_concept", "properties": {}}
+{"from_space": "concept", "from_id": "it_change_management_concept", "relation": "related_to", "to_space": "concept", "to_id": "problem_management_concept", "properties": {}}
+{"from_space": "concept", "from_id": "problem_management_concept", "relation": "constrains", "to_space": "outcome", "to_id": "service_disruption_risk", "properties": {"note": "Effective problem management constrains/reduces service disruption risk"}}
+{"from_space": "concept", "from_id": "root_cause_analysis_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "service_disruption_risk", "properties": {"note": "Identifying root causes helps reduce service disruption risk"}}
+{"from_space": "evidence", "from_id": "terminal_timeout_procedure", "relation": "describes", "to_space": "concept", "to_id": "terminal_timeout", "properties": {}}
+{"from_space": "evidence", "from_id": "payment_fail_procedure", "relation": "describes", "to_space": "concept", "to_id": "payment_fail", "properties": {}}
+{"from_space": "evidence", "from_id": "pos_down_procedure", "relation": "describes", "to_space": "concept", "to_id": "pos_down", "properties": {}}
+{"from_space": "evidence", "from_id": "stock_shortage_procedure", "relation": "describes", "to_space": "concept", "to_id": "stock_shortage", "properties": {}}
+{"from_space": "evidence", "from_id": "refund_surge_procedure", "relation": "describes", "to_space": "concept", "to_id": "refund_surge", "properties": {}}
+{"from_space": "evidence", "from_id": "network_failure_procedure", "relation": "describes", "to_space": "concept", "to_id": "network_failure", "properties": {}}
+{"from_space": "evidence", "from_id": "staff_permission_rules", "relation": "describes", "to_space": "concept", "to_id": "staff_permission", "properties": {}}
+{"from_space": "evidence", "from_id": "staff_permission_rules", "relation": "describes", "to_space": "concept", "to_id": "pos_logout_policy", "properties": {}}
+{"from_space": "evidence", "from_id": "terminal_timeout_procedure", "relation": "describes", "to_space": "concept", "to_id": "van_integration", "properties": {}}
+{"from_space": "concept", "from_id": "terminal_timeout", "relation": "contributes_to", "to_space": "outcome", "to_id": "payment_disruption_risk", "properties": {}}
+{"from_space": "concept", "from_id": "pos_down", "relation": "contributes_to", "to_space": "outcome", "to_id": "payment_disruption_risk", "properties": {}}
+{"from_space": "concept", "from_id": "network_failure", "relation": "contributes_to", "to_space": "outcome", "to_id": "payment_disruption_risk", "properties": {}}
+{"from_space": "concept", "from_id": "payment_fail", "relation": "contributes_to", "to_space": "outcome", "to_id": "fraud_risk", "properties": {"trigger": "동일 카드 5회 이상 실패"}}
+{"from_space": "concept", "from_id": "pos_logout_policy", "relation": "contributes_to", "to_space": "outcome", "to_id": "revenue_attribution_error", "properties": {"condition": "로그아웃 누락 시"}}
+{"from_space": "concept", "from_id": "refund_surge", "relation": "contributes_to", "to_space": "outcome", "to_id": "audit_trigger_risk", "properties": {"threshold": "50건 이상/일"}}
+{"from_space": "concept", "from_id": "van_integration", "relation": "influences", "to_space": "concept", "to_id": "terminal_timeout", "properties": {}}
+{"from_space": "concept", "from_id": "network_failure", "relation": "influences", "to_space": "concept", "to_id": "terminal_timeout", "properties": {}}
+{"from_space": "concept", "from_id": "network_failure", "relation": "influences", "to_space": "concept", "to_id": "pos_down", "properties": {}}
+{"from_space": "concept", "from_id": "staff_permission", "relation": "related_to", "to_space": "concept", "to_id": "pos_logout_policy", "properties": {}}
+{"from_space": "lever", "from_id": "backup_payment_activation", "relation": "lowers", "to_space": "outcome", "to_id": "payment_disruption_risk", "properties": {}}
+{"from_space": "lever", "from_id": "manager_escalation", "relation": "lowers", "to_space": "outcome", "to_id": "fraud_risk", "properties": {}}
+{"from_space": "lever", "from_id": "manager_escalation", "relation": "lowers", "to_space": "outcome", "to_id": "audit_trigger_risk", "properties": {}}
+{"from_space": "lever", "from_id": "it_dispatch", "relation": "lowers", "to_space": "outcome", "to_id": "payment_disruption_risk", "properties": {"condition": "1시간 이상 미복구 시"}}
+{"from_space": "lever", "from_id": "backup_payment_activation", "relation": "affects", "to_space": "concept", "to_id": "pos_down", "properties": {}}
+{"from_space": "lever", "from_id": "it_dispatch", "relation": "affects", "to_space": "concept", "to_id": "pos_down", "properties": {}}
+{"from_space": "policy", "from_id": "stock_edit_approval", "relation": "requires_approval", "to_space": "subject", "to_id": "manager", "properties": {"action": "재고 시스템 수정"}}
+{"from_space": "subject", "from_id": "hq_it", "relation": "manages", "to_space": "resource", "to_id": "pos_terminal", "properties": {"contact": "010-0000-1234"}}
+{"from_space": "subject", "from_id": "hq_scm", "relation": "manages", "to_space": "resource", "to_id": "scm_system", "properties": {"contact": "010-0000-5678"}}
+{"from_space": "subject", "from_id": "store_manager", "relation": "manages", "to_space": "resource", "to_id": "pos_terminal", "properties": {}}
+{"from_space": "subject", "from_id": "manager", "relation": "can_execute", "to_space": "resource", "to_id": "scm_system", "properties": {"action": "재고 시스템 수정"}}
+{"from_space": "community", "from_id": "pos_failure_scenarios", "relation": "clusters", "to_space": "concept", "to_id": "pos_down", "properties": {}}
+{"from_space": "community", "from_id": "pos_failure_scenarios", "relation": "clusters", "to_space": "concept", "to_id": "terminal_timeout", "properties": {}}
+{"from_space": "community", "from_id": "payment_scenarios", "relation": "clusters", "to_space": "concept", "to_id": "payment_fail", "properties": {}}
+{"from_space": "community", "from_id": "payment_scenarios", "relation": "clusters", "to_space": "concept", "to_id": "van_integration", "properties": {}}
+{"from_space": "community", "from_id": "payment_scenarios", "relation": "clusters", "to_space": "concept", "to_id": "terminal_timeout", "properties": {}}

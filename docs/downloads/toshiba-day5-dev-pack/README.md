@@ -2,7 +2,7 @@
 
 Atlassian acli · GitLab CI · Jira/Confluence · ELERA 플랫폼 · TCx Sky OS · TCx 단말 스펙. 개발팀이 만들고 배포하는 관점.
 
-- 노드 311개 · 엣지 364개
+- 노드 517개 · 엣지 593개
 - 문법: MetaOntology 9-Space
 
 ## 설치 (Copilot CLI / Claude Code)

@@ -24,15 +24,15 @@
 {"from_space": "resource", "from_id": "toshiba_commerce_portal", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_marketing_page_text", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
-{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "modular_adaptable_solutions", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "lever", "to_id": "modular_adaptable_solutions", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_journey_excellence", "properties": {}}
-{"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "concept", "to_id": "customer_shopping_experience", "properties": {}}
 {"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "business_success", "properties": {}}
-{"from_space": "concept", "from_id": "modular_adaptable_solutions", "relation": "constrains", "to_space": "outcome", "to_id": "security_risk", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "constrains", "to_space": "outcome", "to_id": "security_risk", "properties": {}}
 {"from_space": "concept", "from_id": "operational_excellence", "relation": "contributes_to", "to_space": "outcome", "to_id": "business_success", "properties": {}}
-{"from_space": "concept", "from_id": "modular_adaptable_solutions", "relation": "influences", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "influences", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
 {"from_space": "concept", "from_id": "retail_journey_excellence", "relation": "related_to", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
-{"from_space": "lever", "from_id": "advisory_services_lever", "relation": "raises", "to_space": "outcome", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "lever", "from_id": "advisory_services_lever", "relation": "raises", "to_space": "concept", "to_id": "customer_shopping_experience", "properties": {}}
 {"from_space": "lever", "from_id": "advisory_services_lever", "relation": "affects", "to_space": "concept", "to_id": "retail_journey_excellence", "properties": {}}
 {"from_space": "lever", "from_id": "advisory_services_lever", "relation": "optimizes", "to_space": "outcome", "to_id": "business_success", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_industry_page_text", "relation": "mentions", "to_space": "concept", "to_id": "convenience_fuel_retail", "properties": {}}
@@ -70,11 +70,11 @@
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "epos_installations", "properties": {}}
 {"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "pos_self_checkout", "properties": {}}
-{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {"note": "loss prevention concept mitigates retail loss risk"}}
 {"from_space": "concept", "from_id": "serviceability", "relation": "contributes_to", "to_space": "outcome", "to_id": "system_uptime_outcome", "properties": {}}
 {"from_space": "concept", "from_id": "epos_installations", "relation": "contributes_to", "to_space": "outcome", "to_id": "epos_market_share_kpi", "properties": {}}
 {"from_space": "concept", "from_id": "pos_self_checkout", "relation": "contributes_to", "to_space": "outcome", "to_id": "pos_units_kpi", "properties": {}}
-{"from_space": "concept", "from_id": "loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "serviceability", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "serviceability", "properties": {"note": "both are pillars of Toshiba TGCS retail solutions"}}
 {"from_space": "concept", "from_id": "pos_self_checkout", "relation": "related_to", "to_space": "concept", "to_id": "epos_installations", "properties": {}}
 {"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_marketplace", "properties": {}}
 {"from_space": "concept", "from_id": "marketplace_platform", "relation": "contributes_to", "to_space": "outcome", "to_id": "retailer_growth_success", "properties": {}}
@@ -362,3 +362,232 @@
 {"from_space": "resource", "from_id": "gitlab_graphql_api", "relation": "contains", "to_space": "evidence", "to_id": "graphql_job_query_example", "properties": {}}
 {"from_space": "resource", "from_id": "gitlab_graphql_api", "relation": "contains", "to_space": "evidence", "to_id": "graphql_pipeline_query_example", "properties": {}}
 {"from_space": "concept", "from_id": "pipeline_level_concurrency_control", "relation": "predicts", "to_space": "outcome", "to_id": "stuck_job_risk", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_example_text", "relation": "describes", "to_space": "concept", "to_id": "merge_request", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_example_text", "relation": "describes", "to_space": "concept", "to_id": "diff_view", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_example_text", "relation": "describes", "to_space": "concept", "to_id": "diff_gutter", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_example_text", "relation": "describes", "to_space": "concept", "to_id": "inline_comment", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_example_text", "relation": "describes", "to_space": "concept", "to_id": "file_viewed_marker", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request", "relation": "depends_on", "to_space": "concept", "to_id": "source_branch", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request", "relation": "depends_on", "to_space": "concept", "to_id": "target_branch", "properties": {}}
+{"from_space": "concept", "from_id": "diff_view", "relation": "related_to", "to_space": "concept", "to_id": "merge_request", "properties": {}}
+{"from_space": "concept", "from_id": "diff_view", "relation": "related_to", "to_space": "concept", "to_id": "syntax_highlighting", "properties": {}}
+{"from_space": "concept", "from_id": "diff_gutter", "relation": "part_of", "to_space": "concept", "to_id": "diff_view", "properties": {}}
+{"from_space": "concept", "from_id": "inline_comment", "relation": "related_to", "to_space": "concept", "to_id": "diff_view", "properties": {}}
+{"from_space": "concept", "from_id": "file_viewed_marker", "relation": "part_of", "to_space": "concept", "to_id": "diff_view", "properties": {}}
+{"from_space": "concept", "from_id": "source_branch", "relation": "related_to", "to_space": "concept", "to_id": "target_branch", "properties": {"comparison": "diff basis"}}
+{"from_space": "subject", "from_id": "gitlab_dev_team", "relation": "can_view", "to_space": "resource", "to_id": "gitlab_merge_requests_ui", "properties": {}}
+{"from_space": "evidence", "from_id": "pinned_file_history_note", "relation": "describes", "to_space": "concept", "to_id": "pinned_file_feature", "properties": {}}
+{"from_space": "evidence", "from_id": "pinned_file_history_note", "relation": "mentions", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "file_browser", "relation": "part_of", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "pinned_file_feature", "relation": "part_of", "to_space": "concept", "to_id": "code_review_workflow", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_diff", "relation": "part_of", "to_space": "concept", "to_id": "code_review_workflow", "properties": {}}
+{"from_space": "concept", "from_id": "file_collapse_performance", "relation": "influences", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "file_collapse_performance", "relation": "contributes_to", "to_space": "outcome", "to_id": "review_performance", "properties": {}}
+{"from_space": "concept", "from_id": "pinned_file_feature", "relation": "contributes_to", "to_space": "outcome", "to_id": "reviewer_collaboration", "properties": {}}
+{"from_space": "concept", "from_id": "file_browser", "relation": "contributes_to", "to_space": "outcome", "to_id": "review_performance", "properties": {}}
+{"from_space": "concept", "from_id": "code_review_workflow", "relation": "contributes_to", "to_space": "outcome", "to_id": "reviewer_collaboration", "properties": {}}
+{"from_space": "concept", "from_id": "file_collapse_performance", "relation": "related_to", "to_space": "concept", "to_id": "file_browser", "properties": {}}
+{"from_space": "concept", "from_id": "pinned_file_feature", "relation": "related_to", "to_space": "concept", "to_id": "file_browser", "properties": {}}
+{"from_space": "evidence", "from_id": "collapse_types_textunit", "relation": "describes", "to_space": "concept", "to_id": "generated_file_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "collapse_types_textunit", "relation": "describes", "to_space": "concept", "to_id": "collapse_generated_diff", "properties": {}}
+{"from_space": "evidence", "from_id": "gitattributes_config_example", "relation": "describes", "to_space": "concept", "to_id": "gitlab_generated_attribute", "properties": {}}
+{"from_space": "concept", "from_id": "collapse_generated_diff", "relation": "contributes_to", "to_space": "outcome", "to_id": "reviewer_focus_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "generated_file_concept", "relation": "related_to", "to_space": "concept", "to_id": "collapse_generated_diff", "properties": {}}
+{"from_space": "concept", "from_id": "gitlab_generated_attribute", "relation": "related_to", "to_space": "concept", "to_id": "collapse_generated_diff", "properties": {}}
+{"from_space": "concept", "from_id": "code_review_topic", "relation": "related_to", "to_space": "concept", "to_id": "collapse_generated_diff", "properties": {}}
+{"from_space": "lever", "from_id": "collapse_behavior_lever", "relation": "raises", "to_space": "outcome", "to_id": "reviewer_focus_outcome", "properties": {}}
+{"from_space": "lever", "from_id": "collapse_behavior_lever", "relation": "affects", "to_space": "concept", "to_id": "gitlab_generated_attribute", "properties": {}}
+{"from_space": "concept", "from_id": "inline_diff_mode", "relation": "related_to", "to_space": "concept", "to_id": "side_by_side_diff_mode", "properties": {"note": "Alternative diff viewing modes for merge request changes"}}
+{"from_space": "concept", "from_id": "one_file_at_a_time", "relation": "related_to", "to_space": "concept", "to_id": "merge_request_review", "properties": {}}
+{"from_space": "concept", "from_id": "keyboard_shortcuts", "relation": "influences", "to_space": "concept", "to_id": "one_file_at_a_time", "properties": {"note": "Keyboard shortcuts enable file navigation when one-file-at-a-time is active"}}
+{"from_space": "concept", "from_id": "file_browser", "relation": "influences", "to_space": "concept", "to_id": "one_file_at_a_time", "properties": {"note": "File browser provides alternative navigation when one-file-at-a-time is enabled"}}
+{"from_space": "concept", "from_id": "inline_diff_mode", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_code_review_efficiency", "properties": {"note": "Better for single-line changes"}}
+{"from_space": "concept", "from_id": "side_by_side_diff_mode", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_code_review_efficiency", "properties": {"note": "Better for large sequential line changes"}}
+{"from_space": "concept", "from_id": "one_file_at_a_time", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_code_review_efficiency", "properties": {"note": "Reduces cognitive load for large merge requests"}}
+{"from_space": "lever", "from_id": "diff_view_preference_setting", "relation": "optimizes", "to_space": "outcome", "to_id": "improved_code_review_efficiency", "properties": {}}
+{"from_space": "lever", "from_id": "diff_view_preference_setting", "relation": "affects", "to_space": "concept", "to_id": "inline_diff_mode", "properties": {}}
+{"from_space": "lever", "from_id": "diff_view_preference_setting", "relation": "affects", "to_space": "concept", "to_id": "side_by_side_diff_mode", "properties": {}}
+{"from_space": "lever", "from_id": "diff_view_preference_setting", "relation": "affects", "to_space": "concept", "to_id": "one_file_at_a_time", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_org_gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "issue_590833_evidence", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_org_gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "issue_539581_evidence", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_org_gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "issue_596236_evidence", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_org_gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "epic_19380_evidence", "properties": {}}
+{"from_space": "evidence", "from_id": "issue_590833_evidence", "relation": "describes", "to_space": "concept", "to_id": "feature_flag_concept", "properties": {"context": "Introduced rapid_diffs_on_mr_show flag in GitLab 18.0"}}
+{"from_space": "evidence", "from_id": "issue_596236_evidence", "relation": "describes", "to_space": "concept", "to_id": "code_diff_concept", "properties": {"context": "Known limitations of Rapid Diffs beta"}}
+{"from_space": "evidence", "from_id": "epic_19380_evidence", "relation": "describes", "to_space": "concept", "to_id": "code_diff_concept", "properties": {"context": "Feature parity roadmap between Rapid Diffs and classic diff"}}
+{"from_space": "concept", "from_id": "code_diff_concept", "relation": "part_of", "to_space": "concept", "to_id": "merge_request_concept", "properties": {}}
+{"from_space": "concept", "from_id": "feature_flag_concept", "relation": "influences", "to_space": "concept", "to_id": "code_diff_concept", "properties": {"context": "Feature flag controls which diff experience is available"}}
+{"from_space": "concept", "from_id": "explain_code_concept", "relation": "part_of", "to_space": "concept", "to_id": "merge_request_concept", "properties": {}}
+{"from_space": "concept", "from_id": "code_diff_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "diff_load_time_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "rapid_diffs_lever", "relation": "lowers", "to_space": "outcome", "to_id": "diff_load_time_kpi", "properties": {"context": "Rapid Diffs reduces time before first file is visible"}}
+{"from_space": "lever", "from_id": "rapid_diffs_lever", "relation": "affects", "to_space": "concept", "to_id": "code_diff_concept", "properties": {"context": "Switching between Rapid Diffs and classic diff loading"}}
+{"from_space": "resource", "from_id": "rapid_diffs_tool", "relation": "derived_from", "to_space": "evidence", "to_id": "issue_590833_evidence", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_duo_pro_tool", "relation": "contains", "to_space": "evidence", "to_id": "issue_590833_evidence", "properties": {}}
+{"from_space": "subject", "from_id": "gitlab_duo_agent", "relation": "manages", "to_space": "resource", "to_id": "gitlab_duo_chat_tool", "properties": {"note": "GitLab Duo is the agent driving the chat and explanation tool"}}
+{"from_space": "resource", "from_id": "gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "code_explain_walkthrough", "properties": {}}
+{"from_space": "resource", "from_id": "merge_request_file", "relation": "derived_from", "to_space": "evidence", "to_id": "code_explain_walkthrough", "properties": {"note": "File at a specific SHA is the subject of the walkthrough steps"}}
+{"from_space": "evidence", "from_id": "code_explain_walkthrough", "relation": "describes", "to_space": "concept", "to_id": "code_explanation", "properties": {}}
+{"from_space": "evidence", "from_id": "code_explain_walkthrough", "relation": "describes", "to_space": "concept", "to_id": "inline_comment_management", "properties": {}}
+{"from_space": "evidence", "from_id": "code_explain_walkthrough", "relation": "mentions", "to_space": "concept", "to_id": "experiment_beta_features", "properties": {}}
+{"from_space": "evidence", "from_id": "code_explain_walkthrough", "relation": "mentions", "to_space": "concept", "to_id": "large_language_model", "properties": {}}
+{"from_space": "concept", "from_id": "code_explanation", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_code_comprehension", "properties": {}}
+{"from_space": "concept", "from_id": "large_language_model", "relation": "contributes_to", "to_space": "outcome", "to_id": "llm_accuracy_risk", "properties": {"note": "LLM may not always produce correct results"}}
+{"from_space": "concept", "from_id": "large_language_model", "relation": "influences", "to_space": "concept", "to_id": "code_explanation", "properties": {"note": "LLM is the underlying mechanism for generating explanations"}}
+{"from_space": "concept", "from_id": "experiment_beta_features", "relation": "depends_on", "to_space": "concept", "to_id": "code_explanation", "properties": {"note": "Code explanation feature requires beta features to be enabled"}}
+{"from_space": "concept", "from_id": "large_language_model", "relation": "degrades", "to_space": "outcome", "to_id": "improved_code_comprehension", "properties": {"note": "Inaccurate LLM output can undermine the value of code explanation"}}
+{"from_space": "policy", "from_id": "beta_features_group_requirement", "relation": "restricts", "to_space": "resource", "to_id": "gitlab_duo_chat_tool", "properties": {"note": "Access to Duo Chat code explanation is restricted to users meeting the group feature requirement"}}
+{"from_space": "concept", "from_id": "inline_comment_management", "relation": "related_to", "to_space": "concept", "to_id": "code_explanation", "properties": {"note": "Both are features of the merge request Changes view"}}
+{"from_space": "evidence", "from_id": "tu_whitespace_changes_section", "relation": "describes", "to_space": "concept", "to_id": "whitespace_changes", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_whitespace_changes_section", "relation": "mentions", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_mark_files_viewed_section", "relation": "describes", "to_space": "concept", "to_id": "viewed_file_tracking", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_mark_files_viewed_section", "relation": "mentions", "to_space": "concept", "to_id": "merge_request", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_conflicts_in_diff_section", "relation": "describes", "to_space": "concept", "to_id": "merge_request_conflicts", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_conflicts_in_diff_section", "relation": "mentions", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_diff", "relation": "part_of", "to_space": "concept", "to_id": "merge_request", "properties": {}}
+{"from_space": "concept", "from_id": "inline_comment_expansion", "relation": "part_of", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "whitespace_changes", "relation": "influences", "to_space": "concept", "to_id": "merge_request_diff", "properties": {"note": "Whitespace changes can obscure substantive diff content"}}
+{"from_space": "concept", "from_id": "merge_request_conflicts", "relation": "contributes_to", "to_space": "outcome", "to_id": "missed_conflict_risk", "properties": {}}
+{"from_space": "concept", "from_id": "viewed_file_tracking", "relation": "contributes_to", "to_space": "outcome", "to_id": "review_efficiency", "properties": {}}
+{"from_space": "concept", "from_id": "whitespace_changes", "relation": "degrades", "to_space": "outcome", "to_id": "review_efficiency", "properties": {"note": "Whitespace noise makes it harder to spot substantive changes"}}
+{"from_space": "concept", "from_id": "code_review_workflow", "relation": "depends_on", "to_space": "concept", "to_id": "merge_request_diff", "properties": {}}
+{"from_space": "concept", "from_id": "code_review_workflow", "relation": "contributes_to", "to_space": "outcome", "to_id": "review_efficiency", "properties": {}}
+{"from_space": "lever", "from_id": "whitespace_toggle_lever", "relation": "raises", "to_space": "outcome", "to_id": "review_efficiency", "properties": {"note": "Hiding whitespace changes lets reviewers focus on substantive changes"}}
+{"from_space": "lever", "from_id": "whitespace_toggle_lever", "relation": "affects", "to_space": "concept", "to_id": "whitespace_changes", "properties": {}}
+{"from_space": "lever", "from_id": "viewed_checkbox_lever", "relation": "raises", "to_space": "outcome", "to_id": "review_efficiency", "properties": {"note": "Marking files as viewed reduces noise in repeated reviews"}}
+{"from_space": "lever", "from_id": "viewed_checkbox_lever", "relation": "affects", "to_space": "concept", "to_id": "viewed_file_tracking", "properties": {}}
+{"from_space": "lever", "from_id": "whitespace_toggle_lever", "relation": "lowers", "to_space": "outcome", "to_id": "missed_conflict_risk", "properties": {"note": "Cleaner diffs reduce the chance of overlooking real conflicts"}}
+{"from_space": "concept", "from_id": "code_quality_findings", "relation": "contributes_to", "to_space": "outcome", "to_id": "code_security_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "static_analysis_findings", "relation": "contributes_to", "to_space": "outcome", "to_id": "code_security_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_changes", "relation": "related_to", "to_space": "concept", "to_id": "code_quality_findings", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_changes", "relation": "related_to", "to_space": "concept", "to_id": "static_analysis_findings", "properties": {}}
+{"from_space": "concept", "from_id": "code_quality_findings", "relation": "related_to", "to_space": "concept", "to_id": "static_analysis_findings", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_diff_download_instructions", "relation": "describes", "to_space": "concept", "to_id": "diff_version_comparison", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_file_comment_instructions", "relation": "describes", "to_space": "concept", "to_id": "merge_request_diff_comment", "properties": {}}
+{"from_space": "evidence", "from_id": "mr_file_comment_instructions", "relation": "describes", "to_space": "concept", "to_id": "merge_request_image_comment", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_diff_comment", "relation": "contributes_to", "to_space": "outcome", "to_id": "persistent_code_review_comments", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request_image_comment", "relation": "related_to", "to_space": "concept", "to_id": "merge_request_diff_comment", "properties": {"note": "Both are comment types on merge request content"}}
+{"from_space": "concept", "from_id": "diff_version_comparison", "relation": "related_to", "to_space": "concept", "to_id": "merge_request_diff_comment", "properties": {"note": "Diff versions can be compared before downloading or commenting"}}
+{"from_space": "concept", "from_id": "jira_project_management", "relation": "related_to", "to_space": "concept", "to_id": "atlassian_cloud_cli", "properties": {}}
+{"from_space": "concept", "from_id": "atlassian_cloud_cli", "relation": "part_of", "to_space": "concept", "to_id": "jira_project_management", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_project_create_flags_text", "relation": "describes", "to_space": "concept", "to_id": "jira_project_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_project_create_examples_text", "relation": "describes", "to_space": "concept", "to_id": "jira_project_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_project_create_flags_text", "relation": "mentions", "to_space": "concept", "to_id": "company_managed_project_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_project_create_examples_text", "relation": "mentions", "to_space": "concept", "to_id": "company_managed_project_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_work_item_concept", "relation": "part_of", "to_space": "concept", "to_id": "jira_project_concept", "properties": {}}
+{"from_space": "concept", "from_id": "company_managed_project_concept", "relation": "subclass_of", "to_space": "concept", "to_id": "jira_project_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_project_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "jira_project_created_outcome", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_project_create_cmd", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_project_create_flags_text", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_project_create_cmd", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_project_create_examples_text", "properties": {}}
+{"from_space": "resource", "from_id": "project_json_file", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_project_create_flags_text", "properties": {"note": "Generated via --generate-json flag and consumed via --from-json flag"}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_commerce_portal", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_enterprise_login", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_forgot_password", "properties": {}}
+{"from_space": "resource", "from_id": "toshiba_commerce_portal", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_homepage_content", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_homepage_content", "relation": "mentions", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_homepage_content", "relation": "mentions", "to_space": "concept", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_homepage_content", "relation": "mentions", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_homepage_content", "relation": "mentions", "to_space": "concept", "to_id": "retail_security", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_homepage_content", "relation": "mentions", "to_space": "concept", "to_id": "retail_advisory_services", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_business_success", "properties": {}}
+{"from_space": "concept", "from_id": "operational_excellence", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_business_success", "properties": {}}
+{"from_space": "concept", "from_id": "retail_security", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_business_success", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "influences", "to_space": "concept", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "concept", "from_id": "retail_advisory_services", "relation": "influences", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
+{"from_space": "concept", "from_id": "retail_security", "relation": "related_to", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "raises", "to_space": "outcome", "to_id": "retail_business_success", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "lowers", "to_space": "outcome", "to_id": "labor_challenges", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "affects", "to_space": "concept", "to_id": "retail_security", "properties": {}}
+{"from_space": "lever", "from_id": "modular_adaptable_solutions", "relation": "affects", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "resource", "from_id": "toshiba_commerce_portal", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_industry_page_content", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_content", "relation": "mentions", "to_space": "concept", "to_id": "convenience_fuel_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_content", "relation": "mentions", "to_space": "concept", "to_id": "grocery_general_merchandise_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_content", "relation": "mentions", "to_space": "concept", "to_id": "hospitality_entertainment_retail", "properties": {}}
+{"from_space": "concept", "from_id": "convenience_fuel_retail", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_industry_solutions", "properties": {}}
+{"from_space": "concept", "from_id": "grocery_general_merchandise_retail", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_industry_solutions", "properties": {}}
+{"from_space": "concept", "from_id": "hospitality_entertainment_retail", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_industry_solutions", "properties": {}}
+{"from_space": "concept", "from_id": "retail_industry_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "operational_agility", "properties": {}}
+{"from_space": "resource", "from_id": "mxp_hardware", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_offerings_page_text", "properties": {}}
+{"from_space": "resource", "from_id": "elera_platform", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_offerings_page_text", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_offerings_page_text", "relation": "describes", "to_space": "concept", "to_id": "modularity_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_offerings_page_text", "relation": "describes", "to_space": "concept", "to_id": "security_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_offerings_page_text", "relation": "mentions", "to_space": "concept", "to_id": "unified_retail_topic", "properties": {}}
+{"from_space": "concept", "from_id": "modularity_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_trust_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "regulatory_compliance_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "constrains", "to_space": "outcome", "to_id": "evolving_threats_risk", "properties": {}}
+{"from_space": "concept", "from_id": "modularity_concept", "relation": "related_to", "to_space": "concept", "to_id": "unified_retail_topic", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "related_to", "to_space": "concept", "to_id": "unified_retail_topic", "properties": {}}
+{"from_space": "lever", "from_id": "built_in_security_lever", "relation": "lowers", "to_space": "outcome", "to_id": "evolving_threats_risk", "properties": {}}
+{"from_space": "lever", "from_id": "modular_architecture_lever", "relation": "optimizes", "to_space": "outcome", "to_id": "customer_trust_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "epos_installations", "relation": "contributes_to", "to_space": "outcome", "to_id": "worldwide_epos_share_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "pos_self_checkout", "relation": "contributes_to", "to_space": "outcome", "to_id": "pos_units_deployed_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "epos_installations", "relation": "related_to", "to_space": "concept", "to_id": "pos_self_checkout", "properties": {"note": "EPOS installations encompass POS and self-checkout units"}}
+{"from_space": "concept", "from_id": "serviceability", "relation": "constrains", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {"note": "high serviceability reduces operational disruption risk"}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_marketplace_platform", "properties": {}}
+{"from_space": "resource", "from_id": "toshiba_marketplace_platform", "relation": "contains", "to_space": "evidence", "to_id": "marketplace_description_text", "properties": {}}
+{"from_space": "evidence", "from_id": "marketplace_description_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_marketplace", "properties": {}}
+{"from_space": "evidence", "from_id": "news_section_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_industry_trends", "properties": {}}
+{"from_space": "concept", "from_id": "retail_marketplace", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_growth_success", "properties": {}}
+{"from_space": "concept", "from_id": "retail_industry_trends", "relation": "influences", "to_space": "concept", "to_id": "retail_marketplace", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce", "relation": "owns", "to_space": "resource", "to_id": "elera_commerce_platform", "properties": {}}
+{"from_space": "evidence", "from_id": "idc_report_textunit", "relation": "mentions", "to_space": "concept", "to_id": "pos_software", "properties": {}}
+{"from_space": "evidence", "from_id": "idc_report_textunit", "relation": "mentions", "to_space": "concept", "to_id": "cloud_native_api_first", "properties": {}}
+{"from_space": "evidence", "from_id": "google_edge_blog_textunit", "relation": "mentions", "to_space": "concept", "to_id": "edge_computing_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "google_edge_blog_textunit", "relation": "mentions", "to_space": "concept", "to_id": "retail_innovation", "properties": {}}
+{"from_space": "concept", "from_id": "cloud_native_api_first", "relation": "influences", "to_space": "concept", "to_id": "pos_software", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_retail", "relation": "related_to", "to_space": "concept", "to_id": "cloud_native_api_first", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "operational_stability_retail", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "faster_retail_solution_deployment", "properties": {}}
+{"from_space": "concept", "from_id": "cloud_native_api_first", "relation": "contributes_to", "to_space": "outcome", "to_id": "faster_retail_solution_deployment", "properties": {}}
+{"from_space": "concept", "from_id": "retail_innovation", "relation": "contributes_to", "to_space": "outcome", "to_id": "operational_stability_retail", "properties": {}}
+{"from_space": "concept", "from_id": "pos_software", "relation": "related_to", "to_space": "concept", "to_id": "retail_innovation", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_retail", "relation": "depends_on", "to_space": "concept", "to_id": "cloud_native_api_first", "properties": {}}
+{"from_space": "concept", "from_id": "retail_segment", "relation": "related_to", "to_space": "concept", "to_id": "future_of_retail", "properties": {}}
+{"from_space": "concept", "from_id": "business_partner_type", "relation": "related_to", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "lever", "from_id": "contact_form_lever", "relation": "raises", "to_space": "outcome", "to_id": "retail_industry_engagement", "properties": {}}
+{"from_space": "lever", "from_id": "contact_form_lever", "relation": "affects", "to_space": "concept", "to_id": "future_of_retail", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_portal_api", "properties": {}}
+{"from_space": "evidence", "from_id": "success_message_text", "relation": "describes", "to_space": "concept", "to_id": "contact_form_submission", "properties": {}}
+{"from_space": "evidence", "from_id": "success_message_text", "relation": "supports", "to_space": "concept", "to_id": "contact_form_submission", "properties": {}}
+{"from_space": "concept", "from_id": "contact_form_submission", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_contact_followup", "properties": {}}
+{"from_space": "concept", "from_id": "recaptcha_verification", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_contact_followup", "properties": {"note": "Ensures only legitimate human submissions trigger follow-up"}}
+{"from_space": "concept", "from_id": "deferred_module_loading", "relation": "related_to", "to_space": "concept", "to_id": "contact_form_submission", "properties": {"note": "Portal UI modules support the contact form page rendering"}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "can_execute", "to_space": "resource", "to_id": "google_recaptcha_api", "properties": {"description": "Toshiba Commerce site integrates and invokes the Google reCAPTCHA API for user verification"}}
+{"from_space": "subject", "from_id": "google_org", "relation": "owns", "to_space": "resource", "to_id": "google_recaptcha_api", "properties": {"description": "Google owns and operates the reCAPTCHA API service"}}
+{"from_space": "concept", "from_id": "captcha_verification", "relation": "contributes_to", "to_space": "outcome", "to_id": "bot_access_risk", "properties": {"description": "CAPTCHA verification mitigates the risk of bot access to the commerce platform"}}
+{"from_space": "concept", "from_id": "captcha_verification", "relation": "constrains", "to_space": "outcome", "to_id": "bot_access_risk", "properties": {"description": "CAPTCHA verification constrains bot access risk by requiring human challenge completion"}}
+{"from_space": "concept", "from_id": "jira_project_management", "relation": "related_to", "to_space": "concept", "to_id": "cli_authentication", "properties": {}}
+{"from_space": "resource", "from_id": "acli_tool", "relation": "contains", "to_space": "evidence", "to_id": "jira_project_list_doc", "properties": {}}
+{"from_space": "resource", "from_id": "jira_project_list_command", "relation": "contains", "to_space": "evidence", "to_id": "jira_project_list_doc", "properties": {}}
+{"from_space": "evidence", "from_id": "jira_project_list_doc", "relation": "describes", "to_space": "concept", "to_id": "jira_project", "properties": {}}
+{"from_space": "evidence", "from_id": "jira_project_list_doc", "relation": "describes", "to_space": "concept", "to_id": "pagination_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "jira_project_list_doc", "relation": "describes", "to_space": "concept", "to_id": "json_output_concept", "properties": {}}
+{"from_space": "resource", "from_id": "jira_project_list_command", "relation": "derived_from", "to_space": "evidence", "to_id": "jira_project_list_doc", "properties": {}}
+{"from_space": "concept", "from_id": "pagination_concept", "relation": "related_to", "to_space": "concept", "to_id": "jira_project", "properties": {}}
+{"from_space": "concept", "from_id": "json_output_concept", "relation": "related_to", "to_space": "concept", "to_id": "jira_project", "properties": {}}
+{"from_space": "resource", "from_id": "rovodev_auth_command", "relation": "derived_from", "to_space": "evidence", "to_id": "jira_project_list_doc", "properties": {"note": "Referenced in navigation sidebar of the same documentation page"}}
+{"from_space": "subject", "from_id": "mcp_compatible_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_mcp_server", "properties": {"requires": "OAuth 2.1 authentication, remote MCP server support, configurable server URL"}}
+{"from_space": "subject", "from_id": "mcp_compatible_client", "relation": "can_execute", "to_space": "resource", "to_id": "jira", "properties": {"example_action": "Find all issues assigned to me in the last 7 days"}}
+{"from_space": "subject", "from_id": "mcp_compatible_client", "relation": "can_execute", "to_space": "resource", "to_id": "confluence", "properties": {"example_action": "Create a page titled Engineering Roadmap Q4"}}
+{"from_space": "resource", "from_id": "atlassian_mcp_server", "relation": "contains", "to_space": "evidence", "to_id": "mcp_setup_guide", "properties": {}}
+{"from_space": "evidence", "from_id": "mcp_setup_guide", "relation": "describes", "to_space": "concept", "to_id": "oauth_21_authentication", "properties": {}}
+{"from_space": "evidence", "from_id": "mcp_setup_guide", "relation": "describes", "to_space": "concept", "to_id": "mcp_protocol", "properties": {}}
+{"from_space": "evidence", "from_id": "mcp_setup_guide", "relation": "describes", "to_space": "concept", "to_id": "workflow_automation", "properties": {}}
+{"from_space": "concept", "from_id": "oauth_21_authentication", "relation": "contributes_to", "to_space": "outcome", "to_id": "successful_mcp_client_connection", "properties": {}}
+{"from_space": "concept", "from_id": "mcp_protocol", "relation": "contributes_to", "to_space": "outcome", "to_id": "successful_mcp_client_connection", "properties": {}}
+{"from_space": "concept", "from_id": "oauth_21_authentication", "relation": "related_to", "to_space": "concept", "to_id": "mcp_protocol", "properties": {"note": "OAuth 2.1 is the required authentication mechanism within the MCP protocol context"}}
+{"from_space": "concept", "from_id": "workflow_automation", "relation": "contributes_to", "to_space": "outcome", "to_id": "successful_mcp_client_connection", "properties": {}}
+{"from_space": "subject", "from_id": "atlassian", "relation": "owns", "to_space": "resource", "to_id": "atlassian_remote_mcp_server", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem", "relation": "related_to", "to_space": "concept", "to_id": "jira_project", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem", "relation": "related_to", "to_space": "concept", "to_id": "jira_sprint", "properties": {}}
+{"from_space": "concept", "from_id": "jira_work_item_concept", "relation": "related_to", "to_space": "concept", "to_id": "cli_command_reference_topic", "properties": {"note": "Jira work items are managed via CLI commands documented in the reference topic"}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_tool", "relation": "contains", "to_space": "resource", "to_id": "acli_rovodev_tool", "properties": {"note": "rovodev is a sibling command group referenced alongside jira workitem commands"}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_edit", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_edit_options_text", "properties": {"note": "command reads input from workitem.json via --from-json"}}
+{"from_space": "evidence", "from_id": "acli_edit_options_text", "relation": "describes", "to_space": "concept", "to_id": "jira_work_item", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_edit_options_text", "relation": "describes", "to_space": "concept", "to_id": "atlassian_document_format", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_edit_options_text", "relation": "describes", "to_space": "concept", "to_id": "jql_query", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_edit_options_text", "relation": "describes", "to_space": "concept", "to_id": "work_item_assignee", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_edit_options_text", "relation": "describes", "to_space": "concept", "to_id": "work_item_filter", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_edit", "relation": "contains", "to_space": "evidence", "to_id": "acli_edit_options_text", "properties": {}}
+{"from_space": "concept", "from_id": "jql_query", "relation": "related_to", "to_space": "concept", "to_id": "work_item_filter", "properties": {"description": "Both JQL and Filter ID are mechanisms to select work items for bulk editing"}}
+{"from_space": "concept", "from_id": "atlassian_document_format", "relation": "related_to", "to_space": "concept", "to_id": "jira_work_item", "properties": {"description": "ADF is used to format the description field of a Jira work item"}}
+{"from_space": "concept", "from_id": "work_item_assignee", "relation": "part_of", "to_space": "concept", "to_id": "jira_work_item", "properties": {}}

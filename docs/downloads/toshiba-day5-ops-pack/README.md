@@ -2,7 +2,7 @@
 
 도시바 POS 제품/운영 · 매장 · 단말 · 인시던트 · 티켓 · 운영자 · 모니터링 KPI. 운영팀이 관제하는 관점.
 
-- 노드 321개 · 엣지 383개
+- 노드 509개 · 엣지 729개
 - 문법: MetaOntology 9-Space
 
 ## 설치 (Copilot CLI / Claude Code)
