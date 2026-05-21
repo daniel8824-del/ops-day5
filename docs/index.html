@@ -720,9 +720,7 @@ edge: logged_as · describes · degrades ...</pre>
     <p>본인 직무에 맞는 팩(개발자→개발팩, 운영자→운영팩, 둘 다도 가능)을 받아(<a href="#dl">자료</a>) OpenCrab에 설치하고 자연어로 질의합니다.</p>
     <div class="track instr">
       <div class="track-h">① 팩 설치 (자연어 한 줄 · Copilot CLI / Claude Code)</div>
-      <pre style="white-space: pre-wrap;">"방금 받은 toshiba-day5-dev-pack.zip 풀어서, 안의
- nodes.jsonl · edges.jsonl을 내 OpenCrab에
- ontology_add_node · ontology_add_edge로 전부 불러와줘."</pre>
+      <pre style="white-space: pre-wrap;">"방금 받은 toshiba-day5-dev-pack.zip을 내 OpenCrab에 설치해줘."</pre>
     </div>
     <p style="font-size: 13px; color: var(--muted);">팩 설치 = 이미 만들어진 노드·엣지를 import하는 것이라 <strong>LLM 키 불필요</strong> (extract가 아님). 불러오면 즉시 질의 가능합니다.</p>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800; color: var(--accent-dark); letter-spacing: 0.06em; margin: 14px 0 6px;">② 질의 (자연어)</div>
@@ -748,10 +746,9 @@ edge: logged_as · describes · degrades ...</pre>
     <p>어렵게 생각할 것 없습니다. 본인 문서를 골라 <strong>Copilot CLI(또는 Claude Code)에 한 줄</strong>로 시키면, 알아서 온톨로지를 만들어 <strong>ZIP 팩 파일</strong>로 줍니다. (속 동작은 ingest → extract지만, 키 설정 같은 건 CLI가 알아서 처리하니 신경 쓸 필요 없습니다.)</p>
     <div class="track instr">
       <div class="track-h">자연어 요청 한 줄 (Copilot CLI에 그대로)</div>
-      <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]로 OpenCrab 온톨로지를 만들고,
- '[관심 키워드]'로 한 번 확인한 다음,
- 결과를 ZIP 팩 파일로 만들어줘."</pre>
+      <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]로 OpenCrab 온톨로지를 만들고, '[관심 키워드]'로 확인한 다음 결과를 ZIP 팩으로 만들어줘."</pre>
     </div>
+    <p style="font-size: 13px; color: var(--muted);"><strong>키 안내</strong> | extract 단계에서 "API 키를 입력하라"는 안내가 나올 수 있습니다. <strong>Copilot CLI(또는 Claude Code)로 시키면 그 키 입력을 CLI가 대신 처리</strong>하므로, 따로 키를 발급받을 필요가 없습니다.</p>
     <div class="check-list">
       <h4>✓ 산출물</h4>
       <ul>
@@ -767,11 +764,11 @@ edge: logged_as · describes · degrades ...</pre>
  자동화할 패턴 후보를 같이 추려줘."</pre>
     </div>
     <table>
-      <thead><tr><th>질의 패턴 예시</th><th>굳히면</th></tr></thead>
+      <thead><tr><th>매번 똑같이 묻는 것</th><th>도구·스킬로 굳히면</th></tr></thead>
       <tbody>
-        <tr><td>"결제 실패 → 영향 entity → 담당자 → 티켓"</td><td>MCP tool <code class="inline">impact_to_ticket</code></td></tr>
-        <tr><td>"단말 모델 → 호환 SW → 펌웨어 버전"</td><td>스킬 <code class="inline">device-compat-check</code></td></tr>
-        <tr><td>"신규 매뉴얼 → 관련 entity 자동 연결"</td><td>ingest hook (PostToolUse)</td></tr>
+        <tr><td>"이 장애, 어느 매장·누구한테 영향 가?"</td><td>"장애 영향 한 번에 정리" 스킬</td></tr>
+        <tr><td>"이 부품·버전 바꾸면 뭐가 영향받지?"</td><td>"영향 미리보기" 도구</td></tr>
+        <tr><td>"새 문서 올리면 관련 항목 자동 연결"</td><td>자동 연결 자동화(훅)</td></tr>
       </tbody>
     </table>
     <div class="field-case">
