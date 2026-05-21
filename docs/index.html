@@ -742,20 +742,20 @@ edge: logged_as · describes · degrades ...</pre>
 "이 인시던트의 영향 매장 사슬은?" (impact)</pre>
       </div>
     </div>
-    <p style="font-size: 14px;">질의 결과를 함께 보며 <strong>"우리 환경이면 무엇을 더 붙일까"</strong>를 나눕니다. (질의는 OpenCrab MCP의 <code class="inline">ontology_query</code> · <code class="inline">ontology_impact</code>가 처리)</p>
+    <p style="font-size: 14px;">강사 팩은 <strong>그대로 쓰는 정답이 아니라 본보기 샘플</strong>입니다. 질의 결과를 함께 보며 <strong>"우리 환경이면 어떤 entity·관계로 새로 짤까"</strong>를 나누고, 그 감을 §3에서 본인 문서로 직접 만듭니다. (질의는 OpenCrab MCP의 <code class="inline">ontology_query</code> · <code class="inline">ontology_impact</code>가 처리)</p>
 
     <h3><span class="step-num">3</span>학습자 | 본인 문서로 본인 온톨로지 + 팩 보관</h3>
-    <p>본인 문서를 골라 OpenCrab에 <strong>ingest</strong>(원본을 벡터로 저장) → <strong>extract</strong>(LLM이 노드·엣지 생성)로 본인만의 온톨로지를 만들어 팩으로 보관합니다. 정석 순서는 <code class="inline">ingest → extract</code>입니다.</p>
+    <p>어렵게 생각할 것 없습니다. 본인 문서를 골라 <strong>Copilot CLI(또는 Claude Code)에 한 줄</strong>로 시키면, 알아서 온톨로지를 만들어 <strong>ZIP 팩 파일</strong>로 줍니다. (속 동작은 ingest → extract지만, 키 설정 같은 건 CLI가 알아서 처리하니 신경 쓸 필요 없습니다.)</p>
     <div class="track instr">
-      <div class="track-h">자연어 요청 (ingest → extract → query → export)</div>
-      <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]를 OpenCrab에 ingest하고 extract해서 노드·엣지를 만들어줘. 끝나면 '[관심 키워드]'로 query하고, 이 온톨로지를 팩(nodes.jsonl + edges.jsonl)으로 export해줘."</pre>
+      <div class="track-h">자연어 요청 한 줄 (Copilot CLI에 그대로)</div>
+      <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]로 OpenCrab 온톨로지를 만들고,
+ '[관심 키워드]'로 한 번 확인한 다음,
+ 결과를 ZIP 팩 파일로 만들어줘."</pre>
     </div>
-    <p style="font-size: 13px; color: var(--muted);">extract는 entity를 뽑을 LLM이 필요합니다. 다만 별도 API 키 대신 <strong>본인 Copilot CLI(또는 Claude Code) 자체 모델이 추출을 대신</strong>할 수 있습니다 (CLI가 문서를 읽고 <code class="inline">add_node</code>·<code class="inline">add_edge</code>를 호출). 즉 추가 키 없이 구독 안에서 처리됩니다. (원하면 OpenRouter 등 별도 키도 가능.) 강사 팩만 쓸 거면 이 단계는 건너뛰어도 됩니다.</p>
     <div class="check-list">
       <h4>✓ 산출물</h4>
       <ul>
-        <li>본인 도메인 온톨로지 (로컬 <code class="inline">./opencrab_data/</code>)</li>
-        <li>본인 팩 ZIP (manifest + nodes.jsonl + edges.jsonl + sample_queries) | 팀에 그대로 공유 가능</li>
+        <li><strong>본인 온톨로지 팩 ZIP 파일</strong> (노드·엣지 포함) | 받아서 팀에 그대로 공유 가능</li>
       </ul>
     </div>
 
