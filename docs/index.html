@@ -718,6 +718,14 @@ edge: logged_as · describes · degrades ...</pre>
 
     <h3><span class="step-num">2</span>학습자 | 본인 직무 팩 설치 + 질의 실습</h3>
     <p>본인 직무에 맞는 팩(개발자→개발팩, 운영자→운영팩, 둘 다도 가능)을 받아(<a href="#dl">자료</a>) OpenCrab에 설치하고 자연어로 질의합니다.</p>
+    <div class="track instr">
+      <div class="track-h">① 팩 설치 (자연어 한 줄 · Copilot CLI / Claude Code)</div>
+      <pre style="white-space: pre-wrap;">"방금 받은 toshiba-day5-dev-pack.zip 풀어서, 안의
+ nodes.jsonl · edges.jsonl을 내 OpenCrab에
+ ontology_add_node · ontology_add_edge로 전부 불러와줘."</pre>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">팩 설치 = 이미 만들어진 노드·엣지를 import하는 것이라 <strong>LLM 키 불필요</strong> (extract가 아님). 불러오면 즉시 질의 가능합니다.</p>
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800; color: var(--accent-dark); letter-spacing: 0.06em; margin: 14px 0 6px;">② 질의 (자연어)</div>
     <div class="dual-track">
       <div class="track instr">
         <div class="track-h">개발팩 질의 예</div>
@@ -742,7 +750,7 @@ edge: logged_as · describes · degrades ...</pre>
       <div class="track-h">자연어 요청 (ingest → extract → query → export)</div>
       <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]를 OpenCrab에 ingest하고 extract해서 노드·엣지를 만들어줘. 끝나면 '[관심 키워드]'로 query하고, 이 온톨로지를 팩(nodes.jsonl + edges.jsonl)으로 export해줘."</pre>
     </div>
-    <p style="font-size: 13px; color: var(--muted);">extract는 LLM이 entity를 뽑으므로 키가 필요합니다 (강사가 팩 만들 때와 동일). 본인 CLI 모델 또는 OpenRouter 키를 씁니다. 강사 팩만 쓸 거면 이 단계는 건너뛰어도 됩니다.</p>
+    <p style="font-size: 13px; color: var(--muted);">extract는 entity를 뽑을 LLM이 필요합니다. 다만 별도 API 키 대신 <strong>본인 Copilot CLI(또는 Claude Code) 자체 모델이 추출을 대신</strong>할 수 있습니다 (CLI가 문서를 읽고 <code class="inline">add_node</code>·<code class="inline">add_edge</code>를 호출). 즉 추가 키 없이 구독 안에서 처리됩니다. (원하면 OpenRouter 등 별도 키도 가능.) 강사 팩만 쓸 거면 이 단계는 건너뛰어도 됩니다.</p>
     <div class="check-list">
       <h4>✓ 산출물</h4>
       <ul>
