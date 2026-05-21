@@ -183,7 +183,6 @@
   <div class="container">
     <span class="section-tag">§ 도입 · 강사 구두 진행</span>
     <h2>실전 개발 사례 + <span class="accent">실패·사고에서 배우기</span></h2>
-    <p class="lead" style="margin-bottom: 18px;">아래 두 묶음은 슬라이드 없이 강사가 현장 경험으로 풀어드립니다. 사이트는 줄기만 남깁니다.</p>
 
     <h3><span class="step-num">1</span>실전 시스템 개발 사례</h3>
     <ul>
@@ -226,19 +225,204 @@
       <div class="goal-text"><strong>온톨로지 = entity(개념) + 관계로 짜인 의미 그래프.</strong> AI가 "단어"가 아니라 "무엇이 무엇과 어떻게 연결되는지"를 보게 만드는 layer입니다.</div>
     </div>
 
-    <h3><span class="step-num">1</span>일반 RAG vs Graph RAG</h3>
+    <h3><span class="step-num">1</span>온톨로지가 뭔데? | 비유로 단번에</h3>
+    <p>한마디로 <strong>"점(개념) + 선(관계)으로 그린 지식 지도"</strong>입니다. 셋 다 같은 얘기입니다:</p>
+    <div class="dual-track" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="track instr">
+        <div class="track-h">🏠 가족 관계도</div>
+        <pre style="white-space: pre-wrap;">'아빠' 옆에 '엄마(부부)'
+'나(자식)' 화살표.
+점(사람)+선(관계) = 온톨로지</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">🚇 지하철 노선도</div>
+        <pre style="white-space: pre-wrap;">역=노드, 선로=엣지,
+노선도 전체=그래프.
+"환승하면 어디까지"가 한눈에</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">📚 위키 + 사전</div>
+        <pre style="white-space: pre-wrap;">위키는 글자만.
+온톨로지는 "이 단어=무엇,
+무엇과 어떤 관계"까지 명시</pre>
+      </div>
+    </div>
+
+    <h4 style="margin-top: 22px; font-size: 16px;">스키마 vs 온톨로지 | "떡볶이"로 보면</h4>
+    <div class="dual-track">
+      <div class="track stu">
+        <div class="track-h">📋 스키마 (납작한 카드)</div>
+        <pre style="white-space: pre-wrap;">떡볶이 · 분식 · 5,000원 · 맵기 중간
+→ 속성만. 다른 것과 연결 ❌</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">🕸 온톨로지 (관계망)</div>
+        <pre style="white-space: pre-wrap;">떡볶이 →[필수] 떡  →[매운맛★★★] 고추장
+       →[단짝] 순대  →[원조] 신당동
+→ 관계 + 강도까지 ✅</pre>
+      </div>
+    </div>
+    <p style="font-size: 14px;">스키마는 "떡볶이 가격은 5,000원"까지. <strong>온톨로지는 "무엇으로 만들고, 무엇과 단짝이고, 어디가 원조인지"</strong> 관계까지 연결합니다.</p>
+
+    <h4 style="margin-top: 22px; font-size: 16px;">"그"의 힘 | 특정화</h4>
+    <p><strong>"수의사"</strong>는 그냥 직업입니다. <strong>"그 수의사"</strong>가 되는 순간 (잘 고치나·빠른가·강아지 전문인가) 까지 정의됩니다. 이 "그"를 붙이는 과정이 온톨로지이고, LLM이 모르는 <strong>"우리 회사의 그것"</strong>이 바로 가치입니다.</p>
     <table>
-      <thead><tr><th>구분</th><th>일반 RAG (Day 3)</th><th>Graph RAG (온톨로지)</th></tr></thead>
+      <thead><tr><th>일반</th><th>"그"가 붙으면 (= 온톨로지)</th></tr></thead>
       <tbody>
-        <tr><td>찾는 방식</td><td>의미 비슷한 chunk 검색</td><td>entity 사이 관계를 따라 traversal</td></tr>
-        <tr><td>답하는 질문</td><td>"이것과 비슷한 내용?"</td><td>"이걸 바꾸면 어디까지 영향?"</td></tr>
-        <tr><td>약점</td><td>관계·인과 파악이 약함</td><td>초기 모델링 비용</td></tr>
+        <tr><td>수의사</td><td>그 수의사 | 잘·빠르게·강아지 전문인지까지</td></tr>
+        <tr><td>고양이</td><td>그 고양이 | 털색·성격·사료·병력·좋아하는 장난감</td></tr>
+        <tr><td>POS 단말</td><td><strong>그 단말</strong> | 어느 매장·어떤 SW 스택·인시던트 이력까지</td></tr>
       </tbody>
     </table>
-    <p>예시 | <strong>약(drug) → 성분 → 부작용 → 졸음</strong>. 일반 RAG는 "졸음"이 적힌 문장을 찾고, Graph RAG는 "이 약을 먹으면 왜 졸린지" 관계 사슬을 따라갑니다. 운영으로 옮기면 <strong>"이 결제 모듈을 바꾸면 어떤 매장·티켓·담당자까지 영향이 가는지"</strong>가 같은 질문입니다.</p>
+    <div class="reference">
+      <p>더 많은 비유 (인제스트 = 소 되새김질 · 임베딩 = 의미 좌표 "왕↔여왕 가깝고 왕↔감자 멀다" · Neo4j = 그래프 전용 창고 등)와 인터랙티브 그림: <a href="https://crab-guide.pages.dev/#home" target="_blank">crab-guide 비전공자 가이드</a> (오픈크랩 제품 소개·가격도 함께 있음).</p>
+    </div>
 
-    <h3><span class="step-num">2</span>왜 지금 온톨로지인가</h3>
-    <p>AI 발전 흐름을 단계로 보면 지금은 <strong>에이전트 단계</strong>입니다. 도구를 쓰고 스스로 행동하지만, 팀·조직 규모로 가면 다음 벽에 부딪힙니다. 각 에이전트가 같은 도메인을 <strong>제각각</strong> 이해한다는 점입니다.</p>
+    <h3><span class="step-num">2</span>핵심 개념 4개 | 비유로</h3>
+    <p>온톨로지 외에 이 4개만 잡으면 대화의 80%가 들립니다.</p>
+
+    <h4 style="margin-top: 18px; font-size: 16px;">⬇️ 인제스트 (Ingest) | "삼키고 소화시키기"</h4>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">🐄 소 되새김질</div>
+        <pre style="white-space: pre-wrap;">풀을 그냥 삼키는 게 아니라 다시 잘게
+부수고 분해해서 영양분만 흡수.
+인제스트도 "먹고 → 분해 → 의미만 추출"</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">📖 학생 핵심정리노트</div>
+        <pre style="white-space: pre-wrap;">책을 통째로 들고 가는 게 아니라
+"핵심 정리 노트"만 만들어 들고 감.
+원본은 안 남기고 지식 지도만 저장</pre>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">자료(PDF·이미지·문서·웹)를 넣어 가공·저장. <strong>원본 파일은 안 올라가고 정리된 의미만 저장</strong>되어 가볍고 보안에 유리.</p>
+
+    <h4 style="margin-top: 18px; font-size: 16px;">🗄 Neo4j | "그래프 전용 창고"</h4>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">📦 거미줄 전용 창고</div>
+        <pre style="white-space: pre-wrap;">엑셀(표)은 일반 창고에 잘 들어감.
+"거미줄 같은 관계 그림"을 엑셀에
+넣으면 망함 → 그래프 전용 창고가 Neo4j</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">🚇 환승 0.1초 답</div>
+        <pre style="white-space: pre-wrap;">"3번 환승해 갈 수 있는 모든 역"을
+0.1초에 답하려면 엑셀로는 불가.
+그래프 DB는 이걸 잘함</pre>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">SQL = 엑셀 표 다루는 전통 방식 / Neo4j = 그래프 전문. <strong>오늘 실습은 Neo4j 없이 로컬 SQLite로 충분</strong> (대규모일 때만 선택).</p>
+
+    <h4 style="margin-top: 18px; font-size: 16px;">📐 벡터 임베딩 | "의미 좌표"</h4>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">🗺 도시 지도</div>
+        <pre style="white-space: pre-wrap;">단어를 좌표 위에 흩어놓기.
+"왕" ↔ "여왕"은 좌표가 가깝고
+"왕" ↔ "감자"는 멀다 (의미 거리)</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">🎵 향수 지문</div>
+        <pre style="white-space: pre-wrap;">향수 = 시트러스8·머스크3·우디5...
+숫자 조합이 비슷하면 비슷한 향.
+단어도 1536개 숫자로 변환됨</pre>
+      </div>
+    </div>
+    <table>
+      <thead><tr><th>두 문장</th><th>좌표 거리</th><th>결과</th></tr></thead>
+      <tbody>
+        <tr><td>"왕이 명령을 내렸다" vs "여왕이 결정을 발표했다"</td><td>0.18 (가까움)</td><td>같은 의미로 인식 ✅</td></tr>
+        <tr><td>"왕이 명령을 내렸다" vs "감자를 삶아 으깼다"</td><td>0.92 (멀음)</td><td>다른 의미 ❌</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 13px; color: var(--muted);">키워드 검색은 "왕" 글자가 있어야 찾지만, 임베딩은 <strong>"통치자가 지시했다"</strong>도 좌표가 가까워 같이 찾아냅니다.</p>
+
+    <h4 style="margin-top: 18px; font-size: 16px;">🔍 RAG · 그래프RAG · BM25 | "오픈북 시험"</h4>
+    <p style="font-size: 14px;">AI가 머리에서만 짜내면 거짓말(할루시네이션). 그래서 <strong>"먼저 자료 찾고 → 보고 답한다"</strong>가 RAG. 답 모르면 찍는 학생(일반 AI) vs 책 펴서 답하는 학생(RAG). 책 = 온톨로지 팩.</p>
+    <table>
+      <thead><tr><th>방식</th><th>찾는 것</th><th>비유</th></tr></thead>
+      <tbody>
+        <tr><td><strong>BM25</strong></td><td>"정확히 그 단어" (키워드)</td><td>구글 단순 검색</td></tr>
+        <tr><td><strong>벡터 RAG</strong></td><td>"비슷한 의미" (단어 달라도)</td><td>"비슷한 노래" 추천</td></tr>
+        <tr><td><strong>그래프 RAG</strong></td><td>"이거랑 연결된 거 다" (추론)</td><td>족보·계보 추적</td></tr>
+      </tbody>
+    </table>
+    <div class="field-case">
+      <strong>RAG의 다음 진화 = 그래프 추론.</strong> "이 약 먹으면 졸려?" → 일반 RAG는 "졸음" 키워드 문장만(근거 약함). 그래프 RAG는 <strong>약 → 성분 → 부작용 → 졸음</strong> 체인을 따라가 근거 있는 답. 운영으로 옮기면 <strong>"이 결제 모듈 바꾸면 어떤 매장·티켓·담당자까지"</strong>가 같은 질문입니다. (셋 다 써야 품질↑, 그래프RAG만 쓰면 느림)
+    </div>
+
+    <div class="field-case">
+      <strong>ingest vs extract</strong> | 가장 헷갈리는 둘. <strong>ingest</strong>는 원본을 "검색 색인"으로 저장(그래프 안 생김), <strong>extract</strong>는 LLM이 읽고 "노드·엣지(그래프)"를 만듭니다. <strong>온톨로지 그래프는 extract에서 나옵니다.</strong> 그래서 <strong>강사는 extract로 팩을 제작</strong>하고(LLM 키 필요), <strong>학생은 그 팩을 ingest(import)로 설치</strong>하면 추출 없이 즉시 노드를 받습니다.
+    </div>
+
+    <h3><span class="step-num">3</span>빅데이터 vs 온톨로지 | 반대 방향</h3>
+    <p>"AI 시대엔 빅데이터가 왕"이 통념이지만, <strong>LLM 자체가 이미 빅데이터 덩어리</strong>(인터넷 글 다 학습). LLM의 한계를 넘으려면 <strong>"빅데이터의 반대 = 아주 사적인 데이터"</strong>가 필요합니다.</p>
+    <div class="dual-track">
+      <div class="track stu">
+        <div class="track-h">⬅️ 빅데이터 (구시대)</div>
+        <pre style="white-space: pre-wrap;">• 엄청 큼 · 일반적 · 평균화
+• LLM이 이미 다 학습함
+• 추가 가치 한계 도달</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">➡️ 온톨로지 (새 시대)</div>
+        <pre style="white-space: pre-wrap;">• 작음 · 특정 · 맥락화
+• "그 수의사" 같은 특정화
+• 누구나/팀이 만들 수 있음</pre>
+      </div>
+    </div>
+    <div class="field-case">
+      <strong>암묵지(暗默知)의 자산화</strong> | 사내 업무 매뉴얼·운영 노하우·"우리 팀만 아는 그것"은 <strong>LLM이 절대 모르는 핵심 가치</strong>입니다. 말로 못 푸는 이 암묵지를 온톨로지로 만들면 <strong>팀이 공유하는 지식 자산</strong>이 됩니다. 농경=토지, 산업=공장, AI사회=맥락이 담긴 사적 데이터.
+    </div>
+
+    <h3><span class="step-num">4</span>9-Space | 모든 데이터는 이 9칸 중 하나</h3>
+    <p>어떤 자료든 넣으면 자동으로 9개 의미 공간 중 하나에 매핑됩니다. 온톨로지를 짜는 골격(문법)입니다.</p>
+    <table>
+      <thead><tr><th>#</th><th>공간</th><th>"무엇"</th><th>예</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>주체</strong> Subject</td><td>누가 행동하나</td><td>사람·팀·조직·AI 에이전트</td></tr>
+        <tr><td>2</td><td><strong>리소스</strong> Resource</td><td>무엇을 다루나</td><td>프로젝트·문서·파일·API</td></tr>
+        <tr><td>3</td><td><strong>증거</strong> Evidence</td><td>무엇을 관찰했나</td><td>텍스트 조각·로그·원자료</td></tr>
+        <tr><td>4</td><td><strong>개념</strong> Concept</td><td>추상적 무엇</td><td>키워드·토픽·엔티티</td></tr>
+        <tr><td>5</td><td><strong>주장</strong> Claim</td><td>"X는 Y다" 명제</td><td>가설·결론·인과</td></tr>
+        <tr><td>6</td><td><strong>커뮤니티</strong> Community</td><td>노드 군집</td><td>그래프상 자연 군집</td></tr>
+        <tr><td>7</td><td><strong>결과</strong> Outcome</td><td>측정된 성과·리스크</td><td>KPI·매출·리스크</td></tr>
+        <tr><td>8</td><td><strong>레버</strong> Lever</td><td>움직일 다이얼</td><td>시뮬레이션 입력 변수</td></tr>
+        <tr><td>9</td><td><strong>정책</strong> Policy</td><td>룰·승인·민감도</td><td>권한 정책·승인 워크플로</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size: 13px; color: var(--muted);">멘탈모델: <strong>"들어오면 → 어느 공간? → 어떤 공간과 연결?"</strong> 이 두 질문이 끝. 오늘 두 팩(개발/운영)도 다 이 9칸으로 짜였습니다.</p>
+
+    <h3><span class="step-num">5</span>메타엣지 | 화살표 그 이상</h3>
+    <div class="dual-track">
+      <div class="track stu">
+        <div class="track-h">일반 그래프</div>
+        <pre style="white-space: pre-wrap;">노드 + 엣지(화살표) 끝.
+A → B 연결만. 관계 종류·강도 없음</pre>
+      </div>
+      <div class="track instr">
+        <div class="track-h">메타엣지 (관계의 5속성)</div>
+        <pre style="white-space: pre-wrap;">엣지마다 ① 정의 ② 엣지 간 관계
+③ 하이라키(층위) ④ 권한 ⑤ 강도</pre>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">친구 관계도(점·선)가 아니라 <strong>"친한 정도(강도) + 사귄 기간(층위) + 비밀 공유 여부(권한) + 어떻게 친해졌나(정의)"</strong>까지 기록한 관계도. <strong>영향 분석(impact)</strong>이 가능한 이유입니다.</p>
+
+    <h3><span class="step-num">6</span>원본은 로컬, 의미만 클라우드 | 보안 모델</h3>
+    <p>엔터프라이즈의 핵심 모순: <strong>"내 데이터를 AI에 보여줘야 똑똑한 답이 나오는데, 그러면 보안이 깨진다."</strong> 온톨로지의 답:</p>
+    <pre style="white-space: pre-wrap;">100MB 계약서 / 도면 / 고객 데이터 (민감 원본)
+   ↓ 로컬에서 그래프 빌드 (원본은 절대 안 나감)
+   ↓ 노드·엣지 = 의미만 추출 (약 1KB · 10만 배 압축)
+클라우드 / AI는 "의미"만 받아 답변
+→ 원본 픽셀·문장은 한 글자도 외부로 안 나감. 압축 + 보안 둘 다.</pre>
+    <div class="field-case">
+      규제·보안 강한 환경(의료·법률·금융·리테일)에서 <strong>"민감 원본은 안 나가고 + AI 기능은 풀로"</strong>를 둘 다 충족. 도시바·아모레 사내 도면·고객·운영 데이터도 같은 원리로 안전하게 AI에 붙입니다.
+    </div>
+
+    <h3><span class="step-num">7</span>왜 지금 온톨로지인가</h3>
+    <p>AI 발전 흐름을 단계로 보면 지금은 <strong>에이전트 단계</strong>입니다. 팀·조직 규모로 가면 각 에이전트가 같은 도메인을 <strong>제각각</strong> 이해하는 벽에 부딪힙니다.</p>
     <div style="display: flex; gap: 14px; align-items: center; margin: 16px 0; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px;">
       <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">규칙</span>
       <span style="color: var(--muted);">→</span>
@@ -250,24 +434,7 @@
       <span style="color: var(--muted);">→</span>
       <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">AGI</span>
     </div>
-    <p style="font-size: 14px;">에이전트 다음 단계가 <strong>온톨로지</strong>입니다. 모든 에이전트가 같은 의미 기반을 공유해야 비로소 협업·오케스트레이션이 됩니다. 그 공유 기반이 바로 온톨로지입니다.</p>
-
-    <h3><span class="step-num">3</span>오늘 쓰는 핵심 개념</h3>
-    <table>
-      <thead><tr><th>개념</th><th>한 줄</th></tr></thead>
-      <tbody>
-        <tr><td><strong>온톨로지</strong></td><td>entity + 관계로 짜인 의미 그래프</td></tr>
-        <tr><td><strong>ingest</strong></td><td>원본 문서를 벡터로 저장해 의미 검색 가능하게 (그래프 ❌)</td></tr>
-        <tr><td><strong>extract</strong></td><td>LLM이 문서에서 entity·관계를 뽑아 <strong>그래프(노드·엣지) 생성</strong> (그래프 ✅)</td></tr>
-        <tr><td><strong>임베딩</strong></td><td>의미를 벡터로 바꿔 유사도 검색을 가능하게</td></tr>
-        <tr><td><strong>RAG 종류</strong></td><td>일반 RAG(유사 검색) vs Graph RAG(관계 traversal)</td></tr>
-        <tr><td><strong>그래프</strong></td><td>node(entity)·edge(관계)로 의미를 시각화</td></tr>
-      </tbody>
-    </table>
-
-    <div class="field-case">
-      <strong>ingest vs extract</strong> | 가장 헷갈리는 둘. <strong>ingest</strong>는 원본을 "검색 색인"으로 저장(그래프 안 생김), <strong>extract</strong>는 LLM이 읽고 "노드·엣지(그래프)"를 만듭니다. <strong>온톨로지 그래프는 extract에서 나옵니다.</strong> 그래서 <strong>강사는 extract로 팩을 제작</strong>하고(LLM 키 필요), <strong>학생은 그 팩을 ingest(import)로 설치</strong>하면 추출 없이 즉시 노드를 받습니다.
-    </div>
+    <p style="font-size: 14px;">에이전트 다음 단계가 <strong>온톨로지</strong>입니다. 모든 에이전트가 같은 의미 기반을 공유해야 비로소 협업·오케스트레이션이 됩니다.</p>
 
     <div class="reference">
       <p><strong>OpenCrab</strong>은 위 온톨로지를 직접 만들어 보기 위한 <strong>실습 도구</strong>입니다. 로컬에서 ingest·extract·query·그래프까지 한 번에 됩니다. 오늘은 이 도구로 "온톨로지를 손에 익히는 것"이 목적입니다.</p>
