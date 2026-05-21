@@ -1,0 +1,383 @@
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_account_portal", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "manages", "to_space": "resource", "to_id": "toshiba_enterprise_login_api", "properties": {}}
+{"from_space": "concept", "from_id": "enterprise_authentication", "relation": "related_to", "to_space": "concept", "to_id": "elera_catalog", "properties": {"description": "Enterprise authentication is required to access the ELERA catalog"}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "concept", "from_id": "omnichannel_integration", "relation": "contributes_to", "to_space": "outcome", "to_id": "retailer_transformation", "properties": {}}
+{"from_space": "concept", "from_id": "digital_shopping_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "retailer_transformation", "properties": {}}
+{"from_space": "concept", "from_id": "omnichannel_integration", "relation": "related_to", "to_space": "concept", "to_id": "digital_shopping_experience", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "related_to", "to_space": "concept", "to_id": "omnichannel_integration", "properties": {}}
+{"from_space": "lever", "from_id": "modular_platform_features", "relation": "raises", "to_space": "outcome", "to_id": "retailer_transformation", "properties": {}}
+{"from_space": "lever", "from_id": "modular_platform_features", "relation": "affects", "to_space": "concept", "to_id": "digital_shopping_experience", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_pos", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_produce_recognition", "properties": {}}
+{"from_space": "concept", "from_id": "unified_commerce", "relation": "contributes_to", "to_space": "outcome", "to_id": "optimized_consumer_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "scanning_accuracy", "relation": "contributes_to", "to_space": "outcome", "to_id": "reduced_manual_input", "properties": {}}
+{"from_space": "concept", "from_id": "store_infrastructure", "relation": "related_to", "to_space": "concept", "to_id": "unified_commerce", "properties": {"note": "ELERA builds on existing store infrastructure to deliver unified commerce"}}
+{"from_space": "lever", "from_id": "elera_pos_lever", "relation": "optimizes", "to_space": "outcome", "to_id": "optimized_consumer_engagement", "properties": {}}
+{"from_space": "lever", "from_id": "elera_pos_lever", "relation": "lowers", "to_space": "outcome", "to_id": "rip_and_replace_risk", "properties": {}}
+{"from_space": "lever", "from_id": "elera_pos_lever", "relation": "affects", "to_space": "concept", "to_id": "unified_commerce", "properties": {}}
+{"from_space": "lever", "from_id": "produce_recognition_lever", "relation": "raises", "to_space": "outcome", "to_id": "reduced_manual_input", "properties": {}}
+{"from_space": "lever", "from_id": "produce_recognition_lever", "relation": "affects", "to_space": "concept", "to_id": "scanning_accuracy", "properties": {}}
+{"from_space": "concept", "from_id": "unified_commerce", "relation": "depends_on", "to_space": "concept", "to_id": "store_infrastructure", "properties": {"note": "Unified commerce capabilities are layered on top of existing store infrastructure"}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "contact_form", "properties": {}}
+{"from_space": "policy", "from_id": "recaptcha_verification", "relation": "protects", "to_space": "resource", "to_id": "contact_form", "properties": {"provider": "Google reCAPTCHA"}}
+{"from_space": "concept", "from_id": "data_privacy_consent", "relation": "influences", "to_space": "concept", "to_id": "retail_segments", "properties": {"note": "Consent is prerequisite to marketing outreach across segments"}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_elera_platform", "properties": {}}
+{"from_space": "evidence", "from_id": "contact_success_message", "relation": "describes", "to_space": "concept", "to_id": "customer_inquiry_workflow", "properties": {}}
+{"from_space": "concept", "from_id": "elera_solutions_platform", "relation": "contributes_to", "to_space": "outcome", "to_id": "successful_contact_submission", "properties": {}}
+{"from_space": "concept", "from_id": "customer_inquiry_workflow", "relation": "contributes_to", "to_space": "outcome", "to_id": "successful_contact_submission", "properties": {}}
+{"from_space": "concept", "from_id": "elera_solutions_platform", "relation": "related_to", "to_space": "concept", "to_id": "customer_inquiry_workflow", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "elera_loss_prevention_tool", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "tcx_edgecam_plus_tool", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_lp_video_description_text", "relation": "mentions", "to_space": "concept", "to_id": "self_checkout_loss_prevention_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_lp_video_description_text", "relation": "mentions", "to_space": "concept", "to_id": "edge_ai_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_lp_video_description_text", "relation": "describes", "to_space": "concept", "to_id": "retail_loss_prevention_topic", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout_loss_prevention_concept", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_loss_prevention_topic", "properties": {}}
+{"from_space": "concept", "from_id": "edge_ai_concept", "relation": "influences", "to_space": "concept", "to_id": "self_checkout_loss_prevention_concept", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout_loss_prevention_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {"direction": "mitigates"}}
+{"from_space": "lever", "from_id": "ai_edge_camera_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {}}
+{"from_space": "lever", "from_id": "ai_edge_camera_lever", "relation": "affects", "to_space": "concept", "to_id": "self_checkout_loss_prevention_concept", "properties": {}}
+{"from_space": "lever", "from_id": "ai_edge_camera_lever", "relation": "affects", "to_space": "concept", "to_id": "edge_ai_concept", "properties": {}}
+{"from_space": "concept", "from_id": "retail_loss_prevention_topic", "relation": "constrains", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "elera_loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_lp_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_lp_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_technology", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "retail_technology", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {"note": "Effective loss prevention reduces shrinkage risk"}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "elera_loss_prevention_video", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention_video", "relation": "contains", "to_space": "evidence", "to_id": "facebook_reel_elera_lp", "properties": {}}
+{"from_space": "evidence", "from_id": "facebook_reel_elera_lp", "relation": "mentions", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "evidence", "from_id": "facebook_reel_elera_lp", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "resource", "from_id": "elera_platform", "relation": "related_to", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrinkage_reduction", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "toshiba_careers_portal", "properties": {}}
+{"from_space": "evidence", "from_id": "intern_day_in_life_post", "relation": "mentions", "to_space": "concept", "to_id": "paid_media_email_marketing", "properties": {}}
+{"from_space": "evidence", "from_id": "intern_day_in_life_post", "relation": "mentions", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "evidence", "from_id": "summer_intern_vibes_post", "relation": "mentions", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "concept", "from_id": "internship_program", "relation": "contributes_to", "to_space": "outcome", "to_id": "talent_pipeline_growth", "properties": {}}
+{"from_space": "concept", "from_id": "internship_program", "relation": "contributes_to", "to_space": "outcome", "to_id": "employer_brand_awareness", "properties": {}}
+{"from_space": "concept", "from_id": "paid_media_email_marketing", "relation": "related_to", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "evidence", "from_id": "iwd2025_post_text", "relation": "mentions", "to_space": "concept", "to_id": "international_womens_day_2025", "properties": {}}
+{"from_space": "evidence", "from_id": "iwd2025_post_text", "relation": "mentions", "to_space": "concept", "to_id": "women_in_retail_leadership", "properties": {}}
+{"from_space": "evidence", "from_id": "iwd2025_post_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_innovation", "properties": {}}
+{"from_space": "evidence", "from_id": "iwd2025_post_text", "relation": "mentions", "to_space": "concept", "to_id": "diversity_inclusion", "properties": {}}
+{"from_space": "concept", "from_id": "women_in_retail_leadership", "relation": "contributes_to", "to_space": "outcome", "to_id": "organizational_excellence", "properties": {}}
+{"from_space": "concept", "from_id": "retail_innovation", "relation": "contributes_to", "to_space": "outcome", "to_id": "organizational_excellence", "properties": {}}
+{"from_space": "concept", "from_id": "diversity_inclusion", "relation": "contributes_to", "to_space": "outcome", "to_id": "organizational_excellence", "properties": {}}
+{"from_space": "concept", "from_id": "women_in_retail_leadership", "relation": "related_to", "to_space": "concept", "to_id": "diversity_inclusion", "properties": {}}
+{"from_space": "concept", "from_id": "retail_innovation", "relation": "influences", "to_space": "concept", "to_id": "women_in_retail_leadership", "properties": {}}
+{"from_space": "community", "from_id": "toshiba_women_americas", "relation": "clusters", "to_space": "concept", "to_id": "women_in_retail_leadership", "properties": {"nominated_count": 19, "region": "Americas"}}
+{"from_space": "community", "from_id": "toshiba_women_americas", "relation": "summarizes", "to_space": "concept", "to_id": "international_womens_day_2025", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "intern_thoughts_video", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_intern_team", "relation": "manages", "to_space": "resource", "to_id": "intern_thoughts_video", "properties": {"note": "Interns produced and starred in the video content"}}
+{"from_space": "resource", "from_id": "intern_thoughts_video", "relation": "contains", "to_space": "evidence", "to_id": "intern_thoughts_caption", "properties": {}}
+{"from_space": "evidence", "from_id": "intern_thoughts_caption", "relation": "mentions", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "evidence", "from_id": "intern_thoughts_caption", "relation": "mentions", "to_space": "concept", "to_id": "content_creation", "properties": {}}
+{"from_space": "evidence", "from_id": "intern_thoughts_caption", "relation": "mentions", "to_space": "concept", "to_id": "business_development", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention_video", "relation": "contains", "to_space": "evidence", "to_id": "intern_thoughts_caption", "properties": {"note": "Same post context references ELERA Loss Prevention"}}
+{"from_space": "evidence", "from_id": "intern_thoughts_caption", "relation": "describes", "to_space": "resource", "to_id": "elera_loss_prevention", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_loss_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_loss_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "internship_program", "relation": "related_to", "to_space": "concept", "to_id": "content_creation", "properties": {}}
+{"from_space": "concept", "from_id": "internship_program", "relation": "related_to", "to_space": "concept", "to_id": "business_development", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "toshiba_careers_internship_portal", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention_video", "relation": "contains", "to_space": "evidence", "to_id": "halloween_post_text", "properties": {}}
+{"from_space": "evidence", "from_id": "halloween_post_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_commerce", "properties": {}}
+{"from_space": "evidence", "from_id": "internship_announcement_text", "relation": "mentions", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "evidence", "from_id": "internship_announcement_text", "relation": "describes", "to_space": "concept", "to_id": "internship_program", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention", "relation": "subclass_of", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "part_of", "to_space": "concept", "to_id": "retail_commerce", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {"note": "ELERA Loss Prevention aims to reduce retail shrink risk"}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "constrains", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention_video", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_hq_employee_event_post", "properties": {"note": "Both are content items published on the same Facebook page"}}
+{"from_space": "evidence", "from_id": "toshiba_hq_employee_event_post", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {"context": "The video series on the Facebook page focuses on ELERA Loss Prevention"}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "affects", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_global_commerce_solutions", "relation": "owns", "to_space": "resource", "to_id": "elera_self_service", "properties": {}}
+{"from_space": "resource", "from_id": "elera_self_service", "relation": "contains", "to_space": "evidence", "to_id": "elera_facebook_video_post_march2024", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_facebook_video_post_march2024", "relation": "mentions", "to_space": "concept", "to_id": "retail_self_service_checkout", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_facebook_video_post_march2024", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_facebook_video_post_march2024", "relation": "mentions", "to_space": "concept", "to_id": "retail_innovation", "properties": {}}
+{"from_space": "concept", "from_id": "retail_self_service_checkout", "relation": "contributes_to", "to_space": "outcome", "to_id": "checkout_speed_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "retail_self_service_checkout", "relation": "contributes_to", "to_space": "outcome", "to_id": "front_end_efficiency_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "constrains", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {}}
+{"from_space": "concept", "from_id": "retail_innovation", "relation": "contributes_to", "to_space": "outcome", "to_id": "front_end_efficiency_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "raises", "to_space": "outcome", "to_id": "checkout_speed_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "raises", "to_space": "outcome", "to_id": "front_end_efficiency_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "affects", "to_space": "concept", "to_id": "retail_self_service_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "retail_innovation", "relation": "influences", "to_space": "concept", "to_id": "retail_self_service_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "retail_self_service_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout", "relation": "influences", "to_space": "concept", "to_id": "loss_prevention", "properties": {"note": "Self-checkout environments increase loss prevention challenges"}}
+{"from_space": "lever", "from_id": "elera_lp_integration_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrinkage_risk", "properties": {}}
+{"from_space": "lever", "from_id": "elera_lp_integration_lever", "relation": "affects", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "describes", "to_space": "concept", "to_id": "sdl_interface", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "describes", "to_space": "concept", "to_id": "pc_abs_housing", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "describes", "to_space": "concept", "to_id": "till_options", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "describes", "to_space": "concept", "to_id": "worldwide_certifications", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "describes", "to_space": "concept", "to_id": "toshiba_environmental_compliance", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_software_section", "relation": "describes", "to_space": "concept", "to_id": "upos_driver", "properties": {}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "supports", "to_space": "outcome", "to_id": "cash_drawer_life_cycle", "properties": {"claim_text": "Cash drawer rated for 2.0 million cycles with no preventative maintenance."}}
+{"from_space": "evidence", "from_id": "spec_hardware_section", "relation": "supports", "to_space": "outcome", "to_id": "supported_weight_capacity", "properties": {"claim_text": "Cash drawer supports up to 100 lbs (45.35 kg)."}}
+{"from_space": "concept", "from_id": "toshiba_environmental_compliance", "relation": "related_to", "to_space": "concept", "to_id": "worldwide_certifications", "properties": {}}
+{"from_space": "evidence", "from_id": "latch_plate_interface_description", "relation": "describes", "to_space": "concept", "to_id": "latch_plate_interface", "properties": {}}
+{"from_space": "evidence", "from_id": "latch_plate_interface_description", "relation": "describes", "to_space": "concept", "to_id": "usb_latch_plate", "properties": {}}
+{"from_space": "evidence", "from_id": "latch_plate_interface_description", "relation": "describes", "to_space": "concept", "to_id": "sdl_latch_plate", "properties": {}}
+{"from_space": "concept", "from_id": "usb_latch_plate", "relation": "subclass_of", "to_space": "concept", "to_id": "latch_plate_interface", "properties": {}}
+{"from_space": "concept", "from_id": "sdl_latch_plate", "relation": "subclass_of", "to_space": "concept", "to_id": "latch_plate_interface", "properties": {}}
+{"from_space": "concept", "from_id": "usb_latch_plate", "relation": "related_to", "to_space": "concept", "to_id": "wide_cash_drawer", "properties": {"interface_type": "1x8 latching cable"}}
+{"from_space": "concept", "from_id": "usb_latch_plate", "relation": "contributes_to", "to_space": "outcome", "to_id": "eliminated_cash_drawer_drive_circuitry", "properties": {"note": "Eliminates cash drawer drive circuitry in future system units"}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "concept", "to_id": "wide_cash_drawer", "properties": {}}
+{"from_space": "concept", "from_id": "wide_cash_drawer", "relation": "contains", "to_space": "evidence", "to_id": "cash_drawer_spec_textunit", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "drawer_stability", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "security_lock", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "worldwide_certifications", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "toshiba_environmental_compliance", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "pos_diagnostics", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "describes", "to_space": "concept", "to_id": "systems_management_rma", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "supports", "to_space": "outcome", "to_id": "cash_drawer_life_kpi", "properties": {}}
+{"from_space": "evidence", "from_id": "cash_drawer_spec_textunit", "relation": "supports", "to_space": "outcome", "to_id": "supported_weight_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "drawer_stability", "relation": "contributes_to", "to_space": "outcome", "to_id": "cash_drawer_life_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "security_lock", "relation": "constrains", "to_space": "outcome", "to_id": "cash_drawer_life_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "toshiba_environmental_compliance", "relation": "contributes_to", "to_space": "outcome", "to_id": "cash_drawer_life_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "worldwide_certifications", "relation": "contributes_to", "to_space": "outcome", "to_id": "cash_drawer_life_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "systems_management_rma", "relation": "contributes_to", "to_space": "outcome", "to_id": "driver_dependency_risk", "properties": {}}
+{"from_space": "concept", "from_id": "pos_diagnostics", "relation": "related_to", "to_space": "concept", "to_id": "systems_management_rma", "properties": {}}
+{"from_space": "concept", "from_id": "wide_cash_drawer", "relation": "contains", "to_space": "resource", "to_id": "fixed_till", "properties": {"note": "Fixed Till included with Wide Cash Drawer"}}
+{"from_space": "concept", "from_id": "wide_cash_drawer", "relation": "contains", "to_space": "resource", "to_id": "adjustable_till", "properties": {"note": "Adjustable Till included with Wide Cash Drawer"}}
+{"from_space": "concept", "from_id": "wide_cash_drawer", "relation": "derived_from", "to_space": "concept", "to_id": "upos_driver", "properties": {"note": "Cash drawer operates via UPOS compatible interface"}}
+{"from_space": "evidence", "from_id": "textunit_latch_plate_description", "relation": "describes", "to_space": "concept", "to_id": "latch_plate_interface", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_latch_plate_description", "relation": "describes", "to_space": "concept", "to_id": "usb_latch_plate", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_latch_plate_description", "relation": "describes", "to_space": "concept", "to_id": "sdl_latch_plate", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_commerce_portal", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "tcx_m1_tool", "properties": {}}
+{"from_space": "policy", "from_id": "toshiba_login_approval_rule", "relation": "protects", "to_space": "resource", "to_id": "toshiba_commerce_portal", "properties": {"mechanism": "username/password and enterprise IDP authentication"}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "tcx_m1_device", "properties": {}}
+{"from_space": "resource", "from_id": "tcx_m1_device", "relation": "contains", "to_space": "evidence", "to_id": "tcx_m1_product_description", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "concept", "to_id": "mobile_pos", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "concept", "to_id": "curbside_pickup", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "outcome", "to_id": "checkout_wait_time", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_pos", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_wait_time_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_pos", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_checkout_convenience", "properties": {}}
+{"from_space": "concept", "from_id": "curbside_pickup", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_checkout_convenience", "properties": {}}
+{"from_space": "outcome", "from_id": "checkout_wait_time", "relation": "influences", "to_space": "concept", "to_id": "mobile_pos", "properties": {"note": "Long wait times are the problem that mobile POS addresses"}}
+{"from_space": "lever", "from_id": "mobile_payment_enablement", "relation": "lowers", "to_space": "outcome", "to_id": "customer_wait_time_reduction", "properties": {"note": "Mobile payment capability lowers wait times for customers"}}
+{"from_space": "lever", "from_id": "mobile_payment_enablement", "relation": "raises", "to_space": "outcome", "to_id": "retail_checkout_convenience", "properties": {}}
+{"from_space": "lever", "from_id": "mobile_payment_enablement", "relation": "affects", "to_space": "concept", "to_id": "mobile_pos", "properties": {}}
+{"from_space": "concept", "from_id": "curbside_pickup", "relation": "related_to", "to_space": "concept", "to_id": "mobile_pos", "properties": {}}
+{"from_space": "resource", "from_id": "tcx_m1_device", "relation": "contains", "to_space": "evidence", "to_id": "tcx_m1_product_page", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "describes", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "emv_payment_standard", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "contactless_payment", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "msr_payment", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "pci_compliance", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "barcode_scanning", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_page", "relation": "mentions", "to_space": "concept", "to_id": "android_os", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_payments", "relation": "contributes_to", "to_space": "outcome", "to_id": "faster_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_payments", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_shopper_experience", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_payments", "relation": "contributes_to", "to_space": "outcome", "to_id": "store_congestion_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "emv_payment_standard", "relation": "related_to", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "concept", "from_id": "contactless_payment", "relation": "related_to", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "concept", "from_id": "msr_payment", "relation": "related_to", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "concept", "from_id": "pci_compliance", "relation": "constrains", "to_space": "outcome", "to_id": "faster_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "barcode_scanning", "relation": "contributes_to", "to_space": "outcome", "to_id": "faster_checkout", "properties": {}}
+{"from_space": "lever", "from_id": "mobile_payment_flexibility", "relation": "raises", "to_space": "outcome", "to_id": "improved_shopper_experience", "properties": {}}
+{"from_space": "lever", "from_id": "mobile_payment_flexibility", "relation": "lowers", "to_space": "outcome", "to_id": "store_congestion_reduction", "properties": {"note": "lowers store congestion"}}
+{"from_space": "lever", "from_id": "mobile_payment_flexibility", "relation": "affects", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "concept", "from_id": "android_os", "relation": "part_of", "to_space": "concept", "to_id": "mobile_payments", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "tcx_m1_mpos", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_software", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_description_textunit", "relation": "describes", "to_space": "concept", "to_id": "complete_mpos_solution", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_description_textunit", "relation": "mentions", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_description_textunit", "relation": "mentions", "to_space": "concept", "to_id": "retail_friction_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "complete_mpos_solution", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_shopper_retailer_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "retail_friction_reduction", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_shopper_retailer_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "improved_shopper_retailer_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "retail_friction_reduction", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "concept", "from_id": "complete_mpos_solution", "relation": "related_to", "to_space": "concept", "to_id": "retail_friction_reduction", "properties": {}}
+{"from_space": "subject", "from_id": "retail_operators", "relation": "manages", "to_space": "resource", "to_id": "tcx_m1_mpos", "properties": {}}
+{"from_space": "resource", "from_id": "tcx_m1_mpos", "relation": "contains", "to_space": "evidence", "to_id": "tcx_m1_product_description", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "concept", "to_id": "mobile_point_of_sale", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "concept", "to_id": "in_store_friction", "properties": {}}
+{"from_space": "evidence", "from_id": "tcx_m1_product_description", "relation": "mentions", "to_space": "concept", "to_id": "customer_service_retail", "properties": {}}
+{"from_space": "concept", "from_id": "in_store_friction", "relation": "degrades", "to_space": "outcome", "to_id": "checkout_time_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "in_store_friction", "relation": "degrades", "to_space": "outcome", "to_id": "store_congestion_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_point_of_sale", "relation": "contributes_to", "to_space": "outcome", "to_id": "checkout_time_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_point_of_sale", "relation": "contributes_to", "to_space": "outcome", "to_id": "store_congestion_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_point_of_sale", "relation": "contributes_to", "to_space": "outcome", "to_id": "extended_pos_coverage", "properties": {}}
+{"from_space": "concept", "from_id": "customer_service_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "checkout_time_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_point_of_sale", "relation": "influences", "to_space": "concept", "to_id": "customer_service_retail", "properties": {}}
+{"from_space": "concept", "from_id": "mobile_point_of_sale", "relation": "influences", "to_space": "concept", "to_id": "in_store_friction", "properties": {}}
+{"from_space": "lever", "from_id": "handheld_mpos_deployment", "relation": "lowers", "to_space": "outcome", "to_id": "checkout_time_reduction", "properties": {"note": "Lowers checkout time metric (i.e., reduces time)"}}
+{"from_space": "lever", "from_id": "handheld_mpos_deployment", "relation": "lowers", "to_space": "outcome", "to_id": "store_congestion_reduction", "properties": {"note": "Lowers congestion level"}}
+{"from_space": "lever", "from_id": "handheld_mpos_deployment", "relation": "raises", "to_space": "outcome", "to_id": "extended_pos_coverage", "properties": {}}
+{"from_space": "lever", "from_id": "handheld_mpos_deployment", "relation": "affects", "to_space": "concept", "to_id": "mobile_point_of_sale", "properties": {}}
+{"from_space": "lever", "from_id": "handheld_mpos_deployment", "relation": "affects", "to_space": "concept", "to_id": "in_store_friction", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "elera_pos", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "resource", "from_id": "elera_pos", "relation": "contains", "to_space": "evidence", "to_id": "elera_pos_description_text", "properties": {}}
+{"from_space": "resource", "from_id": "elera_platform", "relation": "contains", "to_space": "evidence", "to_id": "elera_platform_description_text", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pos_description_text", "relation": "mentions", "to_space": "concept", "to_id": "unified_commerce", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pos_description_text", "relation": "mentions", "to_space": "concept", "to_id": "consumer_engagement", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_platform_description_text", "relation": "mentions", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "concept", "from_id": "unified_commerce", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_growth_acceleration", "properties": {}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_growth_acceleration", "properties": {}}
+{"from_space": "concept", "from_id": "unified_commerce", "relation": "constrains", "to_space": "outcome", "to_id": "rip_and_replace_disruption", "properties": {"note": "Unified commerce on existing infrastructure constrains/reduces rip-and-replace risk"}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "raises", "to_space": "outcome", "to_id": "retail_growth_acceleration", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "lowers", "to_space": "outcome", "to_id": "rip_and_replace_disruption", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "lever", "from_id": "elera_platform_lever", "relation": "affects", "to_space": "concept", "to_id": "consumer_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "unified_commerce", "relation": "related_to", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "influences", "to_space": "concept", "to_id": "consumer_engagement", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_pay_tool", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_org", "relation": "owns", "to_space": "resource", "to_id": "elera_pay_api", "properties": {}}
+{"from_space": "resource", "from_id": "elera_pay_tool", "relation": "contains", "to_space": "evidence", "to_id": "elera_pay_description_text", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pay_description_text", "relation": "mentions", "to_space": "concept", "to_id": "cloud_payment_platform", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pay_description_text", "relation": "mentions", "to_space": "concept", "to_id": "transaction_routing", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pay_description_text", "relation": "mentions", "to_space": "concept", "to_id": "central_configuration", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pay_description_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_payment_reporting", "properties": {}}
+{"from_space": "evidence", "from_id": "elera_pay_description_text", "relation": "mentions", "to_space": "concept", "to_id": "retailer_environment_simplification", "properties": {}}
+{"from_space": "concept", "from_id": "cloud_payment_platform", "relation": "contributes_to", "to_space": "outcome", "to_id": "payment_flexibility_adaptability", "properties": {}}
+{"from_space": "concept", "from_id": "transaction_routing", "relation": "part_of", "to_space": "concept", "to_id": "cloud_payment_platform", "properties": {}}
+{"from_space": "concept", "from_id": "central_configuration", "relation": "part_of", "to_space": "concept", "to_id": "cloud_payment_platform", "properties": {}}
+{"from_space": "concept", "from_id": "retail_payment_reporting", "relation": "part_of", "to_space": "concept", "to_id": "cloud_payment_platform", "properties": {}}
+{"from_space": "concept", "from_id": "retailer_environment_simplification", "relation": "contributes_to", "to_space": "outcome", "to_id": "payment_flexibility_adaptability", "properties": {}}
+{"from_space": "resource", "from_id": "elera_pay_tool", "relation": "derived_from", "to_space": "evidence", "to_id": "elera_pay_description_text", "properties": {}}
+{"from_space": "concept", "from_id": "fashion_and_apparel", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "food_service", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "gas_and_convenience", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "grocery", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "pharmacy_drug_store", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "specialty_retail", "relation": "subclass_of", "to_space": "concept", "to_id": "retail_segment", "properties": {}}
+{"from_space": "concept", "from_id": "retail_segment", "relation": "contributes_to", "to_space": "outcome", "to_id": "form_submission_success", "properties": {"note": "Selecting the correct retail segment helps route the inquiry for appropriate follow-up."}}
+{"from_space": "concept", "from_id": "human_verification_concept", "relation": "constrains", "to_space": "outcome", "to_id": "bot_access_risk", "properties": {}}
+{"from_space": "concept", "from_id": "deferred_modules_concept", "relation": "related_to", "to_space": "concept", "to_id": "human_verification_concept", "properties": {"note": "Deferred module loading is gated behind human verification"}}
+{"from_space": "concept", "from_id": "human_verification_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "bot_access_risk", "properties": {"note": "Mitigates bot access risk"}}
+{"from_space": "policy", "from_id": "recaptcha_verification", "relation": "related_to", "to_space": "concept", "to_id": "bot_detection", "properties": {}}
+{"from_space": "policy", "from_id": "recaptcha_verification", "relation": "contributes_to", "to_space": "outcome", "to_id": "automated_bot_access_risk", "properties": {"effect": "mitigates risk"}}
+{"from_space": "concept", "from_id": "bot_detection", "relation": "constrains", "to_space": "outcome", "to_id": "automated_bot_access_risk", "properties": {}}
+{"from_space": "evidence", "from_id": "stat_51pct_cstore_sco", "relation": "mentions", "to_space": "concept", "to_id": "self_checkout_technology", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "sco_adoption_rate", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout_technology", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "initially perceived as impersonal"}}
+{"from_space": "concept", "from_id": "self_checkout_technology", "relation": "influences", "to_space": "concept", "to_id": "operational_efficiency", "properties": {"note": "streamlines checkout, reduces labor costs"}}
+{"from_space": "concept", "from_id": "self_checkout_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "theft_and_scanning_errors_risk", "properties": {"note": "creates opportunity for theft and scanning errors"}}
+{"from_space": "concept", "from_id": "traditional_loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "self_checkout_technology", "properties": {}}
+{"from_space": "concept", "from_id": "traditional_loss_prevention", "relation": "depends_on", "to_space": "concept", "to_id": "weight_security_measures", "properties": {}}
+{"from_space": "concept", "from_id": "ai_powered_loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "traditional_loss_prevention", "properties": {"note": "AI as evolution of traditional methods"}}
+{"from_space": "concept", "from_id": "ai_powered_loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "theft_and_scanning_errors_risk", "properties": {"note": "reduces risk"}}
+{"from_space": "concept", "from_id": "retail_shrink", "relation": "degrades", "to_space": "outcome", "to_id": "sco_adoption_rate", "properties": {"note": "shrink is a barrier to SCO expansion"}}
+{"from_space": "concept", "from_id": "retail_shrink", "relation": "related_to", "to_space": "concept", "to_id": "traditional_loss_prevention", "properties": {}}
+{"from_space": "concept", "from_id": "operational_efficiency", "relation": "depends_on", "to_space": "concept", "to_id": "labor_cost_reduction", "properties": {}}
+{"from_space": "concept", "from_id": "operational_efficiency", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "tension between efficiency and positive experience"}}
+{"from_space": "lever", "from_id": "ai_loss_prevention_lever", "relation": "lowers", "to_space": "outcome", "to_id": "theft_and_scanning_errors_risk", "properties": {}}
+{"from_space": "lever", "from_id": "ai_loss_prevention_lever", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "aims to improve loss prevention without degrading experience"}}
+{"from_space": "lever", "from_id": "staff_presence_lever", "relation": "lowers", "to_space": "outcome", "to_id": "theft_and_scanning_errors_risk", "properties": {"note": "traditional deterrence method"}}
+{"from_space": "lever", "from_id": "staff_presence_lever", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "staff assist shoppers navigating SCO"}}
+{"from_space": "community", "from_id": "retail_sco_community", "relation": "clusters", "to_space": "concept", "to_id": "self_checkout_technology", "properties": {}}
+{"from_space": "community", "from_id": "retail_sco_community", "relation": "summarizes", "to_space": "concept", "to_id": "traditional_loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "covid19_pandemic", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "sco_self_checkout", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "weight_security_measures", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "retail_shrink", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "online_shopping_curbside", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "evidence", "from_id": "whitepaper_pandemic_section", "relation": "mentions", "to_space": "concept", "to_id": "resource_allocation", "properties": {}}
+{"from_space": "concept", "from_id": "covid19_pandemic", "relation": "influences", "to_space": "concept", "to_id": "sco_self_checkout", "properties": {"note": "Pandemic drove widespread adoption of SCO"}}
+{"from_space": "concept", "from_id": "covid19_pandemic", "relation": "influences", "to_space": "concept", "to_id": "social_distancing", "properties": {}}
+{"from_space": "concept", "from_id": "social_distancing", "relation": "influences", "to_space": "concept", "to_id": "loss_prevention", "properties": {"note": "Social distancing made physical staff presence at SCO impractical"}}
+{"from_space": "concept", "from_id": "covid19_pandemic", "relation": "influences", "to_space": "concept", "to_id": "online_shopping_curbside", "properties": {"note": "Pandemic accelerated online shopping and curbside pickup"}}
+{"from_space": "concept", "from_id": "online_shopping_curbside", "relation": "influences", "to_space": "concept", "to_id": "impulse_buys", "properties": {"note": "Online shift reduced opportunity for impulse purchases"}}
+{"from_space": "concept", "from_id": "impulse_buys", "relation": "contributes_to", "to_space": "outcome", "to_id": "reduced_impulse_revenue", "properties": {}}
+{"from_space": "concept", "from_id": "weight_security_measures", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_dissatisfaction_risk", "properties": {"note": "Weight security causes friction and longer wait times"}}
+{"from_space": "concept", "from_id": "weight_security_measures", "relation": "constrains", "to_space": "outcome", "to_id": "checkout_wait_time", "properties": {"note": "False alarms and calibration issues increase wait times"}}
+{"from_space": "concept", "from_id": "retail_shrink", "relation": "contributes_to", "to_space": "outcome", "to_id": "increased_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "constrains", "to_space": "outcome", "to_id": "increased_shrink_risk", "properties": {"note": "Absence of loss prevention increases shrink risk"}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_dissatisfaction_risk", "properties": {}}
+{"from_space": "concept", "from_id": "resource_allocation", "relation": "influences", "to_space": "concept", "to_id": "loss_prevention", "properties": {"note": "Staff dual roles as assistant and security strain resources"}}
+{"from_space": "lever", "from_id": "staff_presence_at_sco", "relation": "lowers", "to_space": "outcome", "to_id": "increased_shrink_risk", "properties": {"note": "Physical staff presence deters theft"}}
+{"from_space": "lever", "from_id": "staff_presence_at_sco", "relation": "affects", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "lever", "from_id": "weight_scale_calibration", "relation": "lowers", "to_space": "outcome", "to_id": "customer_dissatisfaction_risk", "properties": {"note": "Better calibration reduces false alarms and friction"}}
+{"from_space": "lever", "from_id": "weight_scale_calibration", "relation": "optimizes", "to_space": "outcome", "to_id": "checkout_wait_time", "properties": {}}
+{"from_space": "lever", "from_id": "weight_scale_calibration", "relation": "affects", "to_space": "concept", "to_id": "weight_security_measures", "properties": {}}
+{"from_space": "evidence", "from_id": "shrink_section_text", "relation": "mentions", "to_space": "concept", "to_id": "shrink_retail_loss", "properties": {}}
+{"from_space": "evidence", "from_id": "shrink_section_text", "relation": "mentions", "to_space": "concept", "to_id": "ai_machine_learning_surveillance", "properties": {}}
+{"from_space": "evidence", "from_id": "shrink_section_text", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention_technology", "properties": {}}
+{"from_space": "evidence", "from_id": "customer_experience_section_text", "relation": "mentions", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "evidence", "from_id": "customer_experience_section_text", "relation": "mentions", "to_space": "concept", "to_id": "store_layout_optimization", "properties": {}}
+{"from_space": "evidence", "from_id": "employee_productivity_section_text", "relation": "mentions", "to_space": "concept", "to_id": "employee_accountability", "properties": {}}
+{"from_space": "evidence", "from_id": "employee_productivity_section_text", "relation": "mentions", "to_space": "concept", "to_id": "biometric_access_control", "properties": {}}
+{"from_space": "evidence", "from_id": "employee_productivity_section_text", "relation": "mentions", "to_space": "concept", "to_id": "employee_theft_fraud", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "related_to", "to_space": "concept", "to_id": "ai_machine_learning_surveillance", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "related_to", "to_space": "concept", "to_id": "biometric_access_control", "properties": {}}
+{"from_space": "concept", "from_id": "ai_machine_learning_surveillance", "relation": "part_of", "to_space": "concept", "to_id": "loss_prevention_technology", "properties": {}}
+{"from_space": "concept", "from_id": "biometric_access_control", "relation": "part_of", "to_space": "concept", "to_id": "loss_prevention_technology", "properties": {}}
+{"from_space": "concept", "from_id": "shrink_retail_loss", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "employee_theft_fraud", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "shrink_reduction_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "store_layout_optimization", "relation": "contributes_to", "to_space": "outcome", "to_id": "purchase_likelihood_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "purchase_likelihood_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "ai_machine_learning_surveillance", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "Discreet AI surveillance reduces customer anxiety"}}
+{"from_space": "concept", "from_id": "data_driven_decision_making", "relation": "depends_on", "to_space": "concept", "to_id": "loss_prevention_technology", "properties": {}}
+{"from_space": "concept", "from_id": "employee_accountability", "relation": "influences", "to_space": "concept", "to_id": "employee_theft_fraud", "properties": {"note": "Increased accountability reduces internal theft"}}
+{"from_space": "lever", "from_id": "ai_surveillance_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "lever", "from_id": "ai_surveillance_lever", "relation": "raises", "to_space": "outcome", "to_id": "shrink_reduction_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "ai_surveillance_lever", "relation": "affects", "to_space": "concept", "to_id": "ai_machine_learning_surveillance", "properties": {}}
+{"from_space": "lever", "from_id": "biometric_access_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "lever", "from_id": "biometric_access_lever", "relation": "affects", "to_space": "concept", "to_id": "biometric_access_control", "properties": {}}
+{"from_space": "lever", "from_id": "discreet_camera_lever", "relation": "raises", "to_space": "outcome", "to_id": "purchase_likelihood_kpi", "properties": {}}
+{"from_space": "lever", "from_id": "discreet_camera_lever", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "concept", "from_id": "artificial_intelligence_lp", "relation": "related_to", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "concept", "from_id": "sweet_hearting", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "shrink", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "labor_shortage", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "self_checkout_sco", "relation": "influences", "to_space": "concept", "to_id": "shrink", "properties": {}}
+{"from_space": "concept", "from_id": "artificial_intelligence_lp", "relation": "contributes_to", "to_space": "concept", "to_id": "customer_satisfaction", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "cost_savings", "properties": {}}
+{"from_space": "concept", "from_id": "inventory_management", "relation": "influences", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "lever", "from_id": "ai_lp_tools_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "lever", "from_id": "ai_lp_tools_lever", "relation": "raises", "to_space": "outcome", "to_id": "cost_savings", "properties": {}}
+{"from_space": "lever", "from_id": "ai_lp_tools_lever", "relation": "optimizes", "to_space": "concept", "to_id": "customer_satisfaction", "properties": {}}
+{"from_space": "lever", "from_id": "product_relocation_lever", "relation": "lowers", "to_space": "outcome", "to_id": "retail_shrink_risk", "properties": {}}
+{"from_space": "lever", "from_id": "ai_lp_tools_lever", "relation": "affects", "to_space": "concept", "to_id": "sweet_hearting", "properties": {}}
+{"from_space": "lever", "from_id": "ai_lp_tools_lever", "relation": "affects", "to_space": "concept", "to_id": "labor_shortage", "properties": {}}
+{"from_space": "community", "from_id": "retail_industry", "relation": "clusters", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "community", "from_id": "retail_industry", "relation": "clusters", "to_space": "concept", "to_id": "artificial_intelligence_lp", "properties": {}}
+{"from_space": "evidence", "from_id": "text_sco_ai_shift", "relation": "mentions", "to_space": "concept", "to_id": "ai_computer_vision", "properties": {}}
+{"from_space": "evidence", "from_id": "text_sco_ai_shift", "relation": "mentions", "to_space": "concept", "to_id": "sco_self_checkout", "properties": {}}
+{"from_space": "evidence", "from_id": "text_sco_ai_shift", "relation": "mentions", "to_space": "concept", "to_id": "customer_experience", "properties": {}}
+{"from_space": "evidence", "from_id": "text_loss_prevention_impact", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention_technology", "properties": {}}
+{"from_space": "evidence", "from_id": "text_loss_prevention_impact", "relation": "mentions", "to_space": "concept", "to_id": "employee_accountability", "properties": {}}
+{"from_space": "evidence", "from_id": "text_loss_prevention_impact", "relation": "mentions", "to_space": "concept", "to_id": "data_driven_insights", "properties": {}}
+{"from_space": "concept", "from_id": "ai_computer_vision", "relation": "influences", "to_space": "concept", "to_id": "sco_self_checkout", "properties": {"description": "A.I. and computer vision have significantly shifted SCO's role in retail"}}
+{"from_space": "concept", "from_id": "ai_computer_vision", "relation": "contributes_to", "to_space": "outcome", "to_id": "minimized_scanning_errors", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "reduced_shrink_theft", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_competitiveness", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {"description": "Loss prevention technology improved the customer experience"}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "influences", "to_space": "concept", "to_id": "employee_accountability", "properties": {"description": "Loss prevention technology increased employee accountability"}}
+{"from_space": "concept", "from_id": "data_driven_insights", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_competitiveness", "properties": {"description": "Data-driven insights empower retailers to thrive in a competitive market"}}
+{"from_space": "concept", "from_id": "loss_prevention_technology", "relation": "part_of", "to_space": "community", "to_id": "retail_industry", "properties": {}}
+{"from_space": "concept", "from_id": "ai_computer_vision", "relation": "part_of", "to_space": "community", "to_id": "retail_industry", "properties": {}}
+{"from_space": "lever", "from_id": "ai_driven_solutions", "relation": "raises", "to_space": "outcome", "to_id": "retail_competitiveness", "properties": {}}
+{"from_space": "lever", "from_id": "ai_driven_solutions", "relation": "lowers", "to_space": "outcome", "to_id": "minimized_scanning_errors", "properties": {"description": "A.I.-driven solutions minimize scanning errors and checkout delays"}}
+{"from_space": "lever", "from_id": "ai_driven_solutions", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {"description": "A.I.-driven solutions guide shoppers and create a positive customer experience"}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_competitiveness", "properties": {}}
+{"from_space": "concept", "from_id": "ai_powered_loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "self_checkout", "properties": {"note": "A.I. loss prevention is integrated into SCO systems to make them more secure and seamless."}}
+{"from_space": "concept", "from_id": "self_checkout", "relation": "influences", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "Self-checkout directly shapes the in-store shopping experience."}}
+{"from_space": "concept", "from_id": "self_checkout", "relation": "influences", "to_space": "concept", "to_id": "retail_shrink", "properties": {"note": "Wider SCO adoption increases shrink risk if not managed properly."}}
+{"from_space": "concept", "from_id": "retail_shrink", "relation": "contributes_to", "to_space": "outcome", "to_id": "shrink_risk", "properties": {}}
+{"from_space": "concept", "from_id": "ai_powered_loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Adoption of A.I. loss prevention drives retailer enhancement plans."}}
+{"from_space": "concept", "from_id": "pandemic_retail_acceleration", "relation": "influences", "to_space": "concept", "to_id": "self_checkout", "properties": {"note": "The pandemic accelerated self-checkout adoption across retail."}}
+{"from_space": "lever", "from_id": "ai_sco_antitheft", "relation": "lowers", "to_space": "outcome", "to_id": "shrink_risk", "properties": {"note": "A.I.-enhanced anti-theft features in SCO reduce shrink risk."}}
+{"from_space": "lever", "from_id": "ai_sco_antitheft", "relation": "raises", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Availability of A.I. SCO anti-theft tools raises retailer adoption rates."}}
+{"from_space": "lever", "from_id": "ai_sco_antitheft", "relation": "affects", "to_space": "concept", "to_id": "customer_experience", "properties": {"note": "A.I. anti-theft features aim to reduce friction and improve the customer experience."}}
+{"from_space": "lever", "from_id": "ai_sco_antitheft", "relation": "affects", "to_space": "concept", "to_id": "loss_prevention", "properties": {"note": "A.I. SCO directly affects loss prevention outcomes."}}
+{"from_space": "evidence", "from_id": "retailer_survey_stat", "relation": "mentions", "to_space": "concept", "to_id": "ai_powered_loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "retailer_survey_stat", "relation": "mentions", "to_space": "concept", "to_id": "self_checkout", "properties": {}}
+{"from_space": "community", "from_id": "retail_loss_prevention_community", "relation": "clusters", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "community", "from_id": "retail_loss_prevention_community", "relation": "summarizes", "to_space": "concept", "to_id": "ai_powered_loss_prevention", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "constrains", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Loss prevention requirements constrain how self-checkout enhancements can be designed and deployed."}}
+{"from_space": "concept", "from_id": "customer_experience", "relation": "contributes_to", "to_space": "outcome", "to_id": "instore_enhancement_adoption", "properties": {"note": "Better customer experience drives retailer investment in SCO enhancements."}}

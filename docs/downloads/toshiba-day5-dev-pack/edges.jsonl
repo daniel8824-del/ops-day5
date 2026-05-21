@@ -1,0 +1,364 @@
+{"from_space": "subject", "from_id": "atlassian_org", "relation": "owns", "to_space": "resource", "to_id": "acli_tool", "properties": {}}
+{"from_space": "concept", "from_id": "workitem_linking_concept", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "concept", "from_id": "cli_automation_topic", "relation": "related_to", "to_space": "concept", "to_id": "workitem_linking_concept", "properties": {}}
+{"from_space": "concept", "from_id": "workitem_linking_concept", "relation": "related_to", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "resource", "from_id": "acli_tool", "relation": "contains", "to_space": "evidence", "to_id": "jira_workitem_link_doc", "properties": {}}
+{"from_space": "evidence", "from_id": "jira_workitem_link_doc", "relation": "describes", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "jira_workitem_link_doc", "relation": "describes", "to_space": "concept", "to_id": "workitem_linking_topic", "properties": {}}
+{"from_space": "concept", "from_id": "workitem_linking_topic", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "resource", "from_id": "jira_workitem_link_api", "relation": "derived_from", "to_space": "evidence", "to_id": "jira_workitem_link_doc", "properties": {}}
+{"from_space": "resource", "from_id": "jira_workitem_api", "relation": "contains", "to_space": "evidence", "to_id": "jira_workitem_link_doc", "properties": {}}
+{"from_space": "resource", "from_id": "rovodev_api", "relation": "derived_from", "to_space": "evidence", "to_id": "jira_workitem_link_doc", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_cli", "relation": "contains", "to_space": "evidence", "to_id": "acli_workitem_link_reference_page", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_workitem_link_reference_page", "relation": "describes", "to_space": "concept", "to_id": "jira_workitem_link", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_workitem_link_reference_page", "relation": "mentions", "to_space": "concept", "to_id": "jira_workitem", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_workitem_link_reference_page", "relation": "mentions", "to_space": "concept", "to_id": "workitem_link_type", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_link", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem", "properties": {}}
+{"from_space": "concept", "from_id": "workitem_link_type", "relation": "related_to", "to_space": "concept", "to_id": "jira_workitem_link", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_link_create", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_workitem_link_reference_page", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_link_delete", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_workitem_link_reference_page", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_link_list", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_workitem_link_reference_page", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_link_type", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_workitem_link_reference_page", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_commerce_portal", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "toshiba_enterprise_login_api", "properties": {}}
+{"from_space": "resource", "from_id": "toshiba_commerce_portal", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_marketing_page_text", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "modular_adaptable_solutions", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_journey_excellence", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "concept", "from_id": "retail_solutions", "relation": "contributes_to", "to_space": "outcome", "to_id": "business_success", "properties": {}}
+{"from_space": "concept", "from_id": "modular_adaptable_solutions", "relation": "constrains", "to_space": "outcome", "to_id": "security_risk", "properties": {}}
+{"from_space": "concept", "from_id": "operational_excellence", "relation": "contributes_to", "to_space": "outcome", "to_id": "business_success", "properties": {}}
+{"from_space": "concept", "from_id": "modular_adaptable_solutions", "relation": "influences", "to_space": "concept", "to_id": "operational_excellence", "properties": {}}
+{"from_space": "concept", "from_id": "retail_journey_excellence", "relation": "related_to", "to_space": "concept", "to_id": "retail_solutions", "properties": {}}
+{"from_space": "lever", "from_id": "advisory_services_lever", "relation": "raises", "to_space": "outcome", "to_id": "customer_shopping_experience", "properties": {}}
+{"from_space": "lever", "from_id": "advisory_services_lever", "relation": "affects", "to_space": "concept", "to_id": "retail_journey_excellence", "properties": {}}
+{"from_space": "lever", "from_id": "advisory_services_lever", "relation": "optimizes", "to_space": "outcome", "to_id": "business_success", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_text", "relation": "mentions", "to_space": "concept", "to_id": "convenience_fuel_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_text", "relation": "mentions", "to_space": "concept", "to_id": "grocery_general_merchandise_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_text", "relation": "mentions", "to_space": "concept", "to_id": "hospitality_entertainment_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_industry_page_text", "relation": "mentions", "to_space": "concept", "to_id": "specialty_retail", "properties": {}}
+{"from_space": "concept", "from_id": "convenience_fuel_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "transaction_acceleration", "properties": {}}
+{"from_space": "concept", "from_id": "grocery_general_merchandise_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "frictionless_customer_experience", "properties": {}}
+{"from_space": "concept", "from_id": "grocery_general_merchandise_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "operational_agility", "properties": {}}
+{"from_space": "concept", "from_id": "hospitality_entertainment_retail", "relation": "related_to", "to_space": "concept", "to_id": "specialty_retail", "properties": {}}
+{"from_space": "concept", "from_id": "convenience_fuel_retail", "relation": "related_to", "to_space": "concept", "to_id": "grocery_general_merchandise_retail", "properties": {"description": "Both are high-volume retail segments served by Toshiba commerce solutions"}}
+{"from_space": "subject", "from_id": "toshiba_tgcs_org", "relation": "owns", "to_space": "resource", "to_id": "mxp_hardware", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_tgcs_org", "relation": "owns", "to_space": "resource", "to_id": "elera_platform", "properties": {}}
+{"from_space": "evidence", "from_id": "modularity_description_text", "relation": "describes", "to_space": "concept", "to_id": "modularity_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "modularity_description_text", "relation": "mentions", "to_space": "concept", "to_id": "retail_technology_topic", "properties": {}}
+{"from_space": "evidence", "from_id": "security_description_text", "relation": "describes", "to_space": "concept", "to_id": "security_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "modularity_description_text", "relation": "mentions", "to_space": "concept", "to_id": "unified_retail_future_concept", "properties": {}}
+{"from_space": "concept", "from_id": "modularity_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_scalability_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_trust_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "modularity_concept", "relation": "related_to", "to_space": "concept", "to_id": "retail_technology_topic", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "related_to", "to_space": "concept", "to_id": "retail_technology_topic", "properties": {}}
+{"from_space": "concept", "from_id": "modularity_concept", "relation": "influences", "to_space": "concept", "to_id": "unified_retail_future_concept", "properties": {}}
+{"from_space": "concept", "from_id": "security_concept", "relation": "influences", "to_space": "concept", "to_id": "unified_retail_future_concept", "properties": {}}
+{"from_space": "lever", "from_id": "modular_architecture_lever", "relation": "raises", "to_space": "outcome", "to_id": "retail_scalability_outcome", "properties": {}}
+{"from_space": "lever", "from_id": "modular_architecture_lever", "relation": "affects", "to_space": "concept", "to_id": "modularity_concept", "properties": {}}
+{"from_space": "lever", "from_id": "built_in_security_lever", "relation": "raises", "to_space": "outcome", "to_id": "customer_trust_outcome", "properties": {}}
+{"from_space": "lever", "from_id": "built_in_security_lever", "relation": "affects", "to_space": "concept", "to_id": "security_concept", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_tgcs", "relation": "owns", "to_space": "resource", "to_id": "iot_suite", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_tgcs", "relation": "owns", "to_space": "resource", "to_id": "elera_loss_prevention", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_tgcs", "relation": "owns", "to_space": "resource", "to_id": "retail_transformation_services", "properties": {}}
+{"from_space": "resource", "from_id": "iot_suite", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_marketing_page_text", "properties": {}}
+{"from_space": "resource", "from_id": "elera_loss_prevention", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_marketing_page_text", "properties": {}}
+{"from_space": "resource", "from_id": "retail_transformation_services", "relation": "contains", "to_space": "evidence", "to_id": "toshiba_marketing_page_text", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "serviceability", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "loss_prevention", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "epos_installations", "properties": {}}
+{"from_space": "evidence", "from_id": "toshiba_marketing_page_text", "relation": "mentions", "to_space": "concept", "to_id": "pos_self_checkout", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_loss_risk", "properties": {}}
+{"from_space": "concept", "from_id": "serviceability", "relation": "contributes_to", "to_space": "outcome", "to_id": "system_uptime_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "epos_installations", "relation": "contributes_to", "to_space": "outcome", "to_id": "epos_market_share_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "pos_self_checkout", "relation": "contributes_to", "to_space": "outcome", "to_id": "pos_units_kpi", "properties": {}}
+{"from_space": "concept", "from_id": "loss_prevention", "relation": "related_to", "to_space": "concept", "to_id": "serviceability", "properties": {}}
+{"from_space": "concept", "from_id": "pos_self_checkout", "relation": "related_to", "to_space": "concept", "to_id": "epos_installations", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce", "relation": "owns", "to_space": "resource", "to_id": "toshiba_marketplace", "properties": {}}
+{"from_space": "concept", "from_id": "marketplace_platform", "relation": "contributes_to", "to_space": "outcome", "to_id": "retailer_growth_success", "properties": {}}
+{"from_space": "concept", "from_id": "marketplace_platform", "relation": "related_to", "to_space": "concept", "to_id": "retail_technology", "properties": {}}
+{"from_space": "community", "from_id": "top_retailers_community", "relation": "clusters", "to_space": "concept", "to_id": "retail_technology", "properties": {}}
+{"from_space": "community", "from_id": "top_retailers_community", "relation": "summarizes", "to_space": "concept", "to_id": "marketplace_platform", "properties": {}}
+{"from_space": "concept", "from_id": "retail_technology", "relation": "contributes_to", "to_space": "outcome", "to_id": "retailer_growth_success", "properties": {}}
+{"from_space": "subject", "from_id": "toshiba_commerce_org", "relation": "owns", "to_space": "resource", "to_id": "elera_commerce_platform", "properties": {}}
+{"from_space": "subject", "from_id": "google_org", "relation": "owns", "to_space": "resource", "to_id": "google_distributed_cloud", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_idc_leader_claim", "relation": "mentions", "to_space": "concept", "to_id": "pos_software_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_idc_leader_claim", "relation": "mentions", "to_space": "concept", "to_id": "cloud_native_architecture_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_edge_strategy_discussion", "relation": "mentions", "to_space": "concept", "to_id": "edge_computing_concept", "properties": {}}
+{"from_space": "evidence", "from_id": "tu_edge_strategy_discussion", "relation": "mentions", "to_space": "concept", "to_id": "cloud_native_architecture_concept", "properties": {}}
+{"from_space": "concept", "from_id": "cloud_native_architecture_concept", "relation": "related_to", "to_space": "concept", "to_id": "pos_software_concept", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_concept", "relation": "related_to", "to_space": "concept", "to_id": "cloud_native_architecture_concept", "properties": {}}
+{"from_space": "concept", "from_id": "pos_software_concept", "relation": "part_of", "to_space": "concept", "to_id": "retail_technology_concept", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_concept", "relation": "part_of", "to_space": "concept", "to_id": "retail_technology_concept", "properties": {}}
+{"from_space": "concept", "from_id": "edge_computing_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "outcome_retail_operational_stability", "properties": {}}
+{"from_space": "concept", "from_id": "cloud_native_architecture_concept", "relation": "contributes_to", "to_space": "outcome", "to_id": "outcome_retail_innovation", "properties": {}}
+{"from_space": "lever", "from_id": "lever_cloud_native_adoption", "relation": "raises", "to_space": "outcome", "to_id": "outcome_retail_innovation", "properties": {}}
+{"from_space": "lever", "from_id": "lever_edge_computing_deployment", "relation": "stabilizes", "to_space": "outcome", "to_id": "outcome_retail_operational_stability", "properties": {}}
+{"from_space": "lever", "from_id": "lever_edge_computing_deployment", "relation": "raises", "to_space": "outcome", "to_id": "outcome_retail_innovation", "properties": {}}
+{"from_space": "lever", "from_id": "lever_cloud_native_adoption", "relation": "affects", "to_space": "concept", "to_id": "pos_software_concept", "properties": {}}
+{"from_space": "lever", "from_id": "lever_edge_computing_deployment", "relation": "affects", "to_space": "concept", "to_id": "edge_computing_concept", "properties": {}}
+{"from_space": "concept", "from_id": "future_of_retail", "relation": "contributes_to", "to_space": "outcome", "to_id": "retail_industry_engagement", "properties": {}}
+{"from_space": "concept", "from_id": "retail_segments", "relation": "related_to", "to_space": "concept", "to_id": "future_of_retail", "properties": {}}
+{"from_space": "concept", "from_id": "email_marketing_consent", "relation": "related_to", "to_space": "concept", "to_id": "future_of_retail", "properties": {}}
+{"from_space": "evidence", "from_id": "contact_success_message", "relation": "describes", "to_space": "concept", "to_id": "customer_contact_request", "properties": {}}
+{"from_space": "concept", "from_id": "customer_contact_request", "relation": "contributes_to", "to_space": "outcome", "to_id": "customer_followup_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "recaptcha_challenge", "relation": "contributes_to", "to_space": "outcome", "to_id": "bot_abuse_risk", "properties": {"note": "reCAPTCHA challenges mitigate bot abuse risk"}}
+{"from_space": "concept", "from_id": "recaptcha_challenge", "relation": "constrains", "to_space": "outcome", "to_id": "bot_abuse_risk", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "merged_results_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "auto_merge", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "fast_forward_merge", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_intro_text", "relation": "mentions", "to_space": "concept", "to_id": "semi_linear_merge", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "related_to", "to_space": "concept", "to_id": "merge_request", "properties": {"description": "Merge trains queue and process merge requests"}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "related_to", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {"description": "A merge train triggers a merge train pipeline"}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "related_to", "to_space": "concept", "to_id": "merged_results_pipeline", "properties": {"description": "First merge train pipeline is equivalent to a merged results pipeline"}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "influences", "to_space": "concept", "to_id": "default_branch", "properties": {"description": "Merge train controls what gets merged into the default branch"}}
+{"from_space": "concept", "from_id": "fast_forward_merge", "relation": "related_to", "to_space": "concept", "to_id": "merge_train", "properties": {"description": "Fast-forward merge is a supported method in merge trains since GitLab 16.5"}}
+{"from_space": "concept", "from_id": "semi_linear_merge", "relation": "related_to", "to_space": "concept", "to_id": "merge_train", "properties": {"description": "Semi-linear merge is a supported method in merge trains since GitLab 16.5"}}
+{"from_space": "concept", "from_id": "auto_merge", "relation": "related_to", "to_space": "concept", "to_id": "merge_train", "properties": {"description": "Auto-merge is the UI action to add a merge request to a merge train (since GitLab 16.0)"}}
+{"from_space": "lever", "from_id": "merge_queue", "relation": "raises", "to_space": "outcome", "to_id": "devops_efficiency", "properties": {}}
+{"from_space": "lever", "from_id": "merge_queue", "relation": "lowers", "to_space": "outcome", "to_id": "merge_conflict_reduction", "properties": {"description": "Queuing reduces the occurrence of merge conflicts"}}
+{"from_space": "lever", "from_id": "merge_queue", "relation": "affects", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "contributes_to", "to_space": "outcome", "to_id": "devops_efficiency", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "contributes_to", "to_space": "outcome", "to_id": "merge_conflict_reduction", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_ci_cd", "relation": "contains", "to_space": "evidence", "to_id": "merge_train_example_text", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_ci_cd", "relation": "contains", "to_space": "evidence", "to_id": "automatic_cancellation_text", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_train_example_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_train_example_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_train_example_text", "relation": "describes", "to_space": "concept", "to_id": "pipeline_failure", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_train_example_text", "relation": "describes", "to_space": "concept", "to_id": "parallel_execution", "properties": {}}
+{"from_space": "evidence", "from_id": "automatic_cancellation_text", "relation": "describes", "to_space": "concept", "to_id": "automatic_pipeline_cancellation", "properties": {}}
+{"from_space": "evidence", "from_id": "automatic_cancellation_text", "relation": "describes", "to_space": "concept", "to_id": "redundant_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "part_of", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "depends_on", "to_space": "concept", "to_id": "merge_request", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "depends_on", "to_space": "concept", "to_id": "target_branch", "properties": {}}
+{"from_space": "concept", "from_id": "pipeline_failure", "relation": "influences", "to_space": "concept", "to_id": "merge_train", "properties": {"effect": "removes failed merge request and triggers new pipelines for subsequent requests"}}
+{"from_space": "concept", "from_id": "pipeline_failure", "relation": "influences", "to_space": "concept", "to_id": "redundant_pipeline", "properties": {"effect": "causes downstream pipelines to become redundant"}}
+{"from_space": "concept", "from_id": "automatic_pipeline_cancellation", "relation": "depends_on", "to_space": "concept", "to_id": "redundant_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "parallel_execution", "relation": "contributes_to", "to_space": "outcome", "to_id": "default_branch_stability", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train", "relation": "contributes_to", "to_space": "outcome", "to_id": "default_branch_stability", "properties": {}}
+{"from_space": "concept", "from_id": "automatic_pipeline_cancellation", "relation": "contributes_to", "to_space": "outcome", "to_id": "pipeline_resource_waste", "properties": {"effect": "reduces resource waste by canceling redundant pipelines"}}
+{"from_space": "concept", "from_id": "redundant_pipeline", "relation": "contributes_to", "to_space": "outcome", "to_id": "pipeline_resource_waste", "properties": {}}
+{"from_space": "lever", "from_id": "skip_merge_train", "relation": "affects", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "lever", "from_id": "skip_merge_train", "relation": "raises", "to_space": "outcome", "to_id": "pipeline_resource_waste", "properties": {"reason": "triggers cancellation of existing train pipelines"}}
+{"from_space": "lever", "from_id": "remove_mr_from_train", "relation": "affects", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "lever", "from_id": "remove_mr_from_train", "relation": "raises", "to_space": "outcome", "to_id": "pipeline_resource_waste", "properties": {"reason": "causes downstream pipelines to be canceled and recreated"}}
+{"from_space": "resource", "from_id": "gitlab_project", "relation": "contains", "to_space": "evidence", "to_id": "merge_trains_doc_text", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_doc_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train_queue", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_doc_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train_visualization", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_doc_text", "relation": "describes", "to_space": "concept", "to_id": "merge_method", "properties": {}}
+{"from_space": "evidence", "from_id": "merge_trains_doc_text", "relation": "supports", "to_space": "outcome", "to_id": "stuck_merge_request_risk", "properties": {"note": "Documentation warns of stuck MRs if prerequisites not met"}}
+{"from_space": "concept", "from_id": "merge_train_queue", "relation": "contributes_to", "to_space": "outcome", "to_id": "merge_train_started_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "merge_method", "relation": "influences", "to_space": "concept", "to_id": "merge_train_queue", "properties": {"note": "Merge method must be compatible with merge trains"}}
+{"from_space": "resource", "from_id": "merged_results_pipelines_tool", "relation": "derived_from", "to_space": "evidence", "to_id": "merge_trains_doc_text", "properties": {}}
+{"from_space": "resource", "from_id": "merge_request_pipelines_tool", "relation": "derived_from", "to_space": "evidence", "to_id": "merge_trains_doc_text", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_queue", "relation": "depends_on", "to_space": "concept", "to_id": "merge_method", "properties": {}}
+{"from_space": "evidence", "from_id": "auto_merge_history_text", "relation": "describes", "to_space": "concept", "to_id": "auto_merge", "properties": {}}
+{"from_space": "evidence", "from_id": "auto_merge_history_text", "relation": "describes", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "auto_merge", "relation": "part_of", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "merge_request", "relation": "part_of", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "ci_pipeline", "relation": "part_of", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline_limit", "relation": "constrains", "to_space": "outcome", "to_id": "merge_train_queue_outcome", "properties": {}}
+{"from_space": "concept", "from_id": "automatic_pipeline_cancellation", "relation": "influences", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "lever", "from_id": "parallel_pipeline_limit_lever", "relation": "optimizes", "to_space": "outcome", "to_id": "merge_train_queue_outcome", "properties": {}}
+{"from_space": "lever", "from_id": "parallel_pipeline_limit_lever", "relation": "affects", "to_space": "concept", "to_id": "merge_train_pipeline_limit", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline_limit", "relation": "depends_on", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "automatic_pipeline_cancellation", "relation": "influences", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {"description": "Automatic pipeline cancellation stops all existing merge train pipelines when merge immediately is triggered"}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "contributes_to", "to_space": "outcome", "to_id": "faster_merge_throughput", "properties": {"description": "Running merge train pipelines enables faster and safer merging by verifying changes in parallel"}}
+{"from_space": "resource", "from_id": "fast_forward_merge_method", "relation": "constrains", "to_space": "outcome", "to_id": "faster_merge_throughput", "properties": {"description": "Fast-forward merge method prevents use of merge immediately and skip train, limiting merge throughput options"}}
+{"from_space": "concept", "from_id": "semi_linear_merge_method", "relation": "constrains", "to_space": "outcome", "to_id": "faster_merge_throughput", "properties": {"description": "Semi-linear merge method prevents use of skip train feature"}}
+{"from_space": "resource", "from_id": "fast_forward_merge_method", "relation": "related_to", "to_space": "concept", "to_id": "semi_linear_merge_method", "properties": {"description": "Both merge methods are incompatible with the skip-train feature"}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "part_of", "to_space": "concept", "to_id": "automatic_pipeline_cancellation", "properties": {"description": "Merge train pipelines are the subject of automatic cancellation during merge immediately"}}
+{"from_space": "evidence", "from_id": "textunit_merge_train_settings", "relation": "describes", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_merge_train_settings", "relation": "describes", "to_space": "lever", "to_id": "skip_merge_train", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_merge_train_settings", "relation": "describes", "to_space": "concept", "to_id": "merged_results_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_troubleshooting", "relation": "describes", "to_space": "concept", "to_id": "draft_merge_request", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_troubleshooting", "relation": "describes", "to_space": "concept", "to_id": "merge_conflict", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_troubleshooting", "relation": "describes", "to_space": "concept", "to_id": "unresolved_thread", "properties": {}}
+{"from_space": "evidence", "from_id": "textunit_troubleshooting", "relation": "describes", "to_space": "concept", "to_id": "auto_merge", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "part_of", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "merged_results_pipeline", "relation": "related_to", "to_space": "concept", "to_id": "merge_train_pipeline", "properties": {}}
+{"from_space": "lever", "from_id": "skip_merge_train", "relation": "influences", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "auto_merge", "relation": "depends_on", "to_space": "concept", "to_id": "merge_train", "properties": {"note": "auto-merge cannot skip merge train when merge trains are enabled"}}
+{"from_space": "concept", "from_id": "draft_merge_request", "relation": "contributes_to", "to_space": "outcome", "to_id": "risk_mr_dropped_from_train", "properties": {}}
+{"from_space": "concept", "from_id": "merge_conflict", "relation": "contributes_to", "to_space": "outcome", "to_id": "risk_mr_dropped_from_train", "properties": {}}
+{"from_space": "concept", "from_id": "unresolved_thread", "relation": "contributes_to", "to_space": "outcome", "to_id": "risk_mr_dropped_from_train", "properties": {}}
+{"from_space": "concept", "from_id": "merge_train_pipeline", "relation": "contributes_to", "to_space": "outcome", "to_id": "risk_mr_dropped_from_train", "properties": {"note": "pipeline failure causes MR to be dropped and cannot be retried"}}
+{"from_space": "resource", "from_id": "merge_requests_merge_api", "relation": "contains", "to_space": "evidence", "to_id": "textunit_merge_train_settings", "properties": {"note": "API is referenced by the settings instructions for skip_merge_train attribute"}}
+{"from_space": "evidence", "from_id": "cannot_add_mr_textunit", "relation": "describes", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "evidence", "from_id": "cannot_add_mr_textunit", "relation": "describes", "to_space": "concept", "to_id": "failed_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "cannot_add_mr_textunit", "relation": "supports", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "evidence", "from_id": "cannot_add_mr_textunit", "relation": "mentions", "to_space": "concept", "to_id": "retry_keyword", "properties": {}}
+{"from_space": "evidence", "from_id": "cannot_add_mr_textunit", "relation": "mentions", "to_space": "concept", "to_id": "pipelines_must_succeed_setting", "properties": {}}
+{"from_space": "concept", "from_id": "failed_pipeline", "relation": "contributes_to", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "concept", "from_id": "pipelines_must_succeed_setting", "relation": "constrains", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "concept", "from_id": "ci_pipeline", "relation": "related_to", "to_space": "concept", "to_id": "merge_train", "properties": {}}
+{"from_space": "concept", "from_id": "retry_keyword", "relation": "influences", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "failed_pipeline", "relation": "related_to", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "lever", "from_id": "retry_failed_job_lever", "relation": "lowers", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "lever", "from_id": "rerun_pipeline_lever", "relation": "lowers", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "lever", "from_id": "push_new_commit_lever", "relation": "lowers", "to_space": "outcome", "to_id": "cannot_add_mr_to_train_risk", "properties": {}}
+{"from_space": "lever", "from_id": "retry_failed_job_lever", "relation": "affects", "to_space": "concept", "to_id": "failed_pipeline", "properties": {}}
+{"from_space": "lever", "from_id": "rerun_pipeline_lever", "relation": "affects", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "lever", "from_id": "push_new_commit_lever", "relation": "affects", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "jira_attachment", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem", "properties": {}}
+{"from_space": "concept", "from_id": "attachment_management_concept", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_concept", "relation": "related_to", "to_space": "concept", "to_id": "cli_command_reference_topic", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_attachment", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem", "properties": {"description": "Attachments are part of Jira work items"}}
+{"from_space": "concept", "from_id": "jira_workitem_attachment", "relation": "related_to", "to_space": "concept", "to_id": "acli_reference_commands", "properties": {"description": "Jira work item attachment is documented under ACLI reference commands"}}
+{"from_space": "subject", "from_id": "openai_chatgpt_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_rovo_mcp_server", "properties": {"description": "OpenAI ChatGPT is a supported MCP client"}}
+{"from_space": "subject", "from_id": "claude_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_rovo_mcp_server", "properties": {"description": "Claude is a supported MCP client"}}
+{"from_space": "subject", "from_id": "docker_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_rovo_mcp_server", "properties": {"description": "Docker is a supported MCP client"}}
+{"from_space": "subject", "from_id": "google_gemini_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_rovo_mcp_server", "properties": {"description": "Google Gemini is a supported MCP client"}}
+{"from_space": "subject", "from_id": "amazon_quick_suite_client", "relation": "can_execute", "to_space": "resource", "to_id": "atlassian_rovo_mcp_server", "properties": {"description": "Amazon Quick Suite is a supported MCP client"}}
+{"from_space": "concept", "from_id": "oauth_2_1", "relation": "related_to", "to_space": "concept", "to_id": "api_token_auth", "properties": {"description": "OAuth 2.1 and API token auth are alternative authentication methods for MCP clients"}}
+{"from_space": "concept", "from_id": "api_token_auth", "relation": "contributes_to", "to_space": "outcome", "to_id": "sse_endpoint_deprecation_risk", "properties": {"description": "API token auth dependency on legacy endpoint contributes to deprecation risk"}}
+{"from_space": "subject", "from_id": "atlassian_org", "relation": "owns", "to_space": "resource", "to_id": "atlassian_remote_mcp_server", "properties": {}}
+{"from_space": "concept", "from_id": "mcp_client", "relation": "related_to", "to_space": "concept", "to_id": "mcp_server", "properties": {}}
+{"from_space": "concept", "from_id": "mcp_client", "relation": "contributes_to", "to_space": "outcome", "to_id": "mcp_client_security_risk", "properties": {}}
+{"from_space": "concept", "from_id": "cli_commands_topic", "relation": "related_to", "to_space": "concept", "to_id": "jira_field_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_field_concept", "relation": "related_to", "to_space": "concept", "to_id": "cli_commands_topic", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "derived_from", "to_space": "evidence", "to_id": "example_text_field", "properties": {"note": "subcommand of acli jira field"}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "derived_from", "to_space": "evidence", "to_id": "example_select_field", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "derived_from", "to_space": "evidence", "to_id": "example_date_field", "properties": {}}
+{"from_space": "evidence", "from_id": "example_text_field", "relation": "mentions", "to_space": "concept", "to_id": "jira_custom_field", "properties": {}}
+{"from_space": "evidence", "from_id": "example_text_field", "relation": "mentions", "to_space": "concept", "to_id": "custom_field_type", "properties": {}}
+{"from_space": "evidence", "from_id": "example_select_field", "relation": "mentions", "to_space": "concept", "to_id": "custom_field_searcher", "properties": {}}
+{"from_space": "evidence", "from_id": "example_date_field", "relation": "mentions", "to_space": "concept", "to_id": "jira_custom_field", "properties": {}}
+{"from_space": "concept", "from_id": "custom_field_type", "relation": "part_of", "to_space": "concept", "to_id": "jira_custom_field", "properties": {}}
+{"from_space": "concept", "from_id": "custom_field_searcher", "relation": "part_of", "to_space": "concept", "to_id": "jira_custom_field", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "contains", "to_space": "evidence", "to_id": "example_text_field", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "contains", "to_space": "evidence", "to_id": "example_select_field", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_field_create", "relation": "contains", "to_space": "evidence", "to_id": "example_date_field", "properties": {}}
+{"from_space": "resource", "from_id": "acli_tool", "relation": "contains", "to_space": "evidence", "to_id": "example_text_field", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_concept", "relation": "related_to", "to_space": "concept", "to_id": "atlassian_cli_reference", "properties": {}}
+{"from_space": "resource", "from_id": "jira_workitem_view_command", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_comment_management", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "concept", "from_id": "jira_workitem_attachment_management", "relation": "part_of", "to_space": "concept", "to_id": "jira_workitem_concept", "properties": {}}
+{"from_space": "resource", "from_id": "acli_jira_workitem_view", "relation": "derived_from", "to_space": "evidence", "to_id": "acli_view_command_doc", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_view_command_doc", "relation": "describes", "to_space": "concept", "to_id": "jira_work_item", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_view_command_doc", "relation": "describes", "to_space": "concept", "to_id": "work_item_fields", "properties": {}}
+{"from_space": "evidence", "from_id": "acli_view_command_doc", "relation": "describes", "to_space": "concept", "to_id": "json_output", "properties": {}}
+{"from_space": "concept", "from_id": "work_item_fields", "relation": "part_of", "to_space": "concept", "to_id": "jira_work_item", "properties": {}}
+{"from_space": "concept", "from_id": "jira_work_item", "relation": "related_to", "to_space": "concept", "to_id": "json_output", "properties": {"note": "Work items can be rendered as JSON output via --json flag"}}
+{"from_space": "concept", "from_id": "jira_board", "relation": "part_of", "to_space": "concept", "to_id": "jira_sprint", "properties": {"note": "Board and sprint are related Jira planning concepts"}}
+{"from_space": "concept", "from_id": "jira_sprint", "relation": "related_to", "to_space": "concept", "to_id": "jira_workitem", "properties": {}}
+{"from_space": "concept", "from_id": "jira_project", "relation": "related_to", "to_space": "concept", "to_id": "jira_board", "properties": {}}
+{"from_space": "concept", "from_id": "jira_auth", "relation": "related_to", "to_space": "concept", "to_id": "jira_project", "properties": {"note": "Authentication is required for project access"}}
+{"from_space": "concept", "from_id": "jira_filter", "relation": "related_to", "to_space": "concept", "to_id": "jira_dashboard", "properties": {}}
+{"from_space": "concept", "from_id": "atlassian_jira", "relation": "related_to", "to_space": "concept", "to_id": "cli_authentication", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_ci_yml", "relation": "contains", "to_space": "evidence", "to_id": "deploy_resource_group_example", "properties": {}}
+{"from_space": "evidence", "from_id": "deploy_resource_group_example", "relation": "describes", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {}}
+{"from_space": "evidence", "from_id": "deploy_resource_group_example", "relation": "describes", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "evidence", "from_id": "concurrent_pipeline_problem_description", "relation": "mentions", "to_space": "concept", "to_id": "pipeline_concurrency", "properties": {}}
+{"from_space": "evidence", "from_id": "concurrent_pipeline_problem_description", "relation": "mentions", "to_space": "concept", "to_id": "deployment_job", "properties": {}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "depends_on", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "influences", "to_space": "concept", "to_id": "pipeline_concurrency", "properties": {}}
+{"from_space": "concept", "from_id": "pipeline_concurrency", "relation": "contributes_to", "to_space": "outcome", "to_id": "pipeline_efficiency", "properties": {}}
+{"from_space": "concept", "from_id": "pipeline_concurrency", "relation": "contributes_to", "to_space": "outcome", "to_id": "concurrent_deployment_corruption", "properties": {"note": "Uncontrolled concurrency on deployment jobs increases corruption risk"}}
+{"from_space": "concept", "from_id": "deployment_job", "relation": "contributes_to", "to_space": "outcome", "to_id": "concurrent_deployment_corruption", "properties": {"condition": "when running concurrently to the same environment"}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "constrains", "to_space": "outcome", "to_id": "concurrent_deployment_corruption", "properties": {}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "contributes_to", "to_space": "outcome", "to_id": "deployment_safety", "properties": {}}
+{"from_space": "concept", "from_id": "build_job", "relation": "contributes_to", "to_space": "outcome", "to_id": "pipeline_efficiency", "properties": {"note": "Build jobs can still run concurrently to maximize pipeline efficiency"}}
+{"from_space": "concept", "from_id": "gitlab_cicd_pipeline", "relation": "part_of", "to_space": "concept", "to_id": "deployment_job", "properties": {}}
+{"from_space": "concept", "from_id": "gitlab_cicd_pipeline", "relation": "part_of", "to_space": "concept", "to_id": "build_job", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "lowers", "to_space": "outcome", "to_id": "concurrent_deployment_corruption", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "raises", "to_space": "outcome", "to_id": "deployment_safety", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "affects", "to_space": "concept", "to_id": "pipeline_concurrency", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "affects", "to_space": "concept", "to_id": "deployment_job", "properties": {}}
+{"from_space": "policy", "from_id": "resource_group_access_policy", "relation": "restricts", "to_space": "resource", "to_id": "gitlab_ci_yml", "properties": {"note": "Configuration of resource_group in .gitlab-ci.yml requires appropriate project role"}}
+{"from_space": "concept", "from_id": "process_mode", "relation": "part_of", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode_unordered", "relation": "subclass_of", "to_space": "concept", "to_id": "process_mode", "properties": {"description": "Default mode"}}
+{"from_space": "concept", "from_id": "process_mode_oldest_first", "relation": "subclass_of", "to_space": "concept", "to_id": "process_mode", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode_newest_first", "relation": "subclass_of", "to_space": "concept", "to_id": "process_mode", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode_newest_ready_first", "relation": "subclass_of", "to_space": "concept", "to_id": "process_mode", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode_newest_ready_first", "relation": "related_to", "to_space": "concept", "to_id": "process_mode_newest_first", "properties": {"description": "Faster variant that avoids prioritizing new pipelines over the current one"}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "influences", "to_space": "concept", "to_id": "pipeline", "properties": {"description": "Resource group controls the order and concurrency of pipeline job execution"}}
+{"from_space": "concept", "from_id": "deployment_job", "relation": "subclass_of", "to_space": "concept", "to_id": "ci_job", "properties": {}}
+{"from_space": "concept", "from_id": "ci_job", "relation": "part_of", "to_space": "concept", "to_id": "pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "idempotency", "relation": "related_to", "to_space": "concept", "to_id": "process_mode_newest_first", "properties": {"description": "Jobs must be idempotent when using newest_first mode"}}
+{"from_space": "concept", "from_id": "idempotency", "relation": "related_to", "to_space": "concept", "to_id": "process_mode_newest_ready_first", "properties": {"description": "Jobs must be idempotent when using newest_ready_first mode"}}
+{"from_space": "concept", "from_id": "process_mode_oldest_first", "relation": "contributes_to", "to_space": "outcome", "to_id": "deployment_safety", "properties": {"description": "Safer for continuous deployments by processing oldest pipeline first"}}
+{"from_space": "concept", "from_id": "process_mode_newest_first", "relation": "contributes_to", "to_space": "outcome", "to_id": "deployment_safety", "properties": {"description": "Prevents outdated deployment jobs from running"}}
+{"from_space": "concept", "from_id": "process_mode_unordered", "relation": "degrades", "to_space": "outcome", "to_id": "deployment_safety", "properties": {"description": "Less safe for ordered deployments as execution order is not guaranteed"}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "constrains", "to_space": "outcome", "to_id": "outdated_deployment_risk", "properties": {"description": "Resource group limits concurrent deploys, reducing outdated deployment risk"}}
+{"from_space": "lever", "from_id": "process_mode_selection", "relation": "raises", "to_space": "outcome", "to_id": "deployment_safety", "properties": {"description": "Choosing oldest_first or newest_first raises deployment safety"}}
+{"from_space": "lever", "from_id": "process_mode_selection", "relation": "lowers", "to_space": "outcome", "to_id": "outdated_deployment_risk", "properties": {"description": "Choosing newest_first or newest_ready_first lowers the risk of outdated deployments"}}
+{"from_space": "lever", "from_id": "process_mode_selection", "relation": "affects", "to_space": "concept", "to_id": "process_mode", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_ci_yml", "relation": "contains", "to_space": "evidence", "to_id": "process_mode_example", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_table", "relation": "describes", "to_space": "concept", "to_id": "process_mode", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_table", "relation": "describes", "to_space": "concept", "to_id": "process_mode_unordered", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_table", "relation": "describes", "to_space": "concept", "to_id": "process_mode_oldest_first", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_table", "relation": "describes", "to_space": "concept", "to_id": "process_mode_newest_first", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_table", "relation": "describes", "to_space": "concept", "to_id": "process_mode_newest_ready_first", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_example", "relation": "describes", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_example", "relation": "mentions", "to_space": "concept", "to_id": "deployment_job", "properties": {}}
+{"from_space": "concept", "from_id": "continuous_deployment", "relation": "depends_on", "to_space": "concept", "to_id": "process_mode", "properties": {"description": "Continuous deployment safety depends on selecting the right process mode"}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "related_to", "to_space": "concept", "to_id": "continuous_deployment", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode_unordered", "relation": "related_to", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "Unordered is one of the valid process modes for resource_group"}}
+{"from_space": "concept", "from_id": "process_mode_oldest_first", "relation": "related_to", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "oldest_first is one of the valid process modes for resource_group"}}
+{"from_space": "concept", "from_id": "process_mode_newest_first", "relation": "related_to", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "newest_first is one of the valid process modes for resource_group"}}
+{"from_space": "concept", "from_id": "trigger_keyword", "relation": "related_to", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "trigger and resource_group keywords can co-exist in the same job definition"}}
+{"from_space": "concept", "from_id": "trigger_strategy_keyword", "relation": "depends_on", "to_space": "concept", "to_id": "trigger_keyword", "properties": {"description": "trigger:strategy is a sub-key of the trigger keyword"}}
+{"from_space": "concept", "from_id": "trigger_strategy_keyword", "relation": "influences", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "trigger:strategy ensures the resource_group lock is held until downstream pipeline finishes"}}
+{"from_space": "concept", "from_id": "pipeline_level_concurrency_control", "relation": "part_of", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "Pipeline-level concurrency control is achieved via resource_group keyword"}}
+{"from_space": "concept", "from_id": "parent_pipeline", "relation": "related_to", "to_space": "concept", "to_id": "child_pipeline", "properties": {"description": "Parent pipeline triggers the child deployment pipeline"}}
+{"from_space": "concept", "from_id": "child_pipeline", "relation": "subclass_of", "to_space": "concept", "to_id": "deployment_pipeline", "properties": {"description": "The child pipeline is a deployment pipeline"}}
+{"from_space": "concept", "from_id": "resource_group_keyword", "relation": "contributes_to", "to_space": "outcome", "to_id": "controlled_deployment_order", "properties": {"description": "resource_group ensures controlled sequential deployment order"}}
+{"from_space": "concept", "from_id": "concurrent_execution", "relation": "contributes_to", "to_space": "outcome", "to_id": "concurrent_deployment_risk", "properties": {"description": "Uncontrolled concurrent execution leads to deployment risk"}}
+{"from_space": "concept", "from_id": "resource_group_keyword", "relation": "constrains", "to_space": "outcome", "to_id": "concurrent_deployment_risk", "properties": {"description": "resource_group constrains concurrent deployment risk by serializing pipeline execution"}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "lowers", "to_space": "outcome", "to_id": "concurrent_deployment_risk", "properties": {"description": "Configuring resource_group lowers the risk of concurrent deployments"}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "raises", "to_space": "outcome", "to_id": "controlled_deployment_order", "properties": {"description": "Configuring resource_group raises the likelihood of controlled, ordered deployments"}}
+{"from_space": "lever", "from_id": "resource_group_lever", "relation": "affects", "to_space": "concept", "to_id": "concurrent_execution", "properties": {"description": "resource_group configuration directly affects concurrent execution behavior"}}
+{"from_space": "evidence", "from_id": "pipeline_concurrency_example", "relation": "describes", "to_space": "concept", "to_id": "pipeline_level_concurrency_control", "properties": {"description": "The example illustrates pipeline-level concurrency control"}}
+{"from_space": "evidence", "from_id": "pipeline_concurrency_example", "relation": "describes", "to_space": "concept", "to_id": "resource_group_keyword", "properties": {"description": "The example demonstrates usage of resource_group keyword"}}
+{"from_space": "evidence", "from_id": "process_mode_explanation", "relation": "describes", "to_space": "concept", "to_id": "process_mode_unordered", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_explanation", "relation": "describes", "to_space": "concept", "to_id": "process_mode_oldest_first", "properties": {}}
+{"from_space": "evidence", "from_id": "process_mode_explanation", "relation": "describes", "to_space": "concept", "to_id": "process_mode_newest_first", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_ci", "relation": "contains", "to_space": "evidence", "to_id": "process_mode_explanation", "properties": {"description": "GitLab CI documentation contains the process mode explanation"}}
+{"from_space": "resource", "from_id": "gitlab_ci", "relation": "contains", "to_space": "evidence", "to_id": "pipeline_concurrency_example", "properties": {"description": "GitLab CI documentation contains the pipeline concurrency control example"}}
+{"from_space": "evidence", "from_id": "good_config_example", "relation": "describes", "to_space": "lever", "to_id": "resource_group_in_parent_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "bad_config_example", "relation": "mentions", "to_space": "concept", "to_id": "pipeline_deadlock", "properties": {}}
+{"from_space": "evidence", "from_id": "bad_config_example", "relation": "mentions", "to_space": "concept", "to_id": "oldest_first_process_mode", "properties": {}}
+{"from_space": "evidence", "from_id": "bad_config_example", "relation": "mentions", "to_space": "concept", "to_id": "production_resource_group", "properties": {}}
+{"from_space": "evidence", "from_id": "good_config_example", "relation": "mentions", "to_space": "concept", "to_id": "production_resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "oldest_first_process_mode", "relation": "related_to", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "production_resource_group", "relation": "subclass_of", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "child_pipeline", "relation": "depends_on", "to_space": "concept", "to_id": "parent_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "strategy_mirror", "relation": "influences", "to_space": "concept", "to_id": "pipeline_deadlock", "properties": {"description": "strategy:mirror causes parent test job to block waiting for child, enabling deadlock condition"}}
+{"from_space": "concept", "from_id": "oldest_first_process_mode", "relation": "influences", "to_space": "concept", "to_id": "pipeline_deadlock", "properties": {"description": "oldest_first prioritizes parent deploy job over newer child pipeline, causing mutual wait"}}
+{"from_space": "concept", "from_id": "pipeline_deadlock", "relation": "contributes_to", "to_space": "outcome", "to_id": "deadlock_risk", "properties": {}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "contributes_to", "to_space": "outcome", "to_id": "pipeline_serialization", "properties": {}}
+{"from_space": "concept", "from_id": "waiting_for_resource_state", "relation": "contributes_to", "to_space": "outcome", "to_id": "deadlock_risk", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_in_parent_pipeline", "relation": "lowers", "to_space": "outcome", "to_id": "deadlock_risk", "properties": {"description": "Specifying resource_group on the trigger job in the parent pipeline prevents child pipeline from independently competing for the resource"}}
+{"from_space": "lever", "from_id": "resource_group_in_parent_pipeline", "relation": "affects", "to_space": "concept", "to_id": "pipeline_deadlock", "properties": {}}
+{"from_space": "lever", "from_id": "resource_group_in_parent_pipeline", "relation": "raises", "to_space": "outcome", "to_id": "pipeline_serialization", "properties": {}}
+{"from_space": "concept", "from_id": "ci_pipeline_configuration", "relation": "part_of", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode", "relation": "related_to", "to_space": "concept", "to_id": "oldest_first_mode", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode", "relation": "related_to", "to_space": "concept", "to_id": "newest_first_mode", "properties": {}}
+{"from_space": "concept", "from_id": "process_mode", "relation": "influences", "to_space": "concept", "to_id": "upcoming_jobs", "properties": {"description": "Process mode determines the order in which upcoming jobs are assigned resources"}}
+{"from_space": "concept", "from_id": "pipeline", "relation": "contributes_to", "to_space": "outcome", "to_id": "race_condition_risk", "properties": {"condition": "multiple child pipelines or simultaneous pipelines"}}
+{"from_space": "concept", "from_id": "race_condition", "relation": "contributes_to", "to_space": "outcome", "to_id": "race_condition_risk", "properties": {}}
+{"from_space": "concept", "from_id": "race_condition", "relation": "contributes_to", "to_space": "outcome", "to_id": "resource_group_malfunction_risk", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_resource_group", "relation": "contains", "to_space": "evidence", "to_id": "gitlab_issue_436988", "properties": {}}
+{"from_space": "evidence", "from_id": "gitlab_issue_436988", "relation": "describes", "to_space": "concept", "to_id": "race_condition", "properties": {}}
+{"from_space": "lever", "from_id": "cancel_old_pipeline_lever", "relation": "lowers", "to_space": "outcome", "to_id": "resource_group_malfunction_risk", "properties": {"description": "Cancelling old pipelines unblocks resource group queue"}}
+{"from_space": "lever", "from_id": "start_new_pipeline_lever", "relation": "lowers", "to_space": "outcome", "to_id": "race_condition_risk", "properties": {"description": "Starting a new pipeline is a temporary workaround for race conditions"}}
+{"from_space": "lever", "from_id": "cancel_old_pipeline_lever", "relation": "affects", "to_space": "concept", "to_id": "upcoming_jobs", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_rest_api_resource_groups", "relation": "derived_from", "to_space": "evidence", "to_id": "gitlab_issue_436988", "properties": {}}
+{"from_space": "concept", "from_id": "oldest_first_mode", "relation": "influences", "to_space": "concept", "to_id": "pipeline", "properties": {"description": "Oldest first mode determines which pipeline's job gets the resource next"}}
+{"from_space": "concept", "from_id": "upcoming_jobs", "relation": "contributes_to", "to_space": "outcome", "to_id": "resource_group_malfunction_risk", "properties": {"description": "Stale or stuck upcoming jobs can indicate resource group malfunction"}}
+{"from_space": "concept", "from_id": "pipeline_level_concurrency_control", "relation": "depends_on", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "concept", "from_id": "trigger_job", "relation": "part_of", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "ci_job", "relation": "part_of", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "concept", "from_id": "trigger_job", "relation": "related_to", "to_space": "concept", "to_id": "pipeline_level_concurrency_control", "properties": {"note": "Trigger jobs are not accessible from UI in pipeline-level concurrency control"}}
+{"from_space": "concept", "from_id": "resource_group", "relation": "constrains", "to_space": "outcome", "to_id": "stuck_job_risk", "properties": {"note": "Resource group concurrency control can cause jobs to become stuck"}}
+{"from_space": "evidence", "from_id": "graphql_job_query_example", "relation": "describes", "to_space": "concept", "to_id": "ci_job", "properties": {}}
+{"from_space": "evidence", "from_id": "graphql_pipeline_query_example", "relation": "describes", "to_space": "concept", "to_id": "ci_pipeline", "properties": {}}
+{"from_space": "evidence", "from_id": "graphql_job_query_example", "relation": "mentions", "to_space": "concept", "to_id": "resource_group", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_graphql_api", "relation": "contains", "to_space": "evidence", "to_id": "graphql_job_query_example", "properties": {}}
+{"from_space": "resource", "from_id": "gitlab_graphql_api", "relation": "contains", "to_space": "evidence", "to_id": "graphql_pipeline_query_example", "properties": {}}
+{"from_space": "concept", "from_id": "pipeline_level_concurrency_control", "relation": "predicts", "to_space": "outcome", "to_id": "stuck_job_risk", "properties": {}}

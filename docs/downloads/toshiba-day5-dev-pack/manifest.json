@@ -1,0 +1,10 @@
+{
+  "name": "toshiba-day5-dev-pack",
+  "title": "도시바 POS 개발팀 온톨로지 팩",
+  "description": "Atlassian acli · GitLab CI · Jira/Confluence · ELERA 플랫폼 · TCx Sky OS · TCx 단말 스펙. 개발팀이 만들고 배포하는 관점.",
+  "version": "1.0",
+  "created": "2026-05-21",
+  "grammar": "MetaOntology 9-Space",
+  "node_count": 311,
+  "edge_count": 364
+}

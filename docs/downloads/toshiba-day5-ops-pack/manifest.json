@@ -1,0 +1,10 @@
+{
+  "name": "toshiba-day5-ops-pack",
+  "title": "도시바 POS 운영팀 온톨로지 팩",
+  "description": "도시바 POS 제품/운영 · 매장 · 단말 · 인시던트 · 티켓 · 운영자 · 모니터링 KPI. 운영팀이 관제하는 관점.",
+  "version": "1.0",
+  "created": "2026-05-21",
+  "grammar": "MetaOntology 9-Space",
+  "node_count": 321,
+  "edge_count": 383
+}
