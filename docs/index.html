@@ -705,7 +705,7 @@ edge: logged_as · describes · degrades ...</pre>
       <div class="track-h">① 팩 설치 (자연어 한 줄 · Copilot CLI / Claude Code)</div>
       <pre style="white-space: pre-wrap;">"방금 받은 toshiba-day5-dev-pack.zip을 내 OpenCrab에 설치해줘."</pre>
     </div>
-    <p style="font-size: 13px; color: var(--muted);">팩 설치 = 이미 만들어진 노드·엣지를 import하는 것이라 <strong>LLM 키 불필요</strong> (extract가 아님). 불러오면 즉시 질의 가능합니다.</p>
+    <p style="font-size: 13px; color: var(--muted);">팩은 <strong>OpenCrab Pack v1 형식</strong>(nodes.jsonl + edges.jsonl)이라 그대로 설치됩니다. 로컬은 CLI가 읽어 add_node·add_edge로 적재, 호스티드(opencrab.sh)는 Ingest 메뉴에 zip 업로드. <strong>이미 만들어진 노드·엣지 import라 LLM 키 불필요</strong>(extract 아님) → 불러오면 즉시 질의 가능.</p>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800; color: var(--accent-dark); letter-spacing: 0.06em; margin: 14px 0 6px;">② 질의 (자연어)</div>
     <div class="dual-track">
       <div class="track instr">
@@ -758,12 +758,17 @@ edge: logged_as · describes · degrades ...</pre>
     </div>
 
     <h3><span class="step-num">5</span>그래프화 (선택 심화)</h3>
-    <p>여유가 있는 분은 본인 온톨로지도 d3 그래프로 띄워봅니다. ① 코드는 OpenCrab <code class="inline">apps/web</code>에 이미 있고, ② 본인 데이터로 바꿔 끼우면 됩니다.</p>
+    <p>강사가 만든 두 팩의 그래프는 <strong>설치 없이 바로</strong> 볼 수 있습니다 (d3 · 휠 확대 · 드래그):</p>
+    <ul>
+      <li><a href="graph-dev.html" target="_blank"><strong>개발팩 그래프 (517노드)</strong></a> — acli · GitLab CI · Jira · ELERA</li>
+      <li><a href="graph-ops.html" target="_blank"><strong>운영팩 그래프 (509노드)</strong></a> — 매장 · 인시던트 · SLA · 손실방지</li>
+    </ul>
+    <p>본인 온톨로지를 진짜 OpenCrab 대시보드로 띄우려면 <code class="inline">apps/web</code>(d3) + <code class="inline">apps/api</code>(:8000)를 로컬에서 실행합니다.</p>
     <div class="track instr">
       <div class="track-h">자연어 요청</div>
-      <pre style="white-space: pre-wrap;">"OpenCrab apps/web 그래프 뷰어를 내 온톨로지 데이터에 연결해서 localhost에 띄워줘."</pre>
+      <pre style="white-space: pre-wrap;">"OpenCrab apps/api(:8000)와 apps/web 대시보드를 내 온톨로지 스토어에 연결해서 localhost에 띄워줘."</pre>
     </div>
-    <p style="font-size: 13px; color: var(--muted);">그래프 대시보드 제작은 부담될 수 있어 <strong>선택</strong>으로 둡니다. 핵심은 ②~④(설치·질의·아이디에이션)이며, 그래프는 마지막 보너스입니다.</p>
+    <p style="font-size: 13px; color: var(--muted);">대시보드 셋업이 부담되면 위 미리보기 링크로 충분합니다. 핵심은 ②~④(설치·질의·아이디에이션)이며, 그래프는 보너스입니다.</p>
   </div>
 </section>
 
@@ -857,23 +862,38 @@ edge: logged_as · describes · degrades ...</pre>
     <ul class="dl">
       <li>
         <code>toshiba-day5-dev-pack.zip</code>
-        <span class="dl-desc">개발팀 온톨로지 팩 · acli · GitLab CI · Jira/Confluence · ELERA · TCx Sky (nodes.jsonl + edges.jsonl + manifest + sample_queries)</span>
+        <span class="dl-desc"><strong>개발팀 온톨로지 팩 · 517노드 · 593엣지</strong> · acli · GitLab CI · Jira/Confluence · ELERA · TCx Sky (OpenCrab Pack v1: nodes.jsonl + edges.jsonl + manifest + sample_queries)</span>
         <a class="dl-btn" href="downloads/toshiba-day5-dev-pack.zip" download>개발팩</a>
       </li>
       <li>
         <code>toshiba-day5-ops-pack.zip</code>
-        <span class="dl-desc">운영팀 온톨로지 팩 · 도시바 POS 제품/운영 · 매장 · 단말 · 인시던트 · 티켓 · KPI</span>
+        <span class="dl-desc"><strong>운영팀 온톨로지 팩 · 509노드 · 729엣지</strong> · 매장 · 단말 · 인시던트 · 티켓 · SLA · 손실방지 · KPI</span>
         <a class="dl-btn" href="downloads/toshiba-day5-ops-pack.zip" download>운영팩</a>
+      </li>
+      <li>
+        <code>graph-dev.html</code>
+        <span class="dl-desc"><strong>개발팩 그래프 바로 보기</strong> (d3 · 휠 확대 · 드래그 · 점 호버) — 설치 없이 미리보기</span>
+        <a class="dl-btn" href="graph-dev.html" target="_blank">그래프</a>
+      </li>
+      <li>
+        <code>graph-ops.html</code>
+        <span class="dl-desc"><strong>운영팩 그래프 바로 보기</strong> (d3) — 설치 없이 미리보기</span>
+        <a class="dl-btn" href="graph-ops.html" target="_blank">그래프</a>
+      </li>
+      <li>
+        <code>toshiba-day5-dev-source.zip</code>
+        <span class="dl-desc">개발팩 <strong>원본 문서 178개</strong> (extract에 들어간 raw 자료) · 직접 추출 재현·확장용</span>
+        <a class="dl-btn" href="downloads/toshiba-day5-dev-source.zip" download>원본</a>
+      </li>
+      <li>
+        <code>toshiba-day5-ops-source.zip</code>
+        <span class="dl-desc">운영팩 <strong>원본 문서 119개</strong> (도시바 POS·ITSM·runbook) · 직접 추출 재현·확장용</span>
+        <a class="dl-btn" href="downloads/toshiba-day5-ops-source.zip" download>원본</a>
       </li>
       <li>
         <code>OpenCrab</code>
         <span class="dl-desc">온톨로지 실습 도구 원본 · 로컬 SQLite + Chroma · 외부 DB 불필요</span>
         <a class="dl-btn" href="https://github.com/AlexAI-MCP/OpenCrab" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <code>apps/web 그래프 뷰어</code>
-        <span class="dl-desc">d3 기반 온톨로지 그래프 대시보드 (선택 심화 · 본인 데이터 연결)</span>
-        <a class="dl-btn" href="https://github.com/AlexAI-MCP/OpenCrab/tree/main/apps/web" target="_blank">코드</a>
       </li>
     </ul>
 
