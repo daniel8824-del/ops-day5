@@ -249,7 +249,82 @@
     </div>
 
     <h4 style="margin-top: 22px; font-size: 16px;">스키마 vs 온톨로지 | "떡볶이"로 보면</h4>
-    <div class="dual-track">
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg">
+        <!-- LEFT: 스키마 (단순 카드) -->
+        <rect x="20" y="20" width="280" height="340" rx="18" fill="#F9FAFB" stroke="#D1D6DB" stroke-width="2"/>
+        <text x="160" y="50" text-anchor="middle" font-size="13" font-weight="800" fill="#8B95A1">📋 스키마 (납작한 카드)</text>
+        <!-- card content -->
+        <rect x="60" y="80" width="200" height="240" rx="12" fill="white" stroke="#D1D6DB"/>
+        <text x="160" y="115" text-anchor="middle" font-size="20" font-weight="800" fill="#191F28">떡볶이</text>
+        <line x1="80" y1="135" x2="240" y2="135" stroke="#F2F4F6" stroke-width="1"/>
+        <text x="80" y="160" font-size="12" font-weight="600" fill="#8B95A1">이름</text>
+        <text x="240" y="160" font-size="12" font-weight="700" fill="#191F28" text-anchor="end">떡볶이</text>
+        <text x="80" y="185" font-size="12" font-weight="600" fill="#8B95A1">카테고리</text>
+        <text x="240" y="185" font-size="12" font-weight="700" fill="#191F28" text-anchor="end">분식</text>
+        <text x="80" y="210" font-size="12" font-weight="600" fill="#8B95A1">가격</text>
+        <text x="240" y="210" font-size="12" font-weight="700" fill="#191F28" text-anchor="end">5,000원</text>
+        <text x="80" y="235" font-size="12" font-weight="600" fill="#8B95A1">맵기</text>
+        <text x="240" y="235" font-size="12" font-weight="700" fill="#191F28" text-anchor="end">중간</text>
+        <text x="80" y="260" font-size="12" font-weight="600" fill="#8B95A1">분량</text>
+        <text x="240" y="260" font-size="12" font-weight="700" fill="#191F28" text-anchor="end">1인분</text>
+        <text x="160" y="305" text-anchor="middle" font-size="11" font-weight="700" fill="#F04452">⚠️ 다른 것과 연결 없음</text>
+
+        <!-- RIGHT: 온톨로지 (관계 그래프) -->
+        <rect x="320" y="20" width="380" height="340" rx="18" fill="#F7FAFF" stroke="#3182F6" stroke-width="2"/>
+        <text x="510" y="50" text-anchor="middle" font-size="13" font-weight="800" fill="#3182F6">🕸 온톨로지 (관계망)</text>
+
+        <!-- edges (drawn first so nodes overlap) -->
+        <line x1="510" y1="200" x2="400" y2="120" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+        <line x1="510" y1="200" x2="620" y2="120" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+        <line x1="510" y1="200" x2="370" y2="220" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+        <line x1="510" y1="200" x2="650" y2="220" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+        <line x1="510" y1="200" x2="420" y2="320" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+        <line x1="510" y1="200" x2="600" y2="320" stroke="#3182F6" stroke-width="2" opacity="0.5"/>
+
+        <!-- edge labels -->
+        <text x="445" y="160" font-size="10" font-weight="700" fill="#3182F6">재료</text>
+        <text x="555" y="160" font-size="10" font-weight="700" fill="#3182F6">매운맛</text>
+        <text x="415" y="215" font-size="10" font-weight="700" fill="#3182F6">옵션</text>
+        <text x="585" y="215" font-size="10" font-weight="700" fill="#3182F6">판매</text>
+        <text x="445" y="275" font-size="10" font-weight="700" fill="#3182F6">함께먹기</text>
+        <text x="555" y="275" font-size="10" font-weight="700" fill="#3182F6">대표지역</text>
+
+        <!-- center node -->
+        <circle cx="510" cy="200" r="40" fill="#F04452"/>
+        <text x="510" y="198" text-anchor="middle" font-size="13" font-weight="800" fill="white">떡볶이</text>
+        <text x="510" y="214" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">분식 ★★★</text>
+
+        <!-- 재료 -->
+        <circle cx="400" cy="120" r="28" fill="#FFC940"/>
+        <text x="400" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#191F28">떡</text>
+        <text x="400" y="132" text-anchor="middle" font-size="9" font-weight="600" fill="#191F28" opacity="0.7">필수</text>
+
+        <!-- 고추장 -->
+        <circle cx="620" cy="120" r="28" fill="#FF9500"/>
+        <text x="620" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="white">고추장</text>
+        <text x="620" y="132" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">★★★</text>
+
+        <!-- 라면사리 -->
+        <circle cx="370" cy="220" r="28" fill="#845EE6"/>
+        <text x="370" y="218" text-anchor="middle" font-size="11" font-weight="700" fill="white">라면사리</text>
+        <text x="370" y="232" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">인기</text>
+
+        <!-- 분식집 -->
+        <circle cx="650" cy="220" r="28" fill="#00C896"/>
+        <text x="650" y="218" text-anchor="middle" font-size="11" font-weight="700" fill="white">분식집</text>
+        <text x="650" y="232" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">동네 5곳</text>
+
+        <!-- 순대 -->
+        <circle cx="420" cy="320" r="26" fill="#3182F6"/>
+        <text x="420" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="white">순대</text>
+        <text x="420" y="332" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">단짝</text>
+
+        <!-- 신당동 -->
+        <circle cx="600" cy="320" r="26" fill="#FF6B9D"/>
+        <text x="600" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="white">신당동</text>
+        <text x="600" y="332" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">원조</text>
+      </svg></figure>    <div class="dual-track">
       <div class="track stu">
         <div class="track-h">📋 스키마 (납작한 카드)</div>
         <pre style="white-space: pre-wrap;">떡볶이 · 분식 · 5,000원 · 맵기 중간
@@ -316,7 +391,49 @@
     <p style="font-size: 13px; color: var(--muted);">SQL = 엑셀 표 다루는 전통 방식 / Neo4j = 그래프 전문. <strong>오늘 실습은 Neo4j 없이 로컬 SQLite로 충분</strong> (대규모일 때만 선택).</p>
 
     <h4 style="margin-top: 18px; font-size: 16px;">📐 벡터 임베딩 | "의미 좌표"</h4>
-    <div class="dual-track">
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- grid -->
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F2F4F6" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="600" height="320" fill="url(#grid)"/>
+        <!-- axes -->
+        <line x1="50" y1="280" x2="580" y2="280" stroke="#D1D6DB" stroke-width="2"/>
+        <line x1="50" y1="20" x2="50" y2="280" stroke="#D1D6DB" stroke-width="2"/>
+        <text x="585" y="285" font-size="11" fill="#8B95A1" font-weight="700">의미 X →</text>
+        <text x="20" y="20" font-size="11" fill="#8B95A1" font-weight="700">↑ 의미 Y</text>
+
+        <!-- royalty cluster (top-left) -->
+        <ellipse cx="180" cy="100" rx="100" ry="50" fill="#FFF1E0" opacity="0.5"/>
+        <text x="180" y="60" text-anchor="middle" font-size="12" fill="#FF9500" font-weight="800">👑 왕족 군집</text>
+        <circle cx="140" cy="100" r="9" fill="#FF9500"/>
+        <text x="140" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">왕</text>
+        <circle cx="200" cy="90" r="9" fill="#FF9500"/>
+        <text x="200" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">여왕</text>
+        <circle cx="170" cy="130" r="9" fill="#FF9500"/>
+        <text x="170" y="155" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">왕자</text>
+        <circle cx="230" cy="120" r="9" fill="#FF9500"/>
+        <text x="240" y="130" text-anchor="start" font-size="12" font-weight="700" fill="#191F28">공주</text>
+
+        <!-- vegetable cluster (bottom-right) -->
+        <ellipse cx="460" cy="220" rx="100" ry="50" fill="#E0F8F0" opacity="0.5"/>
+        <text x="460" y="180" text-anchor="middle" font-size="12" fill="#00C896" font-weight="800">🥕 채소 군집</text>
+        <circle cx="430" cy="220" r="9" fill="#00C896"/>
+        <text x="430" y="245" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">감자</text>
+        <circle cx="490" cy="210" r="9" fill="#00C896"/>
+        <text x="490" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">당근</text>
+        <circle cx="470" cy="250" r="9" fill="#00C896"/>
+        <text x="470" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">양파</text>
+        <circle cx="510" cy="235" r="9" fill="#00C896"/>
+        <text x="525" y="240" text-anchor="start" font-size="12" font-weight="700" fill="#191F28">토마토</text>
+
+        <!-- distance arrow between clusters -->
+        <line x1="240" y1="115" x2="430" y2="215" stroke="#F04452" stroke-width="2" stroke-dasharray="6 4"/>
+        <text x="335" y="170" text-anchor="middle" font-size="11" fill="#F04452" font-weight="800">의미 멀음 = 거리 멈</text>
+      </svg></figure>    <div class="dual-track">
       <div class="track instr">
         <div class="track-h">🗺 도시 지도</div>
         <pre style="white-space: pre-wrap;">단어를 좌표 위에 흩어놓기.
@@ -340,7 +457,82 @@
     <p style="font-size: 13px; color: var(--muted);">키워드 검색은 "왕" 글자가 있어야 찾지만, 임베딩은 <strong>"통치자가 지시했다"</strong>도 좌표가 가까워 같이 찾아냅니다.</p>
 
     <h4 style="margin-top: 18px; font-size: 16px;">🔍 RAG · 그래프RAG · BM25 | "오픈북 시험"</h4>
-    <p style="font-size: 14px;">AI가 머리에서만 짜내면 거짓말(할루시네이션). 그래서 <strong>"먼저 자료 찾고 → 보고 답한다"</strong>가 RAG. 답 모르면 찍는 학생(일반 AI) vs 책 펴서 답하는 학생(RAG). 책 = 온톨로지 팩.</p>
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+        <!-- TOP: 일반 AI -->
+        <text x="20" y="30" font-size="13" font-weight="800" fill="#F04452">😱 일반 AI (기억에서 짜내기)</text>
+        <!-- step 1: question -->
+        <rect x="20" y="50" width="120" height="60" rx="12" fill="white" stroke="#D1D6DB" stroke-width="2"/>
+        <text x="80" y="78" text-anchor="middle" font-size="22">❓</text>
+        <text x="80" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#191F28">"휴가 규정?"</text>
+        <!-- arrow -->
+        <line x1="145" y1="80" x2="195" y2="80" stroke="#F04452" stroke-width="2" marker-end="url(#redArr)"/>
+        <defs>
+          <marker id="redArr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M 0 0 L 10 3 L 0 6 z" fill="#F04452"/>
+          </marker>
+          <marker id="blueArr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M 0 0 L 10 3 L 0 6 z" fill="#3182F6"/>
+          </marker>
+          <marker id="greenArr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M 0 0 L 10 3 L 0 6 z" fill="#00C896"/>
+          </marker>
+        </defs>
+        <!-- step 2: AI brain only -->
+        <rect x="200" y="50" width="120" height="60" rx="12" fill="#FFF5F5" stroke="#F04452" stroke-width="2"/>
+        <text x="260" y="78" text-anchor="middle" font-size="22">🧠</text>
+        <text x="260" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#F04452">머리에서만</text>
+        <!-- arrow -->
+        <line x1="325" y1="80" x2="375" y2="80" stroke="#F04452" stroke-width="2" marker-end="url(#redArr)"/>
+        <!-- step 3: lie answer -->
+        <rect x="380" y="50" width="320" height="60" rx="12" fill="#FDEAEB" stroke="#F04452" stroke-width="2"/>
+        <text x="395" y="78" font-size="22">💬</text>
+        <text x="425" y="78" font-size="12" font-weight="700" fill="#F04452">"휴가는 연 15일이고 사용 기준은..."</text>
+        <text x="425" y="98" font-size="10" font-weight="600" fill="#8B95A1">→ 그럴듯하지만 출처 없음 = 할루시네이션 가능</text>
+
+        <!-- DIVIDER -->
+        <line x1="20" y1="155" x2="700" y2="155" stroke="#F2F4F6" stroke-width="1" stroke-dasharray="4 4"/>
+
+        <!-- BOTTOM: RAG -->
+        <text x="20" y="185" font-size="13" font-weight="800" fill="#00C896">✅ RAG (자료 찾고 답하기)</text>
+        <!-- step 1: question -->
+        <rect x="20" y="205" width="100" height="60" rx="12" fill="white" stroke="#D1D6DB" stroke-width="2"/>
+        <text x="70" y="233" text-anchor="middle" font-size="22">❓</text>
+        <text x="70" y="255" text-anchor="middle" font-size="10" font-weight="700" fill="#191F28">"휴가 규정?"</text>
+        <!-- arrow -->
+        <line x1="125" y1="235" x2="165" y2="235" stroke="#3182F6" stroke-width="2" marker-end="url(#blueArr)"/>
+        <!-- step 2: search library -->
+        <rect x="170" y="205" width="120" height="60" rx="12" fill="#E8F3FF" stroke="#3182F6" stroke-width="2"/>
+        <text x="195" y="233" font-size="22">🔍</text>
+        <text x="225" y="232" font-size="11" font-weight="800" fill="#3182F6">자료 검색</text>
+        <text x="225" y="252" font-size="10" font-weight="600" fill="#4E5968">팩에서 찾기</text>
+        <!-- pack label (above the books, outside the row) -->
+        <text x="230" y="283" text-anchor="middle" font-size="10" font-weight="800" fill="#3182F6">📚 회사 규정 팩</text>
+        <!-- arrow down to library -->
+        <line x1="230" y1="290" x2="230" y2="305" stroke="#3182F6" stroke-width="2" marker-end="url(#blueArr)"/>
+        <!-- library/pack box with books only -->
+        <rect x="170" y="310" width="120" height="44" rx="10" fill="white" stroke="#3182F6" stroke-width="2"/>
+        <rect x="184" y="318" width="20" height="28" fill="#3182F6" rx="2"/>
+        <rect x="209" y="318" width="20" height="28" fill="#FFC940" rx="2"/>
+        <rect x="234" y="318" width="20" height="28" fill="#00C896" rx="2"/>
+        <rect x="259" y="318" width="20" height="28" fill="#F04452" rx="2"/>
+
+        <!-- arrow to AI -->
+        <line x1="295" y1="235" x2="335" y2="235" stroke="#3182F6" stroke-width="2" marker-end="url(#blueArr)"/>
+        <!-- step 3: AI with reference -->
+        <rect x="340" y="205" width="120" height="60" rx="12" fill="#F7FAFF" stroke="#3182F6" stroke-width="2"/>
+        <text x="365" y="233" font-size="22">🤖</text>
+        <text x="400" y="232" font-size="11" font-weight="800" fill="#3182F6">AI + 자료</text>
+        <text x="400" y="252" font-size="10" font-weight="600" fill="#4E5968">근거 보고 답</text>
+        <!-- arrow -->
+        <line x1="465" y1="235" x2="505" y2="235" stroke="#00C896" stroke-width="2" marker-end="url(#greenArr)"/>
+        <!-- step 4: cited answer -->
+        <rect x="510" y="205" width="190" height="60" rx="12" fill="#E0F8F0" stroke="#00C896" stroke-width="2"/>
+        <text x="525" y="232" font-size="22">📝</text>
+        <text x="555" y="228" font-size="11" font-weight="800" fill="#00C896">"연 15일, 출처: 사규 3장 2조"</text>
+        <text x="555" y="245" font-size="10" font-weight="600" fill="#4E5968">→ 근거 명시</text>
+        <text x="555" y="258" font-size="10" font-weight="600" fill="#4E5968">→ 검증 가능 ✓</text>
+      </svg></figure>    <p style="font-size: 14px;">AI가 머리에서만 짜내면 거짓말(할루시네이션). 그래서 <strong>"먼저 자료 찾고 → 보고 답한다"</strong>가 RAG. 답 모르면 찍는 학생(일반 AI) vs 책 펴서 답하는 학생(RAG). 책 = 온톨로지 팩.</p>
     <table>
       <thead><tr><th>방식</th><th>찾는 것</th><th>비유</th></tr></thead>
       <tbody>
@@ -358,7 +550,41 @@
     </div>
 
     <h3><span class="step-num">3</span>빅데이터 vs 온톨로지 | 반대 방향</h3>
-    <p>"AI 시대엔 빅데이터가 왕"이 통념이지만, <strong>LLM 자체가 이미 빅데이터 덩어리</strong>(인터넷 글 다 학습). LLM의 한계를 넘으려면 <strong>"빅데이터의 반대 = 아주 사적인 데이터"</strong>가 필요합니다.</p>
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+        <!-- left side: 빅데이터 -->
+        <rect x="20" y="40" width="220" height="200" rx="16" fill="#FDEAEB" stroke="#F04452" stroke-width="2"/>
+        <text x="130" y="70" text-anchor="middle" font-size="14" font-weight="800" fill="#F04452">⬅️ 빅데이터</text>
+        <text x="130" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">구시대 (테크자이언트 독점)</text>
+        <!-- big chart bars -->
+        <rect x="50" y="160" width="20" height="60" fill="#F04452"/>
+        <rect x="80" y="140" width="20" height="80" fill="#F04452"/>
+        <rect x="110" y="120" width="20" height="100" fill="#F04452"/>
+        <rect x="140" y="150" width="20" height="70" fill="#F04452"/>
+        <rect x="170" y="130" width="20" height="90" fill="#F04452"/>
+        <rect x="200" y="170" width="20" height="50" fill="#F04452"/>
+        <text x="130" y="230" text-anchor="middle" font-size="10" font-weight="700" fill="#8B95A1">엄청 큼·일반적·평균화</text>
+
+        <!-- right side: 온톨로지 -->
+        <rect x="360" y="40" width="220" height="200" rx="16" fill="#E0F8F0" stroke="#00C896" stroke-width="2"/>
+        <text x="470" y="70" text-anchor="middle" font-size="14" font-weight="800" fill="#00C896">➡️ 온톨로지</text>
+        <text x="470" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">새 시대 (누구나)</text>
+        <!-- mini graph nodes -->
+        <circle cx="470" cy="160" r="14" fill="#00C896"/>
+        <circle cx="410" cy="150" r="10" fill="#00C896"/>
+        <circle cx="530" cy="150" r="10" fill="#00C896"/>
+        <circle cx="430" cy="200" r="10" fill="#00C896"/>
+        <circle cx="510" cy="200" r="10" fill="#00C896"/>
+        <line x1="470" y1="160" x2="410" y2="150" stroke="#00C896" stroke-width="2"/>
+        <line x1="470" y1="160" x2="530" y2="150" stroke="#00C896" stroke-width="2"/>
+        <line x1="470" y1="160" x2="430" y2="200" stroke="#00C896" stroke-width="2"/>
+        <line x1="470" y1="160" x2="510" y2="200" stroke="#00C896" stroke-width="2"/>
+        <text x="470" y="240" text-anchor="middle" font-size="10" font-weight="700" fill="#8B95A1">작음·특정·맥락화</text>
+
+        <!-- middle vs sign -->
+        <circle cx="300" cy="140" r="30" fill="white" stroke="#3182F6" stroke-width="3"/>
+        <text x="300" y="148" text-anchor="middle" font-size="16" font-weight="800" fill="#3182F6">VS</text>
+      </svg></figure>    <p>"AI 시대엔 빅데이터가 왕"이 통념이지만, <strong>LLM 자체가 이미 빅데이터 덩어리</strong>(인터넷 글 다 학습). LLM의 한계를 넘으려면 <strong>"빅데이터의 반대 = 아주 사적인 데이터"</strong>가 필요합니다.</p>
     <div class="dual-track">
       <div class="track stu">
         <div class="track-h">⬅️ 빅데이터 (구시대)</div>
@@ -378,7 +604,63 @@
     </div>
 
     <h3><span class="step-num">4</span>9-Space | 모든 데이터는 이 9칸 중 하나</h3>
-    <p>어떤 자료든 넣으면 자동으로 9개 의미 공간 중 하나에 매핑됩니다. 온톨로지를 짜는 골격(문법)입니다.</p>
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
+      <!-- connecting lines from center to each space -->
+      <line x1="270" y1="270" x2="270" y2="90" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="385" y2="130" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="440" y2="240" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="420" y2="355" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="330" y2="430" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="210" y2="430" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="120" y2="355" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="100" y2="240" stroke="#E8F3FF" stroke-width="2"/>
+      <line x1="270" y1="270" x2="155" y2="130" stroke="#E8F3FF" stroke-width="2"/>
+
+      <!-- 9 space circles (placed at angles 360/9=40deg, starting top) -->
+      <!-- 1: top (0deg from top) -->
+      <circle cx="270" cy="90" r="45" fill="#3182F6"/>
+      <text x="270" y="86" text-anchor="middle" font-size="11" font-weight="800" fill="white">1·주체</text>
+      <text x="270" y="100" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Subject</text>
+      <!-- 2: 40deg -->
+      <circle cx="385" cy="130" r="45" fill="#00C896"/>
+      <text x="385" y="126" text-anchor="middle" font-size="11" font-weight="800" fill="white">2·리소스</text>
+      <text x="385" y="140" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Resource</text>
+      <!-- 3: 80deg -->
+      <circle cx="440" cy="240" r="45" fill="#FF9500"/>
+      <text x="440" y="236" text-anchor="middle" font-size="11" font-weight="800" fill="white">3·증거</text>
+      <text x="440" y="250" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Evidence</text>
+      <!-- 4: 120deg -->
+      <circle cx="420" cy="355" r="45" fill="#845EE6"/>
+      <text x="420" y="351" text-anchor="middle" font-size="11" font-weight="800" fill="white">4·개념</text>
+      <text x="420" y="365" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Concept</text>
+      <!-- 5: 160deg -->
+      <circle cx="330" cy="430" r="45" fill="#FF6B9D"/>
+      <text x="330" y="426" text-anchor="middle" font-size="11" font-weight="800" fill="white">5·주장</text>
+      <text x="330" y="440" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Claim</text>
+      <!-- 6: 200deg -->
+      <circle cx="210" cy="430" r="45" fill="#F04452"/>
+      <text x="210" y="426" text-anchor="middle" font-size="10" font-weight="800" fill="white">6·커뮤니티</text>
+      <text x="210" y="440" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Community</text>
+      <!-- 7: 240deg -->
+      <circle cx="120" cy="355" r="45" fill="#FFC940"/>
+      <text x="120" y="351" text-anchor="middle" font-size="11" font-weight="800" fill="#191F28">7·결과</text>
+      <text x="120" y="365" text-anchor="middle" font-size="9" font-weight="600" fill="#191F28" opacity="0.75">Outcome</text>
+      <!-- 8: 280deg -->
+      <circle cx="100" cy="240" r="45" fill="#1B64DA"/>
+      <text x="100" y="236" text-anchor="middle" font-size="11" font-weight="800" fill="white">8·레버</text>
+      <text x="100" y="250" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Lever</text>
+      <!-- 9: 320deg -->
+      <circle cx="155" cy="130" r="45" fill="#191F28"/>
+      <text x="155" y="126" text-anchor="middle" font-size="11" font-weight="800" fill="white">9·정책</text>
+      <text x="155" y="140" text-anchor="middle" font-size="9" font-weight="600" fill="white" opacity="0.85">Policy</text>
+
+      <!-- center node (OpenCrab core) -->
+      <circle cx="270" cy="270" r="70" fill="white" stroke="#3182F6" stroke-width="4"/>
+      <text x="270" y="262" text-anchor="middle" font-size="22">🦀</text>
+      <text x="270" y="285" text-anchor="middle" font-size="13" font-weight="800" fill="#191F28">OpenCrab</text>
+      <text x="270" y="300" text-anchor="middle" font-size="10" font-weight="700" fill="#8B95A1">Core</text>
+    </svg></figure>    <p>어떤 자료든 넣으면 자동으로 9개 의미 공간 중 하나에 매핑됩니다. 온톨로지를 짜는 골격(문법)입니다.</p>
     <table>
       <thead><tr><th>#</th><th>공간</th><th>"무엇"</th><th>예</th></tr></thead>
       <tbody>
@@ -396,7 +678,131 @@
     <p style="font-size: 13px; color: var(--muted);">멘탈모델: <strong>"들어오면 → 어느 공간? → 어떤 공간과 연결?"</strong> 이 두 질문이 끝. 오늘 두 팩(개발/운영)도 다 이 9칸으로 짜였습니다.</p>
 
     <h3><span class="step-num">5</span>메타엣지 | 화살표 그 이상</h3>
-    <div class="dual-track">
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <path d="M 0 0 L 10 3 L 0 6 z" fill="#3182F6"/>
+        </marker>
+        <marker id="arrGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <path d="M 0 0 L 10 3 L 0 6 z" fill="#00C896"/>
+        </marker>
+      </defs>
+
+      <!-- ====== LEFT: LocalCrab ====== -->
+      <rect x="20" y="40" width="280" height="440" rx="20" fill="#F0FBF6" stroke="#00C896" stroke-width="2"/>
+      <text x="160" y="75" text-anchor="middle" font-size="15" font-weight="800" fill="#00C896">🔒 LocalCrab</text>
+      <text x="160" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">내 PC · Apache 오픈소스</text>
+
+      <!-- raw files area -->
+      <text x="160" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#00C896">📁 민감 원본 (절대 안 나감)</text>
+      <rect x="40" y="140" width="70" height="80" rx="8" fill="white" stroke="#00C896"/>
+      <text x="75" y="172" text-anchor="middle" font-size="24">📄</text>
+      <text x="75" y="200" text-anchor="middle" font-size="10" font-weight="700">계약서</text>
+      <text x="75" y="213" text-anchor="middle" font-size="9" font-weight="600" fill="#8B95A1">PDF</text>
+
+      <rect x="125" y="140" width="70" height="80" rx="8" fill="white" stroke="#00C896"/>
+      <text x="160" y="172" text-anchor="middle" font-size="24">📐</text>
+      <text x="160" y="200" text-anchor="middle" font-size="10" font-weight="700">도면</text>
+      <text x="160" y="213" text-anchor="middle" font-size="9" font-weight="600" fill="#8B95A1">DXF</text>
+
+      <rect x="210" y="140" width="70" height="80" rx="8" fill="white" stroke="#00C896"/>
+      <text x="245" y="172" text-anchor="middle" font-size="24">🏥</text>
+      <text x="245" y="200" text-anchor="middle" font-size="10" font-weight="700">환자 차트</text>
+      <text x="245" y="213" text-anchor="middle" font-size="9" font-weight="600" fill="#8B95A1">개인정보</text>
+
+      <!-- size info -->
+      <rect x="40" y="240" width="240" height="56" rx="10" fill="white" stroke="#00C896" stroke-dasharray="3 3"/>
+      <text x="160" y="263" text-anchor="middle" font-size="12" font-weight="700" fill="#191F28">💾 총 100MB · 원본 그대로</text>
+      <text x="160" y="283" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">→ Neo4j로 그래프 빌드</text>
+
+      <!-- output ZIP -->
+      <text x="160" y="325" text-anchor="middle" font-size="12" font-weight="800" fill="#00C896">↓ 추출 결과 (ZIP)</text>
+      <rect x="40" y="340" width="240" height="120" rx="12" fill="white" stroke="#00C896" stroke-width="2"/>
+      <text x="160" y="378" text-anchor="middle" font-size="32">📦</text>
+      <text x="160" y="405" text-anchor="middle" font-size="13" font-weight="800" fill="#191F28">노드 50개 + 엣지 30개</text>
+      <text x="160" y="425" text-anchor="middle" font-size="11" font-weight="800" fill="#00C896">크기: 1KB</text>
+      <text x="160" y="445" text-anchor="middle" font-size="10" font-weight="600" fill="#8B95A1">(100,000배 압축)</text>
+
+      <!-- ====== MIDDLE: TRANSFER ====== -->
+      <!-- BLOCKED top: raw cannot pass -->
+      <line x1="305" y1="180" x2="395" y2="180" stroke="#F04452" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <circle cx="350" cy="180" r="22" fill="#FDEAEB" stroke="#F04452" stroke-width="2.5"/>
+      <text x="350" y="187" text-anchor="middle" font-size="20" font-weight="800" fill="#F04452">✕</text>
+      <text x="350" y="225" text-anchor="middle" font-size="11" font-weight="800" fill="#F04452">원본 차단</text>
+      <text x="350" y="242" text-anchor="middle" font-size="10" font-weight="600" fill="#F04452">픽셀/원문 ❌</text>
+
+      <!-- PASS bottom: meaning passes -->
+      <line x1="305" y1="395" x2="395" y2="395" stroke="#00C896" stroke-width="4" marker-end="url(#arrGreen)"/>
+      <text x="350" y="380" text-anchor="middle" font-size="12" font-weight="800" fill="#00C896">의미만 통과 ✓</text>
+      <text x="350" y="425" text-anchor="middle" font-size="10" font-weight="700" fill="#8B95A1">1KB 패킷</text>
+
+      <!-- ====== CENTER: OpenCrab ====== -->
+      <rect x="410" y="40" width="280" height="440" rx="20" fill="#F7FAFF" stroke="#3182F6" stroke-width="2"/>
+      <text x="550" y="75" text-anchor="middle" font-size="15" font-weight="800" fill="#3182F6">☁️ OpenCrab</text>
+      <text x="550" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">클라우드 SaaS · opencrab.sh</text>
+
+      <!-- graph storage area -->
+      <text x="550" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#3182F6">📍 받은 의미를 그래프로 저장</text>
+
+      <!-- graph drawing - cleaner with labels -->
+      <!-- edges -->
+      <line x1="550" y1="240" x2="470" y2="190" stroke="#3182F6" stroke-width="2"/>
+      <line x1="550" y1="240" x2="630" y2="190" stroke="#3182F6" stroke-width="2"/>
+      <line x1="550" y1="240" x2="455" y2="280" stroke="#3182F6" stroke-width="2"/>
+      <line x1="550" y1="240" x2="645" y2="280" stroke="#3182F6" stroke-width="2"/>
+      <line x1="550" y1="240" x2="510" y2="320" stroke="#3182F6" stroke-width="2"/>
+      <line x1="550" y1="240" x2="590" y2="320" stroke="#3182F6" stroke-width="2"/>
+      <!-- center node -->
+      <circle cx="550" cy="240" r="28" fill="#3182F6"/>
+      <text x="550" y="246" text-anchor="middle" font-size="12" font-weight="800" fill="white">핵심</text>
+      <!-- 6 surrounding nodes with labels -->
+      <circle cx="470" cy="190" r="18" fill="#3182F6" opacity="0.85"/>
+      <text x="470" y="196" text-anchor="middle" font-size="10" font-weight="800" fill="white">개념</text>
+      <circle cx="630" cy="190" r="18" fill="#3182F6" opacity="0.85"/>
+      <text x="630" y="196" text-anchor="middle" font-size="10" font-weight="800" fill="white">주체</text>
+      <circle cx="455" cy="280" r="18" fill="#3182F6" opacity="0.85"/>
+      <text x="455" y="286" text-anchor="middle" font-size="10" font-weight="800" fill="white">증거</text>
+      <circle cx="645" cy="280" r="18" fill="#3182F6" opacity="0.85"/>
+      <text x="645" y="286" text-anchor="middle" font-size="10" font-weight="800" fill="white">정책</text>
+      <circle cx="510" cy="320" r="16" fill="#3182F6" opacity="0.85"/>
+      <text x="510" y="325" text-anchor="middle" font-size="9" font-weight="800" fill="white">결과</text>
+      <circle cx="590" cy="320" r="16" fill="#3182F6" opacity="0.85"/>
+      <text x="590" y="325" text-anchor="middle" font-size="9" font-weight="800" fill="white">레버</text>
+
+      <!-- MCP URL area -->
+      <rect x="440" y="370" width="220" height="90" rx="10" fill="white" stroke="#3182F6"/>
+      <text x="550" y="395" text-anchor="middle" font-size="11" font-weight="800" fill="#3182F6">+ 마켓 거래 + MCP 발급</text>
+      <rect x="455" y="410" width="190" height="30" rx="6" fill="#F7FAFF" stroke="#3182F6" stroke-dasharray="2 2"/>
+      <text x="550" y="430" text-anchor="middle" font-size="11" font-weight="600" fill="#1B64DA">opencrab.sh/api/mcp/...</text>
+
+      <!-- arrow from OpenCrab to AI tools -->
+      <line x1="695" y1="240" x2="745" y2="240" stroke="#3182F6" stroke-width="4" marker-end="url(#arrBlue)"/>
+      <text x="720" y="225" text-anchor="middle" font-size="10" font-weight="800" fill="#3182F6">MCP 연결</text>
+
+      <!-- ====== RIGHT: AI 도구들 ====== -->
+      <rect x="750" y="40" width="230" height="440" rx="20" fill="#FFFAE6" stroke="#FFC940" stroke-width="2"/>
+      <text x="865" y="75" text-anchor="middle" font-size="15" font-weight="800" fill="#7A5500">🤖 AI 도구들</text>
+      <text x="865" y="95" text-anchor="middle" font-size="11" font-weight="600" fill="#8B95A1">MCP로 꽂힘</text>
+
+      <rect x="770" y="115" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="146" text-anchor="middle" font-size="14" font-weight="800">GPT</text>
+
+      <rect x="770" y="175" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="206" text-anchor="middle" font-size="14" font-weight="800">Claude</text>
+
+      <rect x="770" y="235" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="266" text-anchor="middle" font-size="14" font-weight="800">Codex</text>
+
+      <rect x="770" y="295" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="326" text-anchor="middle" font-size="13" font-weight="800">클로드코드</text>
+
+      <rect x="770" y="355" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="386" text-anchor="middle" font-size="13" font-weight="800">안티그래비티</text>
+
+      <rect x="770" y="415" width="190" height="50" rx="10" fill="white" stroke="#FFC940"/>
+      <text x="865" y="446" text-anchor="middle" font-size="13" font-weight="800">커서 · 에르메스</text>
+    </svg></figure>    <div class="dual-track">
       <div class="track stu">
         <div class="track-h">일반 그래프</div>
         <pre style="white-space: pre-wrap;">노드 + 엣지(화살표) 끝.
@@ -411,7 +817,28 @@ A → B 연결만. 관계 종류·강도 없음</pre>
     <p style="font-size: 13px; color: var(--muted);">친구 관계도(점·선)가 아니라 <strong>"친한 정도(강도) + 사귄 기간(층위) + 비밀 공유 여부(권한) + 어떻게 친해졌나(정의)"</strong>까지 기록한 관계도. <strong>영향 분석(impact)</strong>이 가능한 이유입니다.</p>
 
     <h3><span class="step-num">6</span>원본은 로컬, 의미만 클라우드 | 보안 모델</h3>
-    <p>엔터프라이즈의 핵심 모순: <strong>"내 데이터를 AI에 보여줘야 똑똑한 답이 나오는데, 그러면 보안이 깨진다."</strong> 온톨로지의 답:</p>
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- baseline -->
+      <line x1="200" y1="180" x2="700" y2="180" stroke="#D1D6DB" stroke-width="2"/>
+
+      <!-- FREE bar (almost invisible) -->
+      <text x="190" y="55" text-anchor="end" font-size="14" font-weight="800" fill="#191F28">FREE</text>
+      <line x1="200" y1="55" x2="220" y2="55" stroke="#D1D6DB" stroke-width="8"/>
+      <text x="230" y="60" font-size="13" font-weight="700" fill="#8B95A1">$0/월 · 마켓 팩만 사용</text>
+
+      <!-- PRO bar -->
+      <text x="190" y="105" text-anchor="end" font-size="14" font-weight="800" fill="#191F28">PRO</text>
+      <rect x="200" y="88" width="100" height="34" fill="#3182F6" rx="6"/>
+      <text x="250" y="110" text-anchor="middle" font-size="13" font-weight="800" fill="white">$10/월</text>
+      <text x="310" y="110" font-size="13" font-weight="700" fill="#191F28">· 본인 데이터 인제스트</text>
+
+      <!-- EXPERT bar -->
+      <text x="190" y="155" text-anchor="end" font-size="14" font-weight="800" fill="#191F28">EXPERT</text>
+      <rect x="200" y="138" width="300" height="34" fill="#1B64DA" rx="6"/>
+      <text x="350" y="160" text-anchor="middle" font-size="13" font-weight="800" fill="white">$30/월</text>
+      <text x="510" y="160" font-size="13" font-weight="700" fill="#191F28">· 팩 판매·수익화</text>
+    </svg></figure>    <p>엔터프라이즈의 핵심 모순: <strong>"내 데이터를 AI에 보여줘야 똑똑한 답이 나오는데, 그러면 보안이 깨진다."</strong> 온톨로지의 답:</p>
     <pre style="white-space: pre-wrap;">100MB 계약서 / 도면 / 고객 데이터 (민감 원본)
    ↓ 로컬에서 그래프 빌드 (원본은 절대 안 나감)
    ↓ 노드·엣지 = 의미만 추출 (약 1KB · 10만 배 압축)
@@ -422,7 +849,94 @@ A → B 연결만. 관계 종류·강도 없음</pre>
     </div>
 
     <h3><span class="step-num">7</span>왜 지금 온톨로지인가</h3>
-    <p>AI 발전 흐름을 단계로 보면 지금은 <strong>에이전트 단계</strong>입니다. 팀·조직 규모로 가면 각 에이전트가 같은 도메인을 <strong>제각각</strong> 이해하는 벽에 부딪힙니다.</p>
+
+    <figure data-svg-injected style="margin:16px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;"><svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sky2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#B8DDFF"/>
+          <stop offset="0.6" stop-color="#E8F3FF"/>
+          <stop offset="1" stop-color="#FFFFFF"/>
+        </linearGradient>
+        <linearGradient id="mtnBack" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#A8B7C8"/>
+          <stop offset="1" stop-color="#6B7785"/>
+        </linearGradient>
+        <linearGradient id="mtnFront" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#4E5968"/>
+          <stop offset="1" stop-color="#191F28"/>
+        </linearGradient>
+        <linearGradient id="goldGrad" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#FFC940"/>
+          <stop offset="1" stop-color="#FF9500"/>
+        </linearGradient>
+      </defs>
+
+      <!-- sky -->
+      <rect width="800" height="440" fill="url(#sky2)"/>
+
+      <!-- floating clouds (where 6/7 live) -->
+      <ellipse cx="640" cy="70" rx="80" ry="20" fill="white" opacity="0.85"/>
+      <ellipse cx="700" cy="80" rx="60" ry="14" fill="white" opacity="0.7"/>
+      <ellipse cx="180" cy="50" rx="70" ry="16" fill="white" opacity="0.6"/>
+
+      <!-- back mountain range -->
+      <polygon points="0,440 80,260 200,300 320,200 460,280 580,180 720,260 800,220 800,440" fill="url(#mtnBack)" opacity="0.55"/>
+
+      <!-- foreground mountain (the climb route) -->
+      <polygon points="0,440 100,400 200,360 280,310 360,260 440,180 520,90 600,170 700,260 800,330 800,440" fill="url(#mtnFront)"/>
+
+      <!-- snow cap on peak -->
+      <polygon points="490,130 520,90 560,140 545,150 530,135 510,150" fill="white" opacity="0.9"/>
+
+      <!-- climbing trail (dashed path) -->
+      <path d="M 90 410 Q 140 395, 180 380 T 240 350 Q 290 325, 320 305 T 380 265 Q 430 220, 460 175 T 520 95" stroke="#3182F6" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+
+      <!-- Stage 1: bottom (도구) -->
+      <circle cx="90" cy="410" r="14" fill="#D1D6DB" stroke="white" stroke-width="3"/>
+      <text x="90" y="414" text-anchor="middle" font-size="11" font-weight="800" fill="white">1</text>
+      <text x="60" y="430" font-size="10" font-weight="700" fill="#191F28">도구</text>
+
+      <!-- Stage 2 (도구+) -->
+      <circle cx="180" cy="380" r="14" fill="#D1D6DB" stroke="white" stroke-width="3"/>
+      <text x="180" y="384" text-anchor="middle" font-size="11" font-weight="800" fill="white">2</text>
+      <text x="150" y="400" font-size="10" font-weight="700" fill="#191F28">도구+</text>
+
+      <!-- Stage 3 (CURRENT - 에이전트) -->
+      <circle cx="270" cy="335" r="22" fill="#3182F6" stroke="white" stroke-width="4"/>
+      <text x="270" y="340" text-anchor="middle" font-size="13" font-weight="800" fill="white">3</text>
+      <text x="260" y="310" font-size="22">🚶</text>
+      <rect x="220" y="280" width="100" height="22" rx="11" fill="#3182F6"/>
+      <text x="270" y="296" text-anchor="middle" font-size="11" font-weight="800" fill="white">우리 위치</text>
+      <text x="250" y="360" font-size="11" font-weight="700" fill="#191F28">에이전트</text>
+
+      <!-- Stage 4 (HIGHLIGHTED - 온톨로지 BASE CAMP) -->
+      <circle cx="380" cy="265" r="28" fill="url(#goldGrad)" stroke="white" stroke-width="4"/>
+      <text x="380" y="270" text-anchor="middle" font-size="14" font-weight="800" fill="white">4</text>
+      <!-- 깃발 -->
+      <line x1="380" y1="240" x2="380" y2="180" stroke="#7A5500" stroke-width="3"/>
+      <polygon points="380,180 420,190 380,205" fill="#FF9500"/>
+      <text x="425" y="195" font-size="13" font-weight="800" fill="#FF9500">⭐ 온톨로지</text>
+      <text x="425" y="210" font-size="10" font-weight="700" fill="#7A5500">베이스캠프</text>
+      <text x="425" y="223" font-size="10" font-weight="700" fill="#7A5500">(오픈크랩 영역)</text>
+
+      <!-- Stage 5: AGI peak -->
+      <circle cx="520" cy="95" r="18" fill="#F04452" stroke="white" stroke-width="3"/>
+      <text x="520" y="100" text-anchor="middle" font-size="12" font-weight="800" fill="white">5</text>
+      <text x="495" y="70" font-size="11" font-weight="800" fill="#F04452">🎯 AGI 정상</text>
+
+      <!-- Stage 6: in clouds -->
+      <circle cx="630" cy="70" r="12" fill="white" stroke="#8B95A1" stroke-width="2" stroke-dasharray="3 2"/>
+      <text x="630" y="74" text-anchor="middle" font-size="10" font-weight="800" fill="#8B95A1">6</text>
+      <text x="615" y="50" font-size="10" font-weight="700" fill="#8B95A1">ASI 조직급</text>
+
+      <!-- Stage 7: highest cloud -->
+      <circle cx="720" cy="50" r="12" fill="white" stroke="#8B95A1" stroke-width="2" stroke-dasharray="3 2"/>
+      <text x="720" y="54" text-anchor="middle" font-size="10" font-weight="800" fill="#8B95A1">7</text>
+      <text x="700" y="30" font-size="10" font-weight="700" fill="#8B95A1">ASI 제도급</text>
+
+      <!-- ground label -->
+      <text x="10" y="430" font-size="10" font-weight="700" fill="#8B95A1">SEA LEVEL</text>
+    </svg></figure>    <p>AI 발전 흐름을 단계로 보면 지금은 <strong>에이전트 단계</strong>입니다. 팀·조직 규모로 가면 각 에이전트가 같은 도메인을 <strong>제각각</strong> 이해하는 벽에 부딪힙니다.</p>
     <div style="display: flex; gap: 14px; align-items: center; margin: 16px 0; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px;">
       <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">규칙</span>
       <span style="color: var(--muted);">→</span>
@@ -436,8 +950,9 @@ A → B 연결만. 관계 종류·강도 없음</pre>
     </div>
     <p style="font-size: 14px;">에이전트 다음 단계가 <strong>온톨로지</strong>입니다. 모든 에이전트가 같은 의미 기반을 공유해야 비로소 협업·오케스트레이션이 됩니다.</p>
 
-    <div class="reference">
-      <p><strong>OpenCrab</strong>은 위 온톨로지를 직접 만들어 보기 위한 <strong>실습 도구</strong>입니다. 로컬에서 ingest·extract·query·그래프까지 한 번에 됩니다. 오늘은 이 도구로 "온톨로지를 손에 익히는 것"이 목적입니다.</p>
+    <div class="goal" style="border-left-color: #946800; background: rgba(148,104,0,0.06);">
+      <div class="goal-label" style="color: #946800;">오해 금지 ★</div>
+      <div class="goal-text">오늘의 목적은 <strong>온톨로지</strong>(도메인을 entity·관계로 구조화하는 사고법)이지 <strong>OpenCrab이 아닙니다.</strong> OpenCrab은 그 사고법을 손으로 만들어 보기 위한 <strong>실습 도구 하나일 뿐</strong>입니다. 도구는 다른 것으로 바뀌어도, 남는 것은 <strong>"내 도메인을 의미 그래프로 짜는 능력"</strong>입니다. 그게 진짜 자산입니다.</div>
     </div>
   </div>
 </section>
