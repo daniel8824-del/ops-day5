@@ -1,0 +1,6 @@
+{"ts":"2026-05-20T23:52:35.696Z","cmd":"goto","args":"http://localhost:8745/index.html","origin":"http://localhost:8745/index.html","durationMs":97,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-20T23:52:35.793Z","cmd":"viewport","args":"1280x900","origin":"http://localhost:8745/index.html","durationMs":6,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-20T23:52:36.097Z","cmd":"console","args":"--errors","origin":"http://localhost:8745/index.html","durationMs":3,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-20T23:52:37.972Z","cmd":"screenshot","args":"/tmp/ops5-full.png","origin":"http://localhost:8745/index.html","durationMs":1767,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-20T23:53:00.093Z","cmd":"screenshot","args":"--selector #onto /tmp/ops5-onto.png","origin":"http://localhost:8745/index.html","durationMs":532,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-05-20T23:53:00.519Z","cmd":"screenshot","args":"--selector header.hero /tmp/ops5-hero.png","origin":"http://localhost:8745/index.html","durationMs":294,"status":"ok","hasCookies":false,"mode":"launched"}

@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 5 교재 | 실전 사례 · 온톨로지 · AI-Ops 전환</title>
+<meta name="description" content="Day 5 강의 교재 | 실전 시스템 사례 + 실패·사고 + 온톨로지 실습 (OpenCrab) + AI-Ops 단계적 전환 로드맵.">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #666;
+    --accent: #00b4d8; --accent-dark: #0096b8;
+    --code-bg: #faf8f3; --warm-bg: #fdfaf2;
+    --border: #e8e2d4;
+  }
+  html, body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background: var(--bg); color: var(--fg);
+    line-height: 1.6;
+    word-break: keep-all; text-wrap: pretty;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  nav.topbar {
+    position: sticky; top: 0; background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+    z-index: 100;
+  }
+  nav.topbar .container {
+    display: flex; align-items: center; gap: 20px;
+    padding: 14px 24px; flex-wrap: wrap;
+  }
+  nav.topbar .brand { font-weight: 800; color: var(--accent-dark); }
+  nav.topbar a {
+    color: var(--fg); text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  nav.topbar a:hover { color: var(--accent-dark); }
+
+  header.hero { padding: 60px 0 50px; background: var(--warm-bg); border-bottom: 1px solid var(--border); }
+  .badge {
+    display: inline-block; padding: 6px 14px; background: rgba(0,180,216,0.12);
+    color: var(--accent-dark); border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.06em; margin-bottom: 18px;
+  }
+  h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 14px; }
+  h1 .accent { color: var(--accent-dark); }
+  .lead { font-size: 18px; color: var(--muted); max-width: 800px; }
+
+  section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  section .container { max-width: 1100px; }
+  h2 { font-size: 28px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 20px; }
+  h2 .accent { color: var(--accent-dark); }
+  h3 { font-size: 20px; margin: 26px 0 12px; font-weight: 700; }
+  h3 .step-num {
+    display: inline-block; width: 28px; height: 28px;
+    background: var(--accent-dark); color: white;
+    border-radius: 50%; text-align: center; line-height: 28px;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    margin-right: 10px; font-weight: 800;
+  }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0 10px 24px; }
+  li { margin: 4px 0; }
+  strong { font-weight: 700; }
+
+  .section-tag {
+    display: inline-block; font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: var(--accent-dark); letter-spacing: 0.08em;
+    font-weight: 700; margin-bottom: 8px; text-transform: uppercase;
+  }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { background: var(--warm-bg); font-weight: 700; }
+  code.inline {
+    background: var(--code-bg); padding: 2px 7px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    border: 1px solid var(--border);
+  }
+  pre {
+    background: #1a1a1a; color: #f0f0f0;
+    padding: 14px 18px; border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    overflow-x: auto; margin: 10px 0; line-height: 1.5;
+  }
+
+  .day-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 24px; }
+  .day-cell { background: var(--warm-bg); border: 1px solid var(--border); border-radius: 8px; padding: 18px; }
+  .day-cell .day-time {
+    display: block; font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--muted); letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .day-cell .ttl { font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+  .day-cell .desc { font-size: 13px; color: var(--muted); }
+
+  .dual-track { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 14px 0; }
+  .track { padding: 14px; border-radius: 8px; background: var(--warm-bg); border: 1px solid var(--border); }
+  .track-h {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+    text-transform: uppercase; margin-bottom: 6px;
+  }
+  .track.instr .track-h { color: var(--accent-dark); }
+  .track.stu .track-h { color: #946800; }
+  .track pre { margin-top: 6px; font-size: 12.5px; }
+
+  .reference {
+    background: var(--code-bg); padding: 14px 18px; border-radius: 8px;
+    border-left: 4px solid var(--border); margin: 16px 0; font-size: 14px;
+  }
+  .reference::before { content: "참고"; display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-dark); font-weight: 800; letter-spacing: 0.06em; margin-bottom: 4px; }
+
+  .goal { background: rgba(0,180,216,0.06); padding: 16px 20px; border-radius: 8px; border-left: 4px solid var(--accent); margin: 16px 0; }
+  .goal-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-dark); font-weight: 800; letter-spacing: 0.08em; }
+  .goal-text { font-size: 15px; margin-top: 6px; }
+
+  .check-list { background: var(--warm-bg); padding: 14px 20px; border-radius: 8px; border-left: 4px solid #06d6a0; margin: 14px 0; }
+  .check-list h4 { font-size: 14px; font-family: 'JetBrains Mono', monospace; color: #04785a; letter-spacing: 0.06em; }
+  .check-list ul { margin: 8px 0 0 18px; font-size: 14px; }
+
+  .field-case {
+    background: var(--warm-bg); border-left: 4px solid #946800;
+    padding: 14px 20px; border-radius: 8px; margin: 18px 0; font-size: 14.5px; line-height: 1.6;
+  }
+  .field-case::before { content: "🏢 현장 사례"; display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #946800; font-weight: 800; letter-spacing: 0.06em; margin-bottom: 6px; text-transform: uppercase; }
+
+  ul.dl { list-style: none; margin: 12px 0; padding: 0; }
+  ul.dl li {
+    padding: 14px 16px; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--code-bg); margin-bottom: 8px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  ul.dl code {
+    background: white; padding: 5px 10px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 700;
+    border: 1px solid var(--border); flex-shrink: 0; min-width: 200px;
+  }
+  ul.dl .dl-desc { font-size: 14px; color: var(--muted); flex: 1; }
+  ul.dl .dl-btn {
+    background: var(--accent-dark); color: white;
+    padding: 6px 14px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 800;
+    text-decoration: none; flex-shrink: 0; letter-spacing: 0.04em;
+  }
+  ul.dl .dl-btn:hover { background: var(--accent); }
+
+  footer { padding: 30px 0 50px; background: var(--warm-bg); border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="container">
+    <span class="brand">Day 5 · 사례 + 온톨로지 + AI-Ops 전환</span>
+    <a href="#intro">도입</a>
+    <a href="#onto">온톨로지</a>
+    <a href="#lab">실습</a>
+    <a href="#roadmap">AI-Ops 로드맵</a>
+    <a href="#dl">자료</a>
+    <a href="https://daniel8824-del.github.io/har-day1/" target="_blank">Day 1</a>
+    <a href="https://daniel8824-del.github.io/pos-day2/" target="_blank">Day 2</a>
+    <a href="https://daniel8824-del.github.io/rag-day3/" target="_blank">Day 3</a>
+    <a href="https://daniel8824-del.github.io/mcp-day4/" target="_blank">Day 4</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="badge">DAY 5 · 5/21 15:00 ~ 18:00 · 마지막 날</div>
+    <h1>실전 사례 · 온톨로지<br><span class="accent">AI-Ops 단계적 전환</span></h1>
+    <p class="lead">
+      Day 1~4에서 만든 <strong>지시문 · 스킬 · 로컬 RAG · MCP · 훅</strong>을 한 단계 위로 올립니다. 오늘의 메인은 <strong>온톨로지</strong> | 팀이 같은 의미 기반을 공유하는 방법입니다. 마지막으로 개인 도구에서 팀 오케스트레이션까지 <strong>AI-Ops 전환 로드맵</strong>을 본인 조직에 맞춰 직접 그려봅니다.
+    </p>
+  </div>
+</header>
+
+<!-- ============ 도입 ============ -->
+<section id="intro">
+  <div class="container">
+    <span class="section-tag">§ 도입 · 강사 구두 진행</span>
+    <h2>실전 개발 사례 + <span class="accent">실패·사고에서 배우기</span></h2>
+    <p class="lead" style="margin-bottom: 18px;">아래 두 묶음은 슬라이드 없이 강사가 현장 경험으로 풀어드립니다. 사이트는 줄기만 남깁니다.</p>
+
+    <h3><span class="step-num">1</span>실전 시스템 개발 사례</h3>
+    <ul>
+      <li><strong>ERP 연동</strong> | 사내 데이터 + AI 에이전트로 반복 업무 자동화</li>
+      <li><strong>콘텐츠 파이프라인</strong> | 수집 → 가공 → 산출까지 한 사이클</li>
+      <li><strong>운영 모니터링</strong> | Day 4 pos-ops 패턴 (탐지 → 진단 → 티켓 → 알림)</li>
+      <li><strong>오케스트레이션</strong> | 여러 에이전트·도구를 묶어 하나의 흐름으로</li>
+    </ul>
+
+    <h3><span class="step-num">2</span>개발 중 실패·사고 8선</h3>
+    <p>"되는 코드"보다 "안 터지는 운영"이 더 어렵습니다. 자주 겪는 8가지:</p>
+    <table>
+      <thead><tr><th>#</th><th>사고</th><th>한 줄 교훈</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>환경변수 노출</td><td><code class="inline">.env</code> 커밋 금지 · 시크릿 스캐너 hook</td></tr>
+        <tr><td>2</td><td>API key 유출</td><td>키는 코드 밖 · 권한 최소화 · 주기 회전</td></tr>
+        <tr><td>3</td><td>무단 배포</td><td>승인 게이트 없는 prod push 차단</td></tr>
+        <tr><td>4</td><td>배치 중복 실행</td><td>멱등성 · 락 · 중복 가드 hook</td></tr>
+        <tr><td>5</td><td>DB 동시 접근</td><td>WHERE 없는 UPDATE/DELETE PreToolUse 차단</td></tr>
+        <tr><td>6</td><td>과잉 구현</td><td>요청 범위 고정 · 자의적 확장 금지</td></tr>
+        <tr><td>7</td><td>비용 폭주</td><td>토큰·호출 상한 · 비용 추적</td></tr>
+        <tr><td>8</td><td>외부 정책 변경</td><td>API·약관 변경 모니터 · 대체 경로 확보</td></tr>
+      </tbody>
+    </table>
+    <div class="field-case">
+      8가지 모두 <strong>Day 4에서 만든 훅</strong>으로 상당 부분 방어됩니다. 사고는 "AI가 똑똑하지 못해서"가 아니라 "가드레일이 없어서" 납니다.
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ 온톨로지 이해 ============ -->
+<section id="onto">
+  <div class="container">
+    <span class="section-tag">§ 온톨로지 이해 · 오늘의 핵심 개념</span>
+    <h2>온톨로지 | <span class="accent">데이터의 양이 아니라 관계</span></h2>
+
+    <div class="goal">
+      <div class="goal-label">한 줄 정의</div>
+      <div class="goal-text"><strong>온톨로지 = entity(개념) + 관계로 짜인 의미 그래프.</strong> AI가 "단어"가 아니라 "무엇이 무엇과 어떻게 연결되는지"를 보게 만드는 layer입니다.</div>
+    </div>
+
+    <h3><span class="step-num">1</span>일반 RAG vs Graph RAG</h3>
+    <table>
+      <thead><tr><th>구분</th><th>일반 RAG (Day 3)</th><th>Graph RAG (온톨로지)</th></tr></thead>
+      <tbody>
+        <tr><td>찾는 방식</td><td>의미 비슷한 chunk 검색</td><td>entity 사이 관계를 따라 traversal</td></tr>
+        <tr><td>답하는 질문</td><td>"이것과 비슷한 내용?"</td><td>"이걸 바꾸면 어디까지 영향?"</td></tr>
+        <tr><td>약점</td><td>관계·인과 파악이 약함</td><td>초기 모델링 비용</td></tr>
+      </tbody>
+    </table>
+    <p>예시 | <strong>약(drug) → 성분 → 부작용 → 졸음</strong>. 일반 RAG는 "졸음"이 적힌 문장을 찾고, Graph RAG는 "이 약을 먹으면 왜 졸린지" 관계 사슬을 따라갑니다. 운영으로 옮기면 <strong>"이 결제 모듈을 바꾸면 어떤 매장·티켓·담당자까지 영향이 가는지"</strong>가 같은 질문입니다.</p>
+
+    <h3><span class="step-num">2</span>왜 지금 온톨로지인가</h3>
+    <p>AI 발전 흐름을 단계로 보면 지금은 <strong>에이전트 단계</strong>입니다. 도구를 쓰고 스스로 행동하지만, 팀·조직 규모로 가면 다음 벽에 부딪힙니다. 각 에이전트가 같은 도메인을 <strong>제각각</strong> 이해한다는 점입니다.</p>
+    <div style="display: flex; gap: 14px; align-items: center; margin: 16px 0; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 13px;">
+      <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">규칙</span>
+      <span style="color: var(--muted);">→</span>
+      <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">머신러닝</span>
+      <span style="color: var(--muted);">→</span>
+      <span style="padding: 8px 14px; background: rgba(0,180,216,0.12); border: 1px solid var(--accent); border-radius: 6px; font-weight: 800; color: var(--accent-dark);">에이전트 (현재)</span>
+      <span style="color: var(--muted);">→</span>
+      <span style="padding: 8px 14px; background: rgba(0,180,216,0.2); border: 2px solid var(--accent-dark); border-radius: 6px; font-weight: 800; color: var(--accent-dark);">온톨로지 (다음 병목)</span>
+      <span style="color: var(--muted);">→</span>
+      <span style="padding: 8px 14px; background: var(--warm-bg); border: 1px solid var(--border); border-radius: 6px;">AGI</span>
+    </div>
+    <p style="font-size: 14px;">에이전트 다음 단계가 <strong>온톨로지</strong>입니다. 모든 에이전트가 같은 의미 기반을 공유해야 비로소 협업·오케스트레이션이 됩니다. 그 공유 기반이 바로 온톨로지입니다.</p>
+
+    <h3><span class="step-num">3</span>오늘 쓰는 핵심 개념</h3>
+    <table>
+      <thead><tr><th>개념</th><th>한 줄</th></tr></thead>
+      <tbody>
+        <tr><td><strong>온톨로지</strong></td><td>entity + 관계로 짜인 의미 그래프</td></tr>
+        <tr><td><strong>ingest</strong></td><td>원본 문서를 벡터로 저장해 의미 검색 가능하게 (그래프 ❌)</td></tr>
+        <tr><td><strong>extract</strong></td><td>LLM이 문서에서 entity·관계를 뽑아 <strong>그래프(노드·엣지) 생성</strong> (그래프 ✅)</td></tr>
+        <tr><td><strong>임베딩</strong></td><td>의미를 벡터로 바꿔 유사도 검색을 가능하게</td></tr>
+        <tr><td><strong>RAG 종류</strong></td><td>일반 RAG(유사 검색) vs Graph RAG(관계 traversal)</td></tr>
+        <tr><td><strong>그래프</strong></td><td>node(entity)·edge(관계)로 의미를 시각화</td></tr>
+      </tbody>
+    </table>
+
+    <div class="field-case">
+      <strong>ingest vs extract</strong> | 가장 헷갈리는 둘. <strong>ingest</strong>는 원본을 "검색 색인"으로 저장(그래프 안 생김), <strong>extract</strong>는 LLM이 읽고 "노드·엣지(그래프)"를 만듭니다. <strong>온톨로지 그래프는 extract에서 나옵니다.</strong> 그래서 <strong>강사는 extract로 팩을 제작</strong>하고(LLM 키 필요), <strong>학생은 그 팩을 ingest(import)로 설치</strong>하면 추출 없이 즉시 노드를 받습니다.
+    </div>
+
+    <div class="reference">
+      <p><strong>OpenCrab</strong>은 위 온톨로지를 직접 만들어 보기 위한 <strong>실습 도구</strong>입니다. 로컬에서 ingest·extract·query·그래프까지 한 번에 됩니다. 오늘은 이 도구로 "온톨로지를 손에 익히는 것"이 목적입니다.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ 온톨로지 실습 ============ -->
+<section id="lab">
+  <div class="container">
+    <span class="section-tag">§ 온톨로지 실습 · 오늘의 메인 (시간 대부분)</span>
+    <h2><span class="accent">OpenCrab</span>으로 온톨로지 직접 만들기</h2>
+
+    <div class="goal">
+      <div class="goal-label">실습 목표</div>
+      <div class="goal-text">강사가 만든 <strong>도시바 POS 팩 2개(개발/운영)</strong> 중 본인 직무 팩을 설치 → 질의 → 의견 수렴. 그다음 <strong>본인 문서로 본인 온톨로지를 extract</strong>해 팩으로 보관하고, 그 결과를 스킬·MCP 아이디어로 발전시킵니다.</div>
+    </div>
+
+    <h3><span class="step-num">1</span>강사 시연 | 같은 POS 도메인, 두 팀의 온톨로지</h3>
+    <p>강사가 도시바 POS 관련 원본 문서를 <strong>OpenCrab <code class="inline">extract</code></strong>로 통째로 넣어 만든 <strong>팩 2개</strong>를 d3 그래프로 보여드립니다. 같은 도시바 POS인데 팀 관점에 따라 온톨로지가 다릅니다.</p>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">개발팀 팩 (무엇으로 만드나)</div>
+        <pre style="white-space: pre-wrap;">소스: acli · GitLab CI · Jira/Confluence ·
+      ELERA 플랫폼 · TCx Sky OS · TCx 단말 스펙
+node: Jira Issue · Pipeline · ELERA POS · TCx Sky ...
+edge: depends_on · part_of · contributes_to ...</pre>
+      </div>
+      <div class="track stu">
+        <div class="track-h">운영팀 팩 (무엇이 돌아가고 터지나)</div>
+        <pre style="white-space: pre-wrap;">소스: 도시바 POS 제품/지원 · 운영 runbook ·
+      ITSM 인시던트/티켓 패턴
+node: 매장 · 단말 · 인시던트 · 티켓 · 운영자 · KPI
+edge: logged_as · describes · degrades ...</pre>
+      </div>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">두 팩은 OpenCrab <code class="inline">extract</code>(LLM이 원본 전문에서 entity·관계 추출)로 생성, <code class="inline">apps/web</code> d3 그래프로 시각화. 그래프 DB(Neo4j) 불필요, 로컬 SQLite에 보관.</p>
+
+    <h3><span class="step-num">2</span>학습자 | 본인 직무 팩 설치 + 질의 실습</h3>
+    <p>본인 직무에 맞는 팩(개발자→개발팩, 운영자→운영팩, 둘 다도 가능)을 받아(<a href="#dl">자료</a>) OpenCrab에 설치하고 자연어로 질의합니다.</p>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">개발팩 질의 예</div>
+        <pre style="white-space: pre-wrap;">"ELERA POS는 어떤 OS 위에서 돌아가?"
+"acli로 work item 만드는 명령은?"
+"GitLab 파이프라인은 어떤 단계로 구성되지?"
+"이 SW 버전 바꾸면 영향 범위는?" (impact)</pre>
+      </div>
+      <div class="track stu">
+        <div class="track-h">운영팩 질의 예</div>
+        <pre style="white-space: pre-wrap;">"POS_DOWN이 어떤 KPI에 영향을 주지?"
+"강남역점 단말 인시던트 흐름은?"
+"P1 티켓 에스컬레이션 정책은?"
+"이 인시던트의 영향 매장 사슬은?" (impact)</pre>
+      </div>
+    </div>
+    <p style="font-size: 14px;">질의 결과를 함께 보며 <strong>"우리 환경이면 무엇을 더 붙일까"</strong>를 나눕니다. (질의는 OpenCrab MCP의 <code class="inline">ontology_query</code> · <code class="inline">ontology_impact</code>가 처리)</p>
+
+    <h3><span class="step-num">3</span>학습자 | 본인 문서로 본인 온톨로지 + 팩 보관</h3>
+    <p>본인 문서를 골라 OpenCrab에 <strong>ingest</strong>(원본을 벡터로 저장) → <strong>extract</strong>(LLM이 노드·엣지 생성)로 본인만의 온톨로지를 만들어 팩으로 보관합니다. 정석 순서는 <code class="inline">ingest → extract</code>입니다.</p>
+    <div class="track instr">
+      <div class="track-h">자연어 요청 (ingest → extract → query → export)</div>
+      <pre style="white-space: pre-wrap;">"내 문서 폴더 [경로]를 OpenCrab에 ingest하고 extract해서 노드·엣지를 만들어줘. 끝나면 '[관심 키워드]'로 query하고, 이 온톨로지를 팩(nodes.jsonl + edges.jsonl)으로 export해줘."</pre>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">extract는 LLM이 entity를 뽑으므로 키가 필요합니다 (강사가 팩 만들 때와 동일). 본인 CLI 모델 또는 OpenRouter 키를 씁니다. 강사 팩만 쓸 거면 이 단계는 건너뛰어도 됩니다.</p>
+    <div class="check-list">
+      <h4>✓ 산출물</h4>
+      <ul>
+        <li>본인 도메인 온톨로지 (로컬 <code class="inline">./opencrab_data/</code>)</li>
+        <li>본인 팩 ZIP (manifest + nodes.jsonl + edges.jsonl + sample_queries) | 팀에 그대로 공유 가능</li>
+      </ul>
+    </div>
+
+    <h3><span class="step-num">4</span>아이디에이션 | 질의 결과 → 스킬 / MCP tool ★</h3>
+    <p>온톨로지 질의에서 <strong>반복적으로 쓰는 패턴</strong>이 보이면, 그걸 스킬이나 MCP tool로 굳혀 자동화합니다. Day 4에 설치한 <code class="inline">brainstorming</code> 스킬로 발산부터 시작하세요.</p>
+    <div class="track instr">
+      <div class="track-h">자연어 요청</div>
+      <pre style="white-space: pre-wrap;">"brainstorming 스킬로 시작. 방금 온톨로지 질의 결과 중
+ 자동화할 패턴 후보를 같이 추려줘."</pre>
+    </div>
+    <table>
+      <thead><tr><th>질의 패턴 예시</th><th>굳히면</th></tr></thead>
+      <tbody>
+        <tr><td>"결제 실패 → 영향 entity → 담당자 → 티켓"</td><td>MCP tool <code class="inline">impact_to_ticket</code></td></tr>
+        <tr><td>"단말 모델 → 호환 SW → 펌웨어 버전"</td><td>스킬 <code class="inline">device-compat-check</code></td></tr>
+        <tr><td>"신규 매뉴얼 → 관련 entity 자동 연결"</td><td>ingest hook (PostToolUse)</td></tr>
+      </tbody>
+    </table>
+    <div class="field-case">
+      여기가 오늘의 핵심입니다. <strong>온톨로지(의미) → 패턴 발견 → 스킬/MCP(자동화)</strong>. 단순히 검색하는 데서 끝나지 않고, 반복 패턴을 도구로 만들어 팀이 재사용합니다.
+    </div>
+
+    <h3><span class="step-num">5</span>그래프화 (선택 심화)</h3>
+    <p>여유가 있는 분은 본인 온톨로지도 d3 그래프로 띄워봅니다. ① 코드는 OpenCrab <code class="inline">apps/web</code>에 이미 있고, ② 본인 데이터로 바꿔 끼우면 됩니다.</p>
+    <div class="track instr">
+      <div class="track-h">자연어 요청</div>
+      <pre style="white-space: pre-wrap;">"OpenCrab apps/web 그래프 뷰어를 내 온톨로지 데이터에
+ 연결해서 localhost에 띄워줘"</pre>
+    </div>
+    <p style="font-size: 13px; color: var(--muted);">그래프 대시보드 제작은 부담될 수 있어 <strong>선택</strong>으로 둡니다. 핵심은 ②~④(설치·질의·아이디에이션)이며, 그래프는 마지막 보너스입니다.</p>
+  </div>
+</section>
+
+
+<!-- ============ AI-Ops 로드맵 ============ -->
+<section id="roadmap">
+  <div class="container">
+    <span class="section-tag">§ AI-Ops 전환 로드맵 · 마무리</span>
+    <h2>개인 도구에서 <span class="accent">팀 오케스트레이션</span>까지</h2>
+
+    <div class="goal">
+      <div class="goal-label">마무리 목표</div>
+      <div class="goal-text">Day 1~5에서 배운 도구를 <strong>단계적 전환 로드맵</strong>으로 묶고, 본인 조직에 맞는 1주·1개월·3개월 액션을 직접 작성합니다.</div>
+    </div>
+
+    <h3><span class="step-num">1</span>AI-Ops 4단계 (Day 1~5 매핑)</h3>
+    <table>
+      <thead><tr><th>단계</th><th>무엇</th><th>이 강의 어디서</th></tr></thead>
+      <tbody>
+        <tr><td><strong>① 개인 지시문</strong></td><td>각자 AI를 길들이기</td><td>Day 1~2 (CLAUDE.md · 스킬)</td></tr>
+        <tr><td><strong>② 팀 표준화</strong></td><td>같은 의미 기반 공유</td><td>오늘 (온톨로지 데이터팩 ZIP)</td></tr>
+        <tr><td><strong>③ 파이프라인</strong></td><td>반복 작업을 도구 chain으로</td><td>Day 4 + 오늘 (스킬 · MCP tool)</td></tr>
+        <tr><td><strong>④ 오케스트레이션</strong></td><td>여러 도구·에이전트를 하나의 흐름으로</td><td>멀티 MCP + 데이터팩 + 대시보드</td></tr>
+      </tbody>
+    </table>
+
+    <h3><span class="step-num">2</span>왜 온톨로지인가 | 스킬 공유 그 이상</h3>
+    <p>"②팀 표준화에 왜 굳이 온톨로지냐, 스킬만 공유하면 안 되냐"는 자연스러운 질문입니다. 답은 <strong>스킬과 온톨로지가 채우는 칸이 다르다</strong>는 데 있습니다.</p>
+    <div class="dual-track">
+      <div class="track instr">
+        <div class="track-h">스킬 = 절차 ("어떻게 행동")</div>
+        <pre style="white-space: pre-wrap;">"이럴 때 이렇게 처리해라"
+ 한 가지 작업의 실행 방법</pre>
+      </div>
+      <div class="track stu">
+        <div class="track-h">온톨로지 = 의미 ("무엇이 어떻게 연결")</div>
+        <pre style="white-space: pre-wrap;">"이 도메인은 이런 개념·관계로 이뤄짐"
+ 팀 전체가 참조하는 공통 의미 기반</pre>
+      </div>
+    </div>
+    <p style="font-size: 14px;">스킬만 공유하면 팀이 커질수록 각 AI가 같은 도메인을 제각각 이해합니다 ("결제" = "Payment" = "거래"가 따로 논다). 온톨로지가 채우는 세 칸:</p>
+    <table>
+      <thead><tr><th>온톨로지가 하는 일</th><th>스킬로는 안 되는 이유</th></tr></thead>
+      <tbody>
+        <tr><td><strong>① 팀 공통 의미 기반</strong></td><td>모든 스킬·MCP·에이전트가 같은 entity·관계를 참조</td></tr>
+        <tr><td><strong>② 영향 분석 (traversal)</strong></td><td>"이거 바꾸면 어디까지?" 스킬은 절차만, 관계를 못 따라감</td></tr>
+        <tr><td><strong>③ 도메인 지식 자산화</strong></td><td>데이터팩으로 축적·공유·버전 관리</td></tr>
+      </tbody>
+    </table>
+    <div class="field-case">
+      <strong>오케스트레이션이 가능하려면 모든 에이전트가 같은 의미 기반을 봐야 합니다.</strong> 그게 온톨로지이고, ②팀 표준화는 "스킬 공유"의 다음 차원입니다.
+    </div>
+
+    <h3><span class="step-num">3</span>본인 조직 액션 플랜 (직접 작성)</h3>
+    <p>아래 틀에 본인 조직 상황을 채워봅니다. 정답은 없고, "당장 무엇부터"가 핵심입니다.</p>
+    <table>
+      <thead><tr><th>기간</th><th>목표</th><th>예시</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1주</strong></td><td>개인 지시문 + 스킬 1개</td><td>CLAUDE.md 정비 · 반복 작업 1개 스킬화</td></tr>
+        <tr><td><strong>1개월</strong></td><td>팀 데이터팩 + MCP 1개</td><td>팀 도메인 온톨로지 ZIP · 사내 도구 MCP 연결</td></tr>
+        <tr><td><strong>3개월</strong></td><td>파이프라인 → 오케스트레이션</td><td>탐지→진단→조치 자동 chain · 가드레일 hook 정착</td></tr>
+      </tbody>
+    </table>
+
+    <h3><span class="step-num">4</span>Day 1~5 총정리</h3>
+    <table>
+      <thead><tr><th>Day</th><th>핵심</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://daniel8824-del.github.io/har-day1/" target="_blank">Day 1</a></td><td>AI 코딩 도구 · 환경 · 첫 지시문</td></tr>
+        <tr><td><a href="https://daniel8824-del.github.io/pos-day2/" target="_blank">Day 2</a></td><td>프롬프트 · 프로젝트 · 스킬 · 훅 · MCP 개념</td></tr>
+        <tr><td><a href="https://daniel8824-del.github.io/rag-day3/" target="_blank">Day 3</a></td><td>로컬 RAG · QMD 문서 검색</td></tr>
+        <tr><td><a href="https://daniel8824-del.github.io/mcp-day4/" target="_blank">Day 4</a></td><td>MCP 개발 · 훅 · 멀티에이전트 · 운영 모니터링</td></tr>
+        <tr><td><strong>Day 5</strong></td><td>실전 사례 · <strong>온톨로지</strong> · AI-Ops 전환 로드맵</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 16px;">개인이 AI를 길들이는 데서 시작해(①), 팀이 같은 의미 기반을 공유하고(②), 반복을 도구로 굳히고(③), 마침내 여러 도구를 하나의 흐름으로 묶습니다(④). 오늘 만든 온톨로지 팩이 그 전환의 출발점입니다.</p>
+  </div>
+</section>
+
+
+<!-- ============ 자료 ============ -->
+<section id="dl">
+  <div class="container">
+    <span class="section-tag">§ 실습 자료</span>
+    <h2>다운로드 · 링크</h2>
+    <p class="lead">강사 배포 팩과 OpenCrab 원본. 모두 로컬에서 동작합니다.</p>
+
+    <ul class="dl">
+      <li>
+        <code>toshiba-day5-dev-pack.zip</code>
+        <span class="dl-desc">개발팀 온톨로지 팩 · acli · GitLab CI · Jira/Confluence · ELERA · TCx Sky (nodes.jsonl + edges.jsonl + manifest + sample_queries)</span>
+        <a class="dl-btn" href="downloads/toshiba-day5-dev-pack.zip" download>개발팩</a>
+      </li>
+      <li>
+        <code>toshiba-day5-ops-pack.zip</code>
+        <span class="dl-desc">운영팀 온톨로지 팩 · 도시바 POS 제품/운영 · 매장 · 단말 · 인시던트 · 티켓 · KPI</span>
+        <a class="dl-btn" href="downloads/toshiba-day5-ops-pack.zip" download>운영팩</a>
+      </li>
+      <li>
+        <code>OpenCrab</code>
+        <span class="dl-desc">온톨로지 실습 도구 원본 · 로컬 SQLite + Chroma · 외부 DB 불필요</span>
+        <a class="dl-btn" href="https://github.com/AlexAI-MCP/OpenCrab" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <code>apps/web 그래프 뷰어</code>
+        <span class="dl-desc">d3 기반 온톨로지 그래프 대시보드 (선택 심화 · 본인 데이터 연결)</span>
+        <a class="dl-btn" href="https://github.com/AlexAI-MCP/OpenCrab/tree/main/apps/web" target="_blank">코드</a>
+      </li>
+    </ul>
+
+    <div class="reference">
+      <p><strong>본인 환경 준비</strong> | Python 3.10+ · Claude Code 또는 Copilot CLI · Git · OpenCrab (자연어 한 줄로 설치). Windows native는 chromadb 빌드 이슈가 있어 WSL을 권장합니다. 데이터는 <code class="inline">./opencrab_data/</code> 로컬에 보관됩니다.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <strong>Day 5 교재 | 실전 사례 · 온톨로지 · AI-Ops 전환</strong> · 2026-05-21<br>
+    이전: <a href="https://daniel8824-del.github.io/har-day1/" target="_blank">Day 1</a> | <a href="https://daniel8824-del.github.io/pos-day2/" target="_blank">Day 2</a> | <a href="https://daniel8824-del.github.io/rag-day3/" target="_blank">Day 3</a> | <a href="https://daniel8824-del.github.io/mcp-day4/" target="_blank">Day 4</a> · 마지막 날<br>
+    도시바 공개 자료 + 시뮬레이션 | 실제 도시바·아모레퍼시픽 운영 데이터 아님
+  </div>
+</footer>
+
+</body>
+</html>
